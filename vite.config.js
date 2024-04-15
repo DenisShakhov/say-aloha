@@ -1,8 +1,7 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: '/say-aloha/',
-
+  base: '/',
   css: {
     postcss: {
       plugins: [
@@ -11,4 +10,5 @@ export default defineConfig({
       ],
     },
   },
+  
 });
