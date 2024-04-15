@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "vite --host",
-    "build": "vite build",
+    "build": "vite build && npx tailwindcss -i ./public/assets/style.css -o ./dist/assets/style.css --minify",
     "preview": "vite preview"
   },
   "keywords": [],

@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', () => {
     // Находим кнопку меню по классу
     const menuButton = document.querySelector('.mobile-menu-button');
