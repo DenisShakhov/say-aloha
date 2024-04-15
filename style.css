@@ -1,0 +1,107 @@
+/* styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.f_block_image_phone {
+    background-image: url('images/phone_1page.png');
+    background-size: cover; /* Covers the entire area of the block */
+    background-position: center; /* Center the image within the block */
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%; /* ширина всего вьюпорта */
+    height: 100%; /* высота всего вьюпорта */
+     /* максимальная высота также ограничена размером вьюпорта */
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    margin-top: 2.5rem;
+    /* Удалить любые другие стили, которые могут мешать ширине и высоте */
+  }
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+  
+.slide {
+position: relative;
+min-width: 100%; /* Гарантирует, что каждый слайд занимает всю ширину карусели */
+box-sizing: border-box;
+}
+
+.slide::after {
+content: '';
+position: absolute;
+left: 0;
+right: 0;
+top: 0; /* Начало градиента теперь с верхней границы */
+bottom: 0; /* Охватывает весь слайд */
+background: linear-gradient(to bottom, transparent, rgba(1, 130, 190, 0) 0%, rgba(1, 101, 147, 0.2) 40%, rgba(0, 71, 102, 0.8) 65%);
+z-index: 2; /* Гарантирует, что градиент находится под текстом и над изображением */
+}
+
+.bg-grad {
+    background: linear-gradient(to bottom, transparent, rgba(1, 130, 190, 0) 0%, rgba(1, 101, 147, 0.2) 40%, rgba(0, 71, 102, 0.8) 65%);
+}
+
+.slide img {
+display: block;
+width: 100%;
+height: auto; /* Поддерживает пропорции изображения */
+position: relative;
+z-index: 1; /* Убедитесь, что изображение под градиентом */
+}
+
+.absolute_custom {
+position: absolute;
+left: 1rem;
+top: 50%;
+transform: translateY(-50%);
+color: white;
+font-size: 1.875rem; /* text-3xl в Tailwind CSS */
+z-index: 3; /* Текст над градиентом */
+}
+
+.slide {
+min-width: 100%;
+transition: transform 0.5s ease;
+box-sizing: border-box;
+}
+
+.slide img {
+width: 100%;
+display: block;
+}
+
+.prev, .next {
+position: absolute;
+
+transform: translateY(-50%);
+color: white;
+border: none;
+cursor: pointer;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+@media (max-width: 768px) {
+    .absolute {
+        font-size: 1.875rem; /* Larger font size for larger screens */
+        padding: 1rem; /* Larger padding for larger screens */
+        width: 3/4; /* Specific width for larger screens */
+    }
+    .slide {
+        height: 400px;
+    }
+    .prev, .next {
+        width: 50px; /* Larger buttons for larger screens */
+        height: 50px; /* Larger buttons for larger screens */
+    }
+}
