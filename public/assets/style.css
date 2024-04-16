@@ -95,18 +95,10 @@ z-index: 1; /* Убедитесь, что изображение под град
 }
 .prev_2, .next_2 {
     position: absolute;
-    top: 50%;
     transform: translateY(-50%);
-    z-index: 2; /* Поверх слайдов, но ниже текста или других элементов, если таковые есть */
 }
 
-.prev_2 {
-    left: 10px; /* Или другое значение, чтобы стрелка была внутри видимой области */
-}
 
-.next_2 {
-    right: 10px; /* Или другое значение, чтобы стрелка была внутри видимой области */
-}
 .slides_2 {
     display: flex;
     transition: transform 0.5s ease; /* Плавное перелистывание */
@@ -132,3 +124,26 @@ z-index: 1; /* Убедитесь, что изображение под град
         height: 50px; /* Larger buttons for larger screens */
     }
 }
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .swiper-button-next{
+     
+  }
