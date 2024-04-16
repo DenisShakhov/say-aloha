@@ -13,7 +13,7 @@ body, html {
     padding: 0;
     overflow-x: hidden;
 }
-.carousel {
+.carousel, .carousel_2 {
     position: relative;
     overflow: hidden;
     width: 100%; /* ширина всего вьюпорта */
@@ -21,15 +21,16 @@ body, html {
      /* максимальная высота также ограничена размером вьюпорта */
     border-bottom-left-radius: 3rem;
     border-bottom-right-radius: 3rem;
-    margin-top: 2.5rem;
+    
     /* Удалить любые другие стили, которые могут мешать ширине и высоте */
-  }
-.slides {
+}
+
+.slides, .slides_2 {
     display: flex;
     transition: transform 0.5s ease;
 }
   
-.slide {
+.slide, .slide_2 {
 position: relative;
 min-width: 100%; /* Гарантирует, что каждый слайд занимает всю ширину карусели */
 box-sizing: border-box;
@@ -50,7 +51,7 @@ z-index: 2; /* Гарантирует, что градиент находитс�
     background: linear-gradient(to bottom, transparent, rgba(1, 130, 190, 0) 0%, rgba(1, 101, 147, 0.2) 40%, rgba(0, 71, 102, 0.8) 65%);
 }
 
-.slide img {
+.slide img, .slide_2 img {
 display: block;
 width: 100%;
 height: auto; /* Поддерживает пропорции изображения */
@@ -59,35 +60,58 @@ z-index: 1; /* Убедитесь, что изображение под град
 }
 
 .absolute_custom {
-position: absolute;
-left: 1rem;
-top: 50%;
-transform: translateY(-50%);
-color: white;
-font-size: 1.875rem; /* text-3xl в Tailwind CSS */
-z-index: 3; /* Текст над градиентом */
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 1.875rem; /* text-3xl в Tailwind CSS */
+    z-index: 3; /* Текст над градиентом */
 }
 
-.slide {
-min-width: 100%;
-transition: transform 0.5s ease;
-box-sizing: border-box;
+.slide, .slide_2 {
+    min-width: 100%;
+    transition: transform 0.5s ease;
+    box-sizing: border-box;
 }
 
-.slide img {
-width: 100%;
-display: block;
+
+.slide img, .slide_2 img {
+    width: 100%;
+    display: block;
 }
 
 .prev, .next {
-position: absolute;
+    position: absolute;
 
-transform: translateY(-50%);
-color: white;
-border: none;
-cursor: pointer;
+    transform: translateY(-50%);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.prev_2, .next_2 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2; /* Поверх слайдов, но ниже текста или других элементов, если таковые есть */
 }
 
+.prev_2 {
+    left: 10px; /* Или другое значение, чтобы стрелка была внутри видимой области */
+}
+
+.next_2 {
+    right: 10px; /* Или другое значение, чтобы стрелка была внутри видимой области */
+}
+.slides_2 {
+    display: flex;
+    transition: transform 0.5s ease; /* Плавное перелистывание */
+}
+
+.slide_2 {
+    flex: 0 0 100%; /* Каждый слайд занимает 100% ширины видимой части */
+    max-width: 100%; /* Ограничение ширины каждого слайда */
+}
 .prev { left: 10px; }
 .next { right: 10px; }
 
@@ -100,7 +124,7 @@ cursor: pointer;
     .slide {
         height: 400px;
     }
-    .prev, .next {
+    .prev, .next, .prev_2, .next_2 {
         width: 50px; /* Larger buttons for larger screens */
         height: 50px; /* Larger buttons for larger screens */
     }
