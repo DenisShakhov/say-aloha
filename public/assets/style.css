@@ -1,3 +1,10 @@
+
+@font-face {
+    font-family: 'grotesque';
+    src: url('assets/RG-StandardSemibold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
 /* styles.css */
 @tailwind base;
 @tailwind components;
@@ -50,7 +57,12 @@ bottom: 0; /* Охватывает весь слайд */
 background: linear-gradient(to bottom, transparent, rgba(1, 130, 190, 0) 0%, rgba(1, 101, 147, 0.2) 40%, rgba(0, 71, 102, 0.8) 65%);
 z-index: 2; /* Гарантирует, что градиент находится под текстом и над изображением */
 }
-
+h2{
+    font-family: 'grotesque';
+}
+h3{
+    font-family: 'grotesque';
+}
 .bg-grad {
     background: linear-gradient(to bottom, transparent, rgba(1, 130, 190, 0) 0%, rgba(1, 101, 147, 0.2) 40%, rgba(0, 71, 102, 0.8) 65%);
 }
