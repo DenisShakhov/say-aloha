@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Tailwind Project</title>
   <link rel="stylesheet" href="assets/style.css">
-  <script type="module" crossorigin src="/assets/index-BBg9E_Jo.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="/assets/index-WwuZRAoT.js"></script>
 </head>
 <body>
 
@@ -107,14 +110,14 @@
             
                 <div class="grow"></div> 
                 <div class="grow flex flex-col  justify-end mb-10 md:p-10 md:mb-15"> 
-                    <div class="mx-2 pl-3 py-2 mt-4  text-sm text-left rounded-full text-blue-text bg-white"> Создадим идеальный тур, учитывая ваши пожелания, бюджет и время отдыха</div>
-                    <h2 class="text-white px-2 mt-2 leading-10 text-4xl font-bold">Незабываемые групповые и индивидуальные экскурсии на Сейшелах</h2>
+                    <div class="mx-2 pl-3 py-2 mt-4 w-fit text-sm text-left text-[14px] rounded-full text-blue-text bg-white pr-2"> Создадим идеальный тур, учитывая ваши пожелания, бюджет и время отдыха</div>
+                    <h2 class="text-white px-2 mt-2 leading-10 max-w-[660px] font-bold text-[50px]">Незабываемые групповые и индивидуальные экскурсии на Сейшелах</h2>
                     
                 </div> 
-                <div class="grow w-1/2 hidden md:flex flex-col justify-end md:mb-7">
+                <div class="grow md:w-1/4 hidden md:flex flex-col justify-end md:mb-7">
                     <div class="flex flex-col items-center justify-center mb-10 mr-10">
-                        <button class="text-blue  bg-white w-full mt-3 py-4 rounded-full ">Смотреть экскурсии</button>
-                        <button class="text-white  border-2 border-white w-full mt-3 py-4 rounded-full ">Эмоции наших клиентов</button>
+                        <button class="text-blue  bg-white w-full mt-3 py-4 rounded-full text-[18px]">Смотреть экскурсии</button>
+                        <button class="text-white  border-2 border-white w-full mt-3 py-4 rounded-full text-[18px]">Эмоции наших клиентов</button>
                     </div>
                 </div>
             </div>
@@ -122,7 +125,7 @@
                 
                 <button class="text-white md:hidden bg-blue w-full mt-3 py-4 rounded-full ">Смотреть экскурсии</button>
                 <button class="text-blue md:hidden border-2 border-blue w-full mt-3 py-4 rounded-full ">Эмоции наших клиентов</button>
-                <ul class=" w-full shadow-none flex text-sm lg:text-base flex-col md:flex-row md:justify-between">
+                <ul class=" w-full shadow-none flex mt-4 text-sm lg:text-base flex-col md:flex-row md:justify-between">
                     <li class="flex items-center mt-2 w-full">
                         <img src="assets/palm.svg" class="mr-2"/> Индивидуальная программа отдыха
                     </li>
@@ -137,17 +140,18 @@
         </div>
 
         <div class="container  flex flex-col gap-x-5 mt-10 w-full md:flex-row items-center justify-center">
-            <div class="md:w-1/2 w-full flex flex-col justify-start">
-                <div class="flex flex-row text-blue-text items-start justify-start">
+            <div class="md:w-1/2 w-full md:px-10 flex flex-col justify-start">
+                <div class="flex flex-row text-[14px] text-blue-text items-start justify-start">
                     <span class="border rounded-2xl border-blue p-1">пляжи</span>
                     <span class="border rounded-2xl border-blue p-1">сноркглинг</span>
                     <span class="border rounded-2xl border-blue p-1">барбекю</span>
                     <span class="border rounded-2xl border-blue p-1">черепахи</span>
                 </div>
-                <div class="font-normal text-4xl leading-tight text-blue-text">Водная экскурсия в морской национальный парк «Святая Анна» теперь<br/> <div class="bg-blue rounded-3xl w-fi mt-3 py-1 px-2 text-white">дешевле на 5 евро!</div></div>
+                <div class="font-semibold text-[30px] md:text-[37px]  leading-tight text-blue-text">Водная экскурсия в морской национальный парк «Святая Анна» теперь<br/> <div class="bg-blue rounded-3xl w-fit  py-1 px-2 text-white">дешевле на 5 евро!</div></div>
+                <div class="mt-2 font-normal text-[16px]">Отправьтесь на приключенческое плавание, окунитесь в потрясающий подводный мир, насладитесь сноркелингом и расслабьтесь на уединенных пляжах. </div>
                 <div class="flex items-start ml-0 pl-0 m-5 justify-start">
-                    <button class="px-10 py-4 bg-blue text-white border rounded-3xl">Забронировать</button>
-                    <button class="px-10 py-4 text-blue-text font-medium rounded-3xl">Подробнее</button>
+                    <button class="px-10 py-4 bg-blue text-white font-bold text-[16px] border rounded-3xl">Забронировать</button>
+                    <button class="px-10 py-4 text-blue-text font-bold text-[16px] rounded-3xl">Подробнее</button>
                 </div>
             </div>
             <div class="md:w-1/2 w-full h-full">
@@ -155,16 +159,16 @@
             </div>
         </div>
 
-        <div class="carousel relative rounded-b-3xl w-full mt-10 rounded-3xl">
+        <div class="carousel relative rounded-b-3xl text-[30px] md:text-[42px] w-full mt-10 rounded-3xl">
             <div class="slides font-bold">
               <div class="slide ">
-                <div class="absolute_custom left-4 top-1/2 w-3/4 text-3xl  text-white">Отправитесь в увлекательные экскурсии от коралловых рифов и тропических лесов до водопадов и уединённых пляжей</div>
+                <div class="absolute_custom left-4 top-1/2 w-3/4   text-white">Отправитесь в увлекательные экскурсии от коралловых рифов и тропических лесов до водопадов и уединённых пляжей</div>
                 <img src="assets/scroll_1_image.png" alt="Slide 1">
               </div>
-              <div class="slide">
-                <div class="absolute_custom left-4 top-1/2 w-3/4 text-3xl text-white">Насладитесь блюдами из свежих морепродуктов и экзотических фруктов</div>
+              <!-- <div class="slide">
+                <div class="absolute_custom left-4 top-1/2 w-3/4 pt-5 text-3xl text-white">Насладитесь блюдами из свежих морепродуктов и экзотических фруктов</div>
                 <img src="assets/scroll_2_image.png" alt="Slide 1">
-              </div>
+              </div> -->
               <div class="slide">
                 <div class="absolute_custom left-4 top-1/2 w-3/4 text-3xl text-white">Посетите музеи и ботанические сады, узнаете о флоре и фауне, и окунётесь в богатую историю этого удивительного места</div>
                 <img src="assets/scroll_3_image.png" class=" md:h-full" alt="Slide 1">
@@ -179,14 +183,14 @@
               </div>
               
             </div>
-            <button class="prev left-4  z-10 top-3/4 w-15 h-15"><img src="assets/Arrow left.svg"/></button>
-            <button class="next left-16 z-10 top-3/4 w-15 h-15"><img src="assets/Arrow right.svg"/></button>
+            <button class="prev md:left-12  z-10 top-3/4 w-15 h-15"><img src="assets/Arrow left.svg"/></button>
+            <button class="next md:left-28 z-10 top-3/4 w-15 h-15"><img src="assets/Arrow right.svg"/></button>
           </div>
         
 
         
-        <div class="grid grid-cols-1 md:grid-cols-2 place-items-stretch border-none bg-none gap-4 mt-10">
-            <span class="col-span-2 text-4xl text-blue-text font-medium">Выберите свой стиль отдыха</span>
+        <div class="grid grid-cols-1 md:grid-cols-2 text-[16px] md:text-[20px] place-items-stretch border-none bg-none gap-4 mt-10">
+            <span class="col-span-2 text-[30px] md:text-[42px] text-blue-text font-medium">Выберите свой стиль отдыха</span>
             <!-- Individual excursion card -->
             <div class="relative rounded-3xl h-[400px]" style="background: linear-gradient(to bottom, transparent, rgba(1, 130, 190, 0) 30%, rgba(1, 101, 147, 0.5) 70%, rgba(0, 71, 102, 0.85) 100%), url('./assets/styles_folder/1.png') no-repeat center center / cover;">
                 <p class="w-full md:p-7 text-white text-[14px] md:text-2xl font-bold absolute bottom-0">Индивидуальные экскурсии</p>
@@ -257,13 +261,14 @@
                           <!-- Add other options here -->
                         </select>
                       </div>
+                      
+                      <button type="submit" class="w-full px-4 py-2 h-[60px] bg-blue text-base font-semibold text-center text-white transition duration-200 ease-in rounded-3xl  ">
+                        Создать свой личный тур
+                      </button>
                       <div class="flex items-center">
                         <input id="terms" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out rounded border-gray-300">
                         <label for="terms" class="ml-2 block text-sm leading-5 text-gray-900"> Нажимая на кнопку, я соглашаюсь с политикой конфиденциальности сайта</label>
                       </div>
-                      <button type="submit" class="w-full px-4 py-2 bg-blue text-base font-semibold text-center text-white transition duration-200 ease-in rounded-3xl  ">
-                        Создать свой личный тур
-                      </button>
                     </div>
                   </div>
                   

@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
         goToSlide(slideArray.length - 1); // Переходим к последнему слайду без анимации
         setTimeout(() => { // Затем возвращаем анимацию
           slides.style.transition = 'transform 0.5s ease';
-          goToSlide(slideArray.length - 2); // Переходим к предпоследнему слайду с анимацией
+          goToSlide(slideArray.length - 1); // Переходим к предпоследнему слайду с анимацией
         }, 0);
       } else {
         goToSlide(currentIndex - 1);
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
         goToSlide(0); // Переходим к первому слайду без анимации
         setTimeout(() => { // Затем возвращаем анимацию
           slides.style.transition = 'transform 0.5s ease';
-          goToSlide(1); // Переходим ко второму слайду с анимацией
+          goToSlide(0); // Переходим ко второму слайду с анимацией
         }, 0);
       } else {
         goToSlide(currentIndex + 1);
@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
         goToSlide(0); // Переходим к первому слайду без анимации
         setTimeout(() => { // Затем возвращаем анимацию
           slides.style.transition = 'transform 0.5s ease';
-          goToSlide(1); // Переходим ко второму слайду с анимацией
+          goToSlide(0); // Переходим ко второму слайду с анимацией
         }, 0);
       } else {
         goToSlide(currentIndex + 1);
