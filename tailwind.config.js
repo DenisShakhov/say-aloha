@@ -11,6 +11,14 @@ module.exports = {
         'blue': '#0083BB',
         'light-blue': '#F4F7F8',
         'grey-text': '#181818'
+      },
+      container: {
+        screens:{
+          '2xl': '1160px',
+        }
+      },
+      borderRadius: {
+        '3xl': '30px'
       }
     }
   },

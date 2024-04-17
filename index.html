@@ -14,9 +14,9 @@
 
 <body>
 
-  <div class="max-w-6xl mx-auto px-4 md:px-0">
+  <div class="container mx-auto px-4 md:px-0">
     <nav class="md:hidden">
-      <div class="max-w-6xl mx-auto px-4">
+      <div class="container mx-auto px-4">
         <div class="flex justify-between">
           <div class="md:hidden flex items-center">
 
@@ -77,7 +77,7 @@
       </div>
 
       <!-- Links section -->
-      <div class="hidden md:flex mt-2 bg-white px-8 py-4 rounded-3xl text-[14px] md:mt-0 space-x-2">
+      <div class="hidden md:flex mt-2 bg-white px-8 py-4 ml-5 rounded-3xl text-[14px] md:mt-0 space-x-2">
         <a href="#" class="text-blue-text">Экскурсии</a>
         <img src="assets/dot.svg" />
         <a href="#" class="text-blue-text">Рыбалка</a>
@@ -88,26 +88,28 @@
         <img src="assets/dot.svg" />
         <a href="#" class="text-blue-text">О компании</a>
       </div>
-      <div class="w-fit gap-x-5 flex items-center justify-between">
+      <div class="w-fit  gap-x-1 flex items-center justify-between">
         <button type="button"
-          class="text-blue-500 bg-white p-4 rounded-3xl hover:text-blue-600 focus:outline-none focus:text-blue-600">
+          class="text-blue-500 bg-white p-4 rounded-full hover:text-blue-600 focus:outline-none focus:text-blue-600">
           <img src="assets/search.svg" alt="Search" class="h-5 w-5" />
         </button>
         <button type="button"
-          class="text-blue-500 bg-white p-4 rounded-3xl hover:text-blue-600 focus:outline-none focus:text-blue-600">
+          class="text-blue-500 bg-white p-4 rounded-full hover:text-blue-600 focus:outline-none focus:text-blue-600">
           <img src="assets/bag.svg" alt="shop" class="h-5 w-5" />
         </button>
         <button type="button"
-          class="text-blue-500 bg-white p-3 rounded-3xl hover:text-blue-600 focus:outline-none focus:text-blue-600">
-          <img src="assets/telegram_2.svg" alt="telegram" class="h-7 w-7" />
+          class="text-blue-500 bg-white p-1 rounded-full hover:text-blue-600 focus:outline-none focus:text-blue-600">
+          <img src="assets/Telegram.svg" alt="telegram" class="h-10 w-10" />
         </button>
       </div>
       <!-- Icons and additional options -->
-      <div class="hidden md:flex items-center space-x-3">
+      <div class="hidden md:flex items-center space-x-5">
 
-        <a href="#" class="text-blue-text">En</a>
-        <a href="#" class="text-blue-text ">€ (EUR)</a>
-        <a href="#" class="text-blue-text bg-white rounded-3xl px-12 py-3">Войти</a>
+        <a href="#" class="text-blue-text flex items-center font-bold text-[16px]  gap-x-2 justify-center">En<img
+            src="assets/arrow_down.svg" /></a>
+        <a href="#" class="text-blue-text flex items-center font-bold text-[16px]  gap-x-2 justify-center">€ (EUR)<img
+            src="assets/arrow_down.svg" /></a>
+        <a href="#" class="text-blue-text bg-white rounded-3xl font-bold text-[16px] px-12 py-3">Войти</a>
       </div>
     </nav>
     <div class="container mx-auto mt-5  rounded-lg  ">
@@ -119,88 +121,101 @@
           <div
             class="mx-2 pl-3 py-2 mt-4 w-fit text-sm text-left text-[14px] rounded-full text-blue-text bg-white pr-2">
             Создадим идеальный тур, учитывая ваши пожелания, бюджет и время отдыха</div>
-          <h2 class="text-white px-2 mt-2 leading-10 max-w-[660px] font-bold text-[32px] md:text-[50px]">Незабываемые
+          <h1 class="text-white px-2 mt-2 max-w-[660px] font-bold text-[32px] md:text-[50px]">Незабываемые
             групповые и индивидуальные экскурсии на Сейшелах</h2>
 
         </div>
         <div class="grow md:w-1/4 hidden md:flex flex-col justify-end md:mb-7">
-          <div class="flex flex-col items-center justify-center mb-10 mr-10">
+          <div class="flex flex-col items-center font-extrabold justify-center mb-10 mr-10">
             <button class="text-blue  bg-white w-full mt-3 py-4 rounded-full text-[18px]">Смотреть экскурсии</button>
             <button class="text-white  border-2 border-white w-full mt-3 py-4 rounded-full text-[18px]">Эмоции наших
               клиентов</button>
           </div>
         </div>
       </div>
-      <div class="">
+      <div class="mt-4">
 
         <button class="text-white md:hidden bg-blue w-full mt-3 py-4 rounded-full ">Смотреть экскурсии</button>
         <button class="text-blue md:hidden border-2 border-blue w-full mt-3 py-4 rounded-full ">Эмоции наших
           клиентов</button>
-        <ul class=" w-full shadow-none flex mt-4 text-sm lg:text-base flex-col md:flex-row md:justify-between">
-          <li class="flex items-center mt-2 w-full">
-            <img src="assets/palm.svg" class="mr-2" /> Индивидуальная программа отдыха
-          </li>
-          <li class="flex items-center mt-2 w-full">
-            <img src="assets/ship.svg" class="mr-2" /> Комфортный отдых на лучших яхтах Сейшел
-          </li>
-          <li class="flex items-center mt-2 w-full">
-            <img src="assets/translate.svg" class="mr-2" /> Русскоязычные и местные гиды со знанием 5 языков
-          </li>
-        </ul>
+        <div
+          class=" w-full mt-2.5 tracking-normal text-left shadow-none font-medium flex items-center justify-between  text-[16px] flex-col md:flex-row ">
+          <span class="flex items-center max-w-[333px]  gap-x-2">
+            <img src="assets/palm.svg" class="" /> Индивидуальная программа отдыха
+          </span>
+          <span class="flex items-center max-w-[400px] gap-x-2">
+            <img src="assets/ship.svg" class="" /> Комфортный отдых на лучших яхтах Сейшел
+          </span>
+          <span class="flex items-center max-w-[300px] gap-x-2">
+            <img src="assets/translate.svg" class="" />
+            Русскоязычные и местные гиды со знанием 5 языков
+          </span>
+        </div>
       </div>
     </div>
 
-    <div class="container  flex flex-col gap-x-5 mt-10 w-full md:flex-row items-center justify-center">
-      <div class="md:w-1/2 w-full md:p-10 rounded-3xl h-max-[570px] bg-white flex flex-col justify-start">
-        <div class="flex flex-row text-[12px] md:text-[14px] text-blue-text items-start justify-start">
-          <span class="border rounded-2xl border-blue p-1.5 px-3">пляжи</span>
-          <span class="border rounded-2xl border-blue p-1.5 px-3">сноркглинг</span>
-          <span class="border rounded-2xl border-blue p-1.5 px-3">барбекю</span>
-          <span class="border rounded-2xl border-blue p-1.5 px-3">черепахи</span>
-        </div>
+    <div class="container flex flex-col md:flex-row h-full gap-x-5 mt-10 w-full items-stretch justify-center">
+      <div class="md:w-1/2 w-full px-12 py-16 rounded-3xl bg-white flex flex-col justify-between">
         <div>
-          <h3 class="font-semibold text-[30px] max-w-[550px] md:text-[37px]  mt-14 leading-none text-blue-text">Водная
-            экскурсия в морской национальный парк «Святая Анна» теперь <div
-              class="bg-blue rounded-3xl w-fit  py-1 px-2 text-white">дешевле на 5 евро!</div>
+          <div class="flex flex-row text-[12px] md:text-[14px] text-blue-text items-start justify-start mb-14">
+            <span class="border rounded-2xl border-blue p-1.5 px-3 mr-2">пляжи</span>
+            <span class="border rounded-2xl border-blue p-1.5 px-3 mr-2">сноркглинг</span>
+            <span class="border rounded-2xl border-blue p-1.5 px-3 mr-2">барбекю</span>
+            <span class="border rounded-2xl border-blue p-1.5 px-3">черепахи</span>
+          </div>
+          <h3 class="font-semibold text-[30px] max-w-[550px] md:text-[37px] leading-none text-blue-text">
+            Водная экскурсия в морской национальный парк «Святая Анна» теперь
+            <span class="bg-blue rounded-3xl px-2 text-white">дешевле на 5 евро!</span>
+          </h3>
+          <div class="mt-2 font-normal max-w-[350px] text-[16px]">
+            Отправьтесь на приключенческое плавание, окунитесь в потрясающий подводный мир, насладитесь сноркелингом и
+            расслабьтесь на уединенных пляжах.
+          </div>
         </div>
-
-        <div class="mt-2 font-normal max-w-[350px] text-[16px]">Отправьтесь на приключенческое плавание, окунитесь в
-          потрясающий подводный мир, насладитесь сноркелингом и расслабьтесь на уединенных пляжах. </div>
-        <div class="flex items-start ml-0 pl-0 m-5 gap-x-2 justify-start">
+        <div class="flex items-start gap-x-2 justify-start mt-14">
           <button class="px-10 py-4 bg-blue text-white font-bold text-[16px] border rounded-3xl">Забронировать</button>
           <button class="px-10 py-4 text-blue-text bg-light-blue font-bold text-[16px] rounded-3xl">Подробнее</button>
         </div>
       </div>
-      <div class="md:w-1/2 w-full h-full">
-        <img class="h-fit object-cover" src="assets/page_2_card.png" />
+      <div class="md:w-1/2 w-full">
+        <img class="rounded-3xl object-cover w-full h-auto md:h-full" src="assets/page_2_card.png" />
       </div>
     </div>
+
+
 
 
 
     <div class="relative rounded-b-3xl leading-none h-[400px] md:h-full w-full swiper mySwiper3 mt-10 rounded-3xl">
       <div class="swiper-wrapper  font-medium md:font-bold">
         <div class="swiper-slide slide">
-          <h2 class="absolute_custom left-4 text-left top-1/2 w-3/4  text-[30px] md:text-[42px] text-white">Отправитесь
+          <h2
+            class="absolute_custom max-w-[643px] left-4 text-left top-1/2 w-3/4  text-[30px] md:text-[42px] text-white">
+            Отправитесь
             в увлекательные экскурсии от коралловых рифов и тропических лесов до водопадов и уединённых пляжей
           </h2>
           <img src="assets/scroll_1_image.png" alt="Slide 1">
         </div>
         <div class="swiper-slide slide ">
           <img src="assets/scroll_3_image.png" alt="Slide 2">
-          <h2 class="absolute_custom left-4 text-left top-1/2 w-3/4  text-[30px] md:text-[42px] text-white">Посетите
+          <h2
+            class="absolute_custom max-w-[589px] left-4 text-left top-1/2 w-3/4  text-[30px] md:text-[42px] text-white">
+            Посетите
             музеи и ботанические сады, узнаете о флоре и фауне, и окунётесь в богатую историю этого удивительного места
           </h2>
         </div>
         <div class="swiper-slide slide">
           <img src="assets/scroll_4_image.png" alt="Slide 3">
-          <h2 class="absolute_custom left-4 text-left top-1/2 w-3/4  text-[30px] md:text-[42px] text-white">
+          <h2
+            class="absolute_custom max-w-[589px] left-4 text-left top-1/2 w-3/4  text-[30px] md:text-[42px] text-white">
             Почувствуешь
             азарт рыбалки в уникальных природных условиях Сейшелских островов</h2>
         </div>
         <div class="swiper-slide slide">
           <img src="assets/scroll_5_image.png" alt="Slide 4">
-          <h2 class="absolute_custom left-4 text-left top-1/2 w-3/4  text-[30px] md:text-[42px] text-white">Проведите
+          <h2
+            class="absolute_custom max-w-[589px] left-4 text-left top-1/2 w-3/4  text-[30px] md:text-[42px] text-white">
+            Проведите
             романтический день на воде, наслаждаясь кристально чистыми лагунами и величественными видами</h2>
         </div>
       </div>
@@ -273,34 +288,64 @@
           class="md:h-1/2 h-full mt-10 mb:mt-10 ml-10 text-white flex flex-col items-start mb-10 justify-center md:justify-start">
           <h2 class="text-[30px] max-w-[275px] md:max-w-[450px] md:text-[42px] font-semibold  leading-10">Сформируем для
             вас индивидуальную экскурсию</h2>
-          <p class="text-[16px] max-w-[290px] md:max-w-[387px] leading-5 font-normal mt-6 w-[350px]">Мы разработаем
+          <p class="text-[16px] max-w-[290px] md:max-w-[387px] l-140 font-normal mt-6 w-[350px]">Мы разработаем
             для вас индивидуальную программу, которая полностью соответствует вашим мечтам. Расскажите нам о своих
             желаниях или местах, которые хотите посетить и мы составим для вас программу</p>
         </div>
       </div>
-      <div class="md:w-1/2 p-7 md:p-0 mt-10 md:mt-0 h-full">
+      <div class="md:w-1/2 flex flex-col justify-end  p-7 md:p-0 mt-10 md:mt-0 md:h-[640px]">
         <div class="flex flex-row items-center justify-between md:justify-center">
           <img class="w-20 h-16 md:w-[120px] md:h-[100px]" src="assets/snorkling.png" />
           <img class="w-20 h-16 md:w-32 md:h-24" src="assets/islands.png" />
           <img class="w-20 h-16 md:w-32 md:h-24" src="assets/fishing.png" />
         </div>
-        <div class=" p-0 flex mt-2 flex-col items-center justify-between rounded-3xl h-full   mx-auto ">
-          <div class="grid gap-6 place-items-stretch h-full">
-            <div class="flex justify-between items-center">
+        <div
+          class="max-w-[404px] flex-col text-smm font-semibold l-140 items-left mt-10 items-center flex justify-start text-[18px]">
+          Заполните форму ниже. Наш
+          менеджер
+          перезвонит вам,
+          чтобы уточнить все
+
+          ваши пожелания
+          и составит для вас
+          идеальный тур</div>
+        <div class="l-140 mt-5 flex items-center justify-start"><img src="assets/telegram_2.svg" class="mr-2" />Или
+          напишите ваш
+          запрос нам в Telegram </div>
+        <div class=" p-0 flex items-start flex-col mt-2  md:w-[410px] rounded-3xl h-full   ">
+          <div class="flex items-start flex-col justify-center gap-y-2.5 w-[404px]  h-full ">
+            <div class="flex w-full justify-between h-[60px] items-center">
               <label for="name" class="sr-only">Имя</label>
               <input type="text" id="name" class="form-input p-4 mt-1  rounded-3xl block w-full  bg-light-blue  "
                 placeholder="Имя">
             </div>
-            <div class="flex gap-4">
-              <select id="country-code" class="form-select rounded-3xl p-3 block w-16  bg-light-blue">
-                <option>+7</option>
-              </select>
-              <input type="text" id="phone" class="p-4 rounded-3xl form-input mt-1 block w-full bg-light-blue"
+            <div class="flex w-full relative h-[60px] rounded-3xl bg-light-blue ">
+              <div class="dropdown  left-0 rounded-3xl ">
+                <div class="dropdown-selector absolute    top-[8px] left-2 gap-x-2" onclick="toggleDropdown()">
+                  <img id="selected-flag" src="assets/russian_flag.svg" alt="Flag" />
+                  <span id="selected-code">+7</span>
+                </div>
+                <ul id="dropdown-options" class="bg-white  rounded-3xl dropdown-options">
+                  <li class="" onclick="selectCountry('assets/russian_flag.svg', '+7')">
+                    <img src="assets/russian_flag.svg" alt="Russian Flag" /> +7
+                  </li>
+                  <li class="" onclick="selectCountry('assets/russian_flag.svg', '+7')">
+                    <img src="assets/russian_flag.svg" alt="Russian Flag" /> +7
+                  </li>
+                  <li class="" onclick="selectCountry('assets/russian_flag.svg', '+7')">
+                    <img src="assets/russian_flag.svg" alt="Russian Flag" /> +7
+                  </li>
+                  <li class="" onclick="selectCountry('assets/russian_flag.svg', '+7')">
+                    <img src="assets/russian_flag.svg" alt="Russian Flag" /> +7
+                  </li>
+                </ul>
+              </div>
+              <input type="tel" id="phone" class="w-full rounded-r-3xl h-[60px] mb-auto bg-transparent pr-4   block "
                 placeholder="Телефон">
             </div>
-            <div class="flex justify-between items-center">
-              <label for="app" class="sr-only">Приложение</label>
-              <select id="app" class="form-select mt-1 block w-full rounded-3xl p-4 bg-light-blue">
+
+            <div class="flex w-full items-center">
+              <select id="app" class="form-select  block w-full rounded-3xl  p-4 bg-light-blue">
                 <option>WhatsApp</option>
                 <option>Viber</option>
                 <!-- Add other options here -->
@@ -308,7 +353,7 @@
             </div>
 
             <button type="submit"
-              class="w-full px-4 py-2 h-[60px] bg-blue text-base font-semibold text-center text-white transition duration-200 ease-in rounded-3xl  ">
+              class="w-full px-4 py-2 mt-5 h-[60px] bg-blue text-base font-semibold text-center text-white transition duration-200 ease-in rounded-3xl  ">
               Создать свой личный тур
             </button>
             <div class="flex max-w-[362px] mt-auto items-center">
@@ -349,39 +394,41 @@
           <div class="swiper-slide rounded-3xl"><img src="assets/man.png" /></div>
         </div>
 
-        <div class="swiper-pagination"></div>
+
       </div>
 
     </div>
     <div
       class="container w-full bg-white p-12 rounded-3xl text-blue-text justify-between mt-16 flex flex-col md:flex-row">
-      <div class="flex flex-col justify-between items-start">
-        <div class="flex flex-col">
-          <h2 class="text-[30px] md:text-[42px] max-w-[450px] font-semibold leading-none">Путешествуйте как
+      <div class="flex flex-col justify-start  items-start h-full">
+        <div class="flex flex-col items-start justify-between h-full">
+          <h2 class="text-[30px] md:text-[42px]  max-w-[450px] font-semibold leading-none">Путешествуйте как
             профессионалы
           </h2>
-          <div class="mt-7 leading-5 max-w-[300px] text-grey-text text-[14px] md:text-[16px]">Узнайте из первых уст,
+          <div class="mt-10 l-140 max-w-[300px] text-grey-text text-[14px] md:text-[16px]">Узнайте из первых уст,
             что ждёт вас в путешествии, и поделитесь собственными мечтами и ожиданиями</div>
         </div>
-        <div class="text-[14px] md:text-[16px] gap-y-3 flex text-blue-text flex-col font-bold mb-auto mt-4 md:mt-10">
-          <div class="flex items-center justify-start ">
+        <div
+          class="text-[14px] md:text-[16px] gap-y-2.5 flex text-blue-text flex-col font-bold mb-auto mt-[30px] md:mt-10">
+          <div class="flex items-center h-[50px] justify-start ">
             <img src="assets/photoapparat.svg" class="mr-2" />
             ЖИВЫЕ ФОТОГРАФИИИ С ЭКСКУРСИИ
           </div>
-          <div class="flex items-center justify-start">
+          <div class="flex items-center h-[50px] justify-start">
             <img src="assets/smile.svg" class="mr-2" />
             ИСКРЕННИЕ ОТЗЫВЫ ОТ НАШИХ ПУТЕШЕСТВЕННИКОВ
           </div>
-          <div class="flex items-center justify-start">
+          <div class="flex items-center h-[50px] justify-start">
             <img src="assets/like.svg" class="mr-2" />
             СОВЕТЫ И ВДОХНОВЛЯЮЩИЕ ИСТОРИИ
           </div>
         </div>
-        <div class="p-4 bg-blue rounded-3xl mt-4 cursor-pointer text-white px-10 font-medium">Перейти в телеграмм</div>
+        <div class="p-4 bg-blue rounded-3xl mt-[30px] mb-auto cursor-pointer text-white px-10 font-medium">Перейти в
+          телеграмм</div>
       </div>
-      <img class="md:w-1/2 h-full mt-10 md:mt-0" src="/assets/bt_girl.png" />
+      <img class=" mt-10 md:mt-0 " src="/assets/bt_girl.png" />
     </div>
-    <div class="container relative flex flex-col items-center justify-start mt-10 ">
+    <div class="container pb-10 relative flex flex-col items-center justify-start mt-10 ">
       <div class="flex text-blue-text flex-col justify-start items-center">
         <h2 class="text-[42px] text-center  leading-none max-w-[600px] font-semibold">
           Невероятные локации Сейшельских островов
@@ -403,19 +450,20 @@
       </div>
       <button class="prev_2  -left-20 z-10 top-[63%] w-15 h-15"><img src="assets/Arrow left_2.svg" /></button>
       <button class="next_2 -right-20 z-10 top-[63%] w-15 h-15"><img src="assets/Arrow right_2.svg" /></button>
+      <div class="swiper-pagination absolute w-fit  bottom-0"></div>
     </div>
 
 
   </div>
   </div>
-  <div class="w-full mt-10   rounded-3xl bg-blue md:bg-white">
-    <div class="max-w-6xl mx-auto px-4 md:px-0">
+  <div class="w-full mt-10  text-[#004F66] rounded-3xl bg-blue md:bg-white">
+    <div class="container mx-auto px-4 md:px-0 flex flex-col items-center justify-start">
       <h1
-        class="p-4 text-white md:text-blue-text md:text-center md:text-[50px] max-w-[720px] mx-auto leading-none text-[30px] md:font-bold font-semibold">
+        class="pt-20 text-white uppercase md:text-blue-text  md:text-center md:text-[50px] max-w-[900px] text-[30px] md:font-bold font-semibold">
         Ваш захватывающий отдых - наша забота и приоритет</h1>
-      <div class="grid grid-cols-1 md:grid-cols-3 md:gap-x-5 p-3 gap-y-5 mx-2 pb-10">
-        <div class=" rounded-3xl px-10 bg-light-blue">
-          <img class="ml-auto p-4" src="assets/rest_palm.svg" />
+      <div class="grid grid-cols-1 md:grid-cols-3 md:gap-x-5 p-3 pt-10 gap-y-5 mx-2 pb-10">
+        <div class=" rounded-3xl  flex flex-col items-start justify-start px-10 bg-light-blue">
+          <img class="ml-auto my-10 w-[60px] h-[60px]" src="assets/rest_palm.svg" />
           <div class=" text-xl mt-12 text-blue-text uppercase text-[16px] md:text-[20px] font-extrabold">Индивидуальный
             подход</div>
           <div class="mt-10 mb-10 text-blue-text text-[14px] md:text-[16px]">Мы создаём незабываемый отдых,
@@ -423,7 +471,7 @@
             потрясающих закатов</div>
         </div>
         <div class=" rounded-3xl px-10 bg-light-blue">
-          <img class="ml-auto p-4" src="assets/shield.svg" />
+          <img class="ml-auto my-10 w-[60px] h-[60px]" src="assets/shield.svg" />
           <div class=" text-xl mt-12 text-blue-text uppercase text-[16px] md:text-[20px] font-extrabold">Безопасность в
             приоритете</div>
           <div class="mt-10 mb-10 text-blue-text text-[14px] md:text-[16px]">Мы обеспечиваем вашу безопасность.
@@ -431,31 +479,35 @@
           </div>
         </div>
         <div class=" rounded-3xl px-10 bg-light-blue">
-          <img class="ml-auto p-4" src="assets/smth.svg" />
-          <div class=" text-xl mt-12 text-blue-text uppercase text-[16px] md:text-[20px] font-extrabold">никаких скрытых
+          <img class="ml-auto my-10 w-[60px] h-[60px]" src="assets/smth.svg" />
+          <div class=" text-xl mt-12 text-blue-text uppercase text-[16px] max-w-[232px] md:text-[20px] font-extrabold">
+            никаких скрытых
             платежей</div>
           <div class="mt-10 mb-10 text-blue-text text-[14px] md:text-[16px]">Мы заранее информируем вас о полной
             стоимости тура, обсуждаем все возможные дополнительные расходы и никаких неприятных сюрпризов по прибытии —
             только полная ясность и открытость</div>
         </div>
         <div class=" rounded-3xl px-10 bg-light-blue">
-          <img class="ml-auto p-4" src="assets/translator.svg" />
-          <div class=" text-xl mt-12 text-blue-text uppercase text-[16px] md:text-[20px] font-extrabold">Многоязычные
+          <img class="ml-auto my-10 w-[60px] h-[60px]" src="assets/translator.svg" />
+          <div class=" text-xl mt-12 text-blue-text uppercase max-w-[176px] text-[16px] md:text-[20px] font-extrabold">
+            Многоязычные
             гиды</div>
           <div class="mt-10 mb-10 text-blue-text text-[14px] md:text-[16px]">Вас ждут профессиональные гиды, говорящие
             на нескольких языках, включая русский, английский, французский, итальянский и немецкий</div>
         </div>
         <div class=" rounded-3xl px-10 bg-light-blue">
-          <img class="ml-auto p-4" src="assets/ship_2.svg" />
-          <div class=" text-xl mt-12 text-blue-text uppercase text-[16px] md:text-[20px] font-extrabold">Катамараны на
+          <img class="ml-auto my-10 w-[60px] h-[60px]" src="assets/ship_2.svg" />
+          <div class=" text-xl mt-12 text-blue-text uppercase max-w-[150px] text-[16px] md:text-[20px] font-extrabold">
+            Катамараны на
             высоте</div>
           <div class="mt-10 mb-10 text-blue-text text-[14px] md:text-[16px]">Мы предлагаем только современные катамараны
             от 40 до 52 футов, не старше 10 лет, с уютными каютами и всем необходимым оборудованием для вашего удобства
           </div>
         </div>
         <div class=" rounded-3xl px-10 bg-light-blue">
-          <img class="ml-auto p-4" src="assets/fish.svg" />
-          <div class=" text-xl mt-12 text-blue-text uppercase text-[16px] md:text-[20px] font-extrabold">трофейная
+          <img class="ml-auto my-10 w-[60px] h-[60px]" src="assets/fish.svg" />
+          <div class=" text-xl mt-12 text-blue-text uppercase text-[16px] md:text-[20px] max-w-[138px] font-extrabold">
+            трофейная
             рыбалка</div>
           <div class="mt-10 mb-10 text-blue-text text-[14px] md:text-[16px]">Гарантированный улов и неповторимые
             впечатления. Наши опытные гиды подберут для вас идеальные места и моменты для ловли, где можно встретить
@@ -483,9 +535,7 @@
           nextEl: ".next_4",
           prevEl: ".prev_4",
         },
-        pagination: {
-          el: ".swiper-pagination",
-        },
+
         mousewheel: true,
         keyboard: true,
         breakpoints: {
@@ -501,6 +551,10 @@
         autoplay: {
           delay: 2500,
           disableOnInteraction: true,
+        },
+        pagination: {
+          el: ".swiper-pagination", // Укажите класс вашего элемента пагинации
+          clickable: true, // Делаем точки кликабельными
         },
         loop: true,
         navigation: {
@@ -521,6 +575,16 @@
           prevEl: ".prev",
         },
       });
+      function toggleDropdown() {
+        var options = document.getElementById("dropdown-options");
+        options.style.display = options.style.display === "block" ? "none" : "block";
+      }
+
+      function selectCountry(flagPath, countryCode) {
+        document.getElementById("selected-flag").src = flagPath;
+        document.getElementById("selected-code").textContent = countryCode;
+        toggleDropdown();
+      }
     </script>
 
 </body>

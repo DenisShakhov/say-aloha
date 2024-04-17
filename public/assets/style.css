@@ -5,6 +5,12 @@
     font-weight: normal;
     font-style: normal;
   }
+@font-face {
+font-family: 'grotesque-bold';
+src: url('assets/RG-StandardBold.woff2') format('woff2');
+font-weight: normal;
+font-style: bold;
+}
 /* styles.css */
 @tailwind base;
 @tailwind components;
@@ -57,16 +63,20 @@ bottom: 0; /* Охватывает весь слайд */
 background: linear-gradient(to bottom, transparent, rgba(1, 130, 190, 0) 0%, rgba(1, 101, 147, 0.2) 40%, rgba(0, 71, 102, 0.8) 65%);
 z-index: 2; /* Гарантирует, что градиент находится под текстом и над изображением */
 }
-h2{
+h2, h3{
     font-family: 'grotesque';
 }
-h3{
-    font-family: 'grotesque';
+h1{
+    font-family: 'grotesque-bold';
+    line-height: 110%;
 }
+
 .bg-grad {
     background: linear-gradient(to bottom, transparent, rgba(1, 130, 190, 0) 0%, rgba(1, 101, 147, 0.2) 40%, rgba(0, 71, 102, 0.8) 65%);
 }
-
+.text-smm, .l-140{
+    line-height: 140%;
+}
 .slide img, .slide_2 img {
 display: block;
 width: 100%;
@@ -156,6 +166,47 @@ z-index: 1; /* Убедитесь, что изображение под град
     height: 100%;
     object-fit: cover;
   }
-  .swiper-button-next{
-     
-  }
+
+
+
+.dropdown {
+  position: relative;
+  width: 100px;
+}
+
+.dropdown-selector {
+  padding: 10px;
+
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dropdown-options {
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 0;
+  right: 0;
+ 
+  z-index: 1000;
+  list-style: none;
+}
+
+.dropdown-options li {
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-options li img {
+  margin-right: 8px;
+}
+
+.dropdown-options li:hover {
+  background-color: #f0f0f0;
+}
+
+
