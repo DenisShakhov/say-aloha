@@ -15,8 +15,6 @@
 }
 h2, h3{
     font-family: 'RG-StandardSemibold', sans-serif;
-}
-h3{
     line-height: 100%;
 }
 h1{
@@ -104,7 +102,6 @@ z-index: 1; /* Убедитесь, что изображение под град
     top: 50%;
     transform: translateY(-50%);
     color: white;
-    font-size: 1.875rem; /* text-3xl в Tailwind CSS */
     z-index: 3; /* Текст над градиентом */
 }
 
@@ -119,7 +116,9 @@ z-index: 1; /* Убедитесь, что изображение под град
     width: 100%;
     display: block;
 }
-
+.l-100{
+    line-height: 100%;
+}
 .prev, .next {
     position: absolute;
 
@@ -188,12 +187,12 @@ z-index: 1; /* Убедитесь, что изображение под град
 }
 
 .dropdown-selector {
-  padding: 10px;
+  
 
   cursor: pointer;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: start;
+  justify-content: start;
 }
 
 .dropdown-options {
