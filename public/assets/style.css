@@ -1,13 +1,13 @@
 
 @font-face {
     font-family: 'grotesque';
-    src: url('assets/RG-StandardSemibold.woff2') format('woff2');
+    src: url('assets/RG-StandardSemibold.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
   }
 @font-face {
 font-family: 'grotesque-bold';
-src: url('assets/RG-StandardBold.woff2') format('woff2');
+src: url('assets/RG-StandardBold.ttf') format('ttf');
 font-weight: normal;
 font-style: bold;
 }
