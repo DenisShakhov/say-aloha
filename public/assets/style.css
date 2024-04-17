@@ -1,16 +1,35 @@
 
 @font-face {
-    font-family: 'grotesque';
-    src: url('assets/RG-StandardSemibold.ttf') format('ttf');
-    font-weight: normal;
+    font-family: 'RG-StandardBold';
+    src: url('assets/RG-StandardBold.ttf') format('truetype');
+    font-weight: bold;
     font-style: normal;
-  }
-@font-face {
-font-family: 'grotesque-bold';
-src: url('assets/RG-StandardBold.ttf') format('ttf');
-font-weight: normal;
-font-style: bold;
 }
+  
+
+@font-face {
+    font-family: 'RG-StandardSemibold'; 
+    src: url('assets/RG-StandardSemibold.ttf') format('truetype');  
+    font-weight: 600;  
+    font-style: normal;
+}
+h2, h3{
+    font-family: 'RG-StandardSemibold', sans-serif;
+}
+h3{
+    line-height: 100%;
+}
+h1{
+    font-family: 'RG-StandardBold', sans-serif;
+    line-height: 110%;
+}
+
+.select-css {
+    -webkit-appearance: none;  /* Для Chrome, Safari, и новых версий Opera */
+    -moz-appearance: none;     /* Для Firefox */
+    appearance: none;
+}
+
 /* styles.css */
 @tailwind base;
 @tailwind components;
@@ -63,16 +82,7 @@ bottom: 0; /* Охватывает весь слайд */
 background: linear-gradient(to bottom, transparent, rgba(1, 130, 190, 0) 0%, rgba(1, 101, 147, 0.2) 40%, rgba(0, 71, 102, 0.8) 65%);
 z-index: 2; /* Гарантирует, что градиент находится под текстом и над изображением */
 }
-h2, h3{
-    font-family: 'grotesque';
-}
-h3{
-    line-height: 100%;
-}
-h1{
-    font-family: 'grotesque-bold';
-    line-height: 110%;
-}
+
 
 .bg-grad {
     background: linear-gradient(to bottom, transparent, rgba(1, 130, 190, 0) 0%, rgba(1, 101, 147, 0.2) 40%, rgba(0, 71, 102, 0.8) 65%);
