@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tailwind Project</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <div class="container mx-auto md:px-0 flex flex-col">
+        <nav class="hidden mt-4  md:flex md:items-center md:justify-between">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="flex items-center  max-w-[120px] leading-none">
+                    <img src="assets/logo.svg" alt="Logo" class="h-12 w-12 ">
+                    <h2 class="font-bold p-0.5 text-blue text-[20px] ml-2">SEY ALOHA</h2>
+                </a>
+                <div class="md:hidden">
+                    <!-- Mobile menu button -->
+                    <button type="button"
+                        class="text-blue-500 hover:text-blue-600 focus:outline-none focus:text-blue-600">
+                        <!-- Icon for menu button here -->
+                    </button>
+                </div>
+            </div>
+
+            <!-- Links section -->
+            <div class="hidden md:flex mt-2 bg-white px-11 py-4 ml-5 rounded-3xl text-[14px] md:mt-0 space-x-2">
+                <a href="page2.html" class="text-blue-text">Экскурсии</a>
+                <img src="assets/dot.svg" />
+                <a href="#" class="text-blue-text">Рыбалка</a>
+                <img src="assets/dot.svg" />
+                <a href="#" class="text-blue-text">Яхтинг</a>
+                <img src="assets/dot.svg" />
+                <a href="#" class="text-blue-text">Катамаран</a>
+                <img src="assets/dot.svg" />
+                <a href="#" class="text-blue-text">О компании</a>
+            </div>
+            <div class="w-fit  gap-x-1 mr-8 flex items-center justify-between">
+                <button type="button"
+                    class="text-blue-500 bg-white p-4 rounded-full hover:text-blue-600 focus:outline-none focus:text-blue-600">
+                    <img src="assets/search.svg" alt="Search" class="h-5 w-5" />
+                </button>
+                <button type="button"
+                    class="text-blue-500 bg-white p-4 rounded-full hover:text-blue-600 focus:outline-none focus:text-blue-600">
+                    <img src="assets/bag.svg" alt="shop" class="h-5 w-5" />
+                </button>
+                <button type="button"
+                    class="text-blue-500 bg-white p-4 rounded-full hover:text-blue-600 focus:outline-none focus:text-blue-600">
+                    <img src="assets/telegram_3.svg" alt="telegram" class="h-5 w-5" />
+                </button>
+            </div>
+            <!-- Icons and additional options -->
+            <div class="hidden md:flex items-center space-x-5">
+
+                <a href="#"
+                    class="text-blue-text flex items-center font-bold text-[16px]  gap-x-2 justify-center">En<img
+                        src="assets/arrow_down.svg" /></a>
+                <a href="#" class="text-blue-text flex items-center font-bold text-[16px]  gap-x-2 justify-center">€
+                    (EUR)<img src="assets/arrow_down.svg" /></a>
+                <a href="#" class="text-blue-text bg-white rounded-3xl font-bold text-[16px] px-12 py-3">Войти</a>
+            </div>
+        </nav>
+        <div class="flex text-[12px] mt-20 text-grey-text items-center gap-x-2 justify-start w-full">
+            <span class=" opacity-50">Главная</span>
+            <img class="w-4 h-4" src="assets/arrow_right_2.svg" />
+            <span class=" opacity-50">Все экскурсии</span>
+            <img class="w-4 h-4" src="assets/arrow_right_2.svg" />
+            <span class="">Групповые</span>
+        </div>
+        <div class="mt-5">
+
+            <h2 class="text-[42px] text-blue-text max-w-[560px]">Выберите и забронируйте незабываемое приключение на
+                Сейшелы!</h2>
+        </div>
+        <div class=" mt-[30px] flex items-center gap-x-[10px] just">
+            <div
+                class="border w-[210px] uppercase  flex items-center font-bold px-[28px] justify-center border-blue-text text-blue-text l-100 rounded-3xl text-center l-140  text-[16px]  h-[60px] ">
+                Все экскурсии
+            </div>
+            <div
+                class="border w-[210px] uppercase  flex items-center font-bold px-[28px] justify-center border-blue-text text-blue-text l-100 rounded-3xl text-center l-140  text-[16px]  h-[60px] ">
+                Индивидуальные
+            </div>
+            <div
+                class="border w-[210px] uppercase bg-blue flex items-center font-bold px-[28px] justify-center  text-white l-100 rounded-3xl text-center l-140  text-[16px]  h-[60px] ">
+                Групповые
+            </div>
+
+        </div>
+        <div class="mt-[50px] grid gap-5 grid-cols-2 ">
+            <div class="w-[570px] flex flex-col items-center justify-end h-[550px] py-[60px] px-[50px]"
+                style="background: url('assets/page_3_bg.png');">
+                <div class="flex items-start justify-between w-full">
+                    <div class="flex text-blue-text text-[14px] flex-col items-start justify-start">
+                        <div class="bg-white px-[19px] py-[5px] rounded-3xl">на авто</div>
+                        <div class="bg-white px-[19px] mt-[5px] py-[5px] rounded-3xl">можно индивидуально</div>
+                    </div>
+                    <div class="border border-white px-[19px] py-[5px] text-white rounded-3xl">от 300€</div>
+                </div>
+                <div class="flex flex-col items-start justify-start w-full">
+                    <h2 class="text-[42px] mt-[120px] text-white font-semibold">Тур по острову Маэ</h2>
+                    <div class="text-[18px] l-140 mt-[30px] text-white">12 точек по маршруту</div>
+                    <div class="mt-5 text-white flex w-full items-center justify-start">
+                        <div class="flex items-center justify-start gap-x-[10px]"><img src="assets/clock_2.svg" />с 9:00
+                            до 18:00
+                        </div>
+                        <div class="flex items-center justify-start ml-[30px] gap-x-[10px]"><img
+                                src="assets/people.svg" />1-23
+                            человека</div>
+                    </div>
+                </div>
+                <div class="items-center mt-[30px] justify-start flex w-full">
+                    <div
+                        class="border w-[210px] uppercase bg-white flex items-center font-bold px-[43px] justify-center text-blue-text l-100 rounded-3xl text-center l-140  text-[16px]  h-[60px] ">
+                        Забронировать
+                    </div>
+                    <div
+                        class="border w-[210px] ml-[10px] uppercase  flex items-center font-bold px-[60px] justify-center border-white text-white l-100 rounded-3xl text-center l-140  text-[16px]  h-[60px] ">
+                        Подробнее
+                    </div>
+                </div>
+            </div>
+            <div class="w-[570px] flex flex-col items-center justify-end h-[550px] py-[60px] px-[50px]"
+                style="background: url('assets/page_3_card_bg_2.png');">
+                <div class="flex items-start justify-between w-full">
+                    <div class="flex text-blue-text text-[14px] flex-col items-start justify-start">
+                        <div class="bg-white px-[19px] py-[5px] rounded-3xl">на лодке</div>
+                        <div class="bg-white px-[19px] mt-[5px] py-[5px] rounded-3xl">можно индивидуально</div>
+                    </div>
+                    <div class="border border-white px-[19px] py-[5px] text-white rounded-3xl">80€</div>
+                </div>
+                <div class="flex flex-col items-start justify-start w-full">
+                    <h2 class="text-[42px] mt-[81px] text-white font-semibold">Морской национальный парк «Святая Анна»
+                    </h2>
+                    <div class="text-[18px] l-140 mt-[30px] text-white">6 точек по маршруту</div>
+                    <div class="mt-5 text-white flex w-full items-center justify-start">
+                        <div class="flex items-center justify-start gap-x-[10px]"><img src="assets/clock_2.svg" />с 9:30
+                            до 17:30
+                        </div>
+                        <div class="flex items-center justify-start ml-[30px] gap-x-[10px]"><img
+                                src="assets/people.svg" />12-15 человек</div>
+                    </div>
+                </div>
+                <div class="items-center mt-[30px] justify-start flex w-full">
+                    <div
+                        class="border w-[210px] uppercase bg-white flex items-center font-bold px-[43px] justify-center text-blue-text l-100 rounded-3xl text-center l-140  text-[16px]  h-[60px] ">
+                        Забронировать
+                    </div>
+                    <div
+                        class="border w-[210px] ml-[10px] uppercase  flex items-center font-bold px-[60px] justify-center border-white text-white l-100 rounded-3xl text-center l-140  text-[16px]  h-[60px] ">
+                        Подробнее
+                    </div>
+                </div>
+            </div>
+            <div class="w-[570px] flex flex-col items-center justify-end h-[550px] py-[60px] px-[50px]"
+                style="background: url('assets/page_3_card_bg_3.png');">
+                <div class="flex items-start justify-between w-full">
+                    <div class="flex text-blue-text text-[14px] flex-col items-start justify-start">
+                        <div class="bg-white px-[19px] py-[5px] rounded-3xl">на лодке</div>
+                        <div class="bg-white px-[19px] mt-[5px] py-[5px] rounded-3xl">можно индивидуально</div>
+                    </div>
+                    <div class="border border-white px-[19px] py-[5px] text-white rounded-3xl">140€</div>
+                </div>
+                <div class="flex flex-col items-start justify-start w-full">
+                    <h2 class="text-[42px] mt-[120px] text-white font-semibold">Тур по острову Ла Диг</h2>
+                    <div class="text-[18px] l-140 mt-[30px] text-white">5 точек по маршруту</div>
+                    <div class="mt-5 text-white flex w-full items-center justify-start">
+                        <div class="flex items-center justify-start gap-x-[10px]"><img src="assets/clock_2.svg" />с 6:30
+                            до 18:00
+                        </div>
+                        <div class="flex items-center justify-start ml-[30px] gap-x-[10px]"><img
+                                src="assets/people.svg" />47 человек</div>
+                    </div>
+                </div>
+                <div class="items-center mt-[30px] justify-start flex w-full">
+                    <div
+                        class="border w-[210px] uppercase bg-white flex items-center font-bold px-[43px] justify-center text-blue-text l-100 rounded-3xl text-center l-140  text-[16px]  h-[60px] ">
+                        Забронировать
+                    </div>
+                    <div
+                        class="border w-[210px] ml-[10px] uppercase  flex items-center font-bold px-[60px] justify-center border-white text-white l-100 rounded-3xl text-center l-140  text-[16px]  h-[60px] ">
+                        Подробнее
+                    </div>
+                </div>
+            </div>
+            <div class="w-[570px] flex flex-col items-center justify-end h-[550px] py-[60px] px-[50px]"
+                style="background: url('assets/page_3_card_bg_4.png');">
+                <div class="flex items-start justify-between w-full">
+                    <div class="flex text-blue-text text-[14px] flex-col items-start justify-start">
+                        <div class="bg-white px-[19px] py-[5px] rounded-3xl">на лодке</div>
+                        <div class="bg-white px-[19px] mt-[5px] py-[5px] rounded-3xl">можно индивидуально</div>
+                    </div>
+                    <div class="border border-white px-[19px] py-[5px] text-white rounded-3xl">от 300€</div>
+                </div>
+                <div class="flex flex-col items-start justify-start w-full">
+                    <h2 class="text-[42px] mt-[81px] text-white font-semibold">Тур по островам Праслин и Ла Диг</h2>
+                    <div class="text-[18px] l-140 mt-[30px] text-white">5 точек по маршруту</div>
+                    <div class="mt-5 text-white flex w-full items-center justify-start">
+                        <div class="flex items-center justify-start gap-x-[10px]"><img src="assets/clock_2.svg" />с 6:30
+                            до 18:00
+                        </div>
+                        <div class="flex items-center justify-start ml-[30px] gap-x-[10px]"><img
+                                src="assets/people.svg" />47 человек</div>
+                    </div>
+                </div>
+                <div class="items-center mt-[30px] justify-start flex w-full">
+                    <div
+                        class="border w-[210px] uppercase bg-white flex items-center font-bold px-[43px] justify-center text-blue-text l-100 rounded-3xl text-center l-140  text-[16px]  h-[60px] ">
+                        Забронировать
+                    </div>
+                    <div
+                        class="border w-[210px] ml-[10px] uppercase  flex items-center font-bold px-[60px] justify-center border-white text-white l-100 rounded-3xl text-center l-140  text-[16px]  h-[60px] ">
+                        Подробнее
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" mt-20 pb-10 relative">
+            <div class="flex relative  justify-between w-full items-center">
+                <h2 class="text-blue-text text-[30px]  md:text-[42px] max-w-[670px] font-semibold">Искренние эмоции
+                    и яркие
+                    воспоминания наших туристов</h2>
+                <div class=" hidden md:flex justify-end items-center gap-x-4">
+                    <img class="cursor-pointer prev_4" src="assets/Arrow left_2.svg" />
+                    <img class="cursor-pointer next_4" src="assets/Arrow right_2.svg" />
+                </div>
+            </div>
+            <div class="mt-[50px] flex items-center justify-start">
+                <p class="max-w-[225px] text-[16px] l-140">Еще большое фото и видео в нашем Telegram и Vkontakte</p>
+                <div class="flex items-center ml-9 gap-x-3 justify-start">
+                    <img src="assets/vk.svg" class="h-11 w-11 cursor-pointer " />
+                    <img src="assets/telegram_2.svg" class="h-11 w-11 cursor-pointer" />
+                </div>
+            </div>
+            <div class="swiper relative mt-7 mySwiper h-full">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide rounded-3xl"><img src="assets/smiling_women.png" /></div>
+                    <div class="swiper-slide rounded-3xl"><img src="assets/smiling_people.png" /></div>
+                    <div class="swiper-slide rounded-3xl"><img src="assets/man.png" /></div>
+                    <div class="swiper-slide rounded-3xl"><img src="assets/smiling_women.png" /></div>
+                    <div class="swiper-slide rounded-3xl"><img src="assets/smiling_people.png" /></div>
+                    <div class="swiper-slide rounded-3xl"><img src="assets/man.png" /></div>
+                </div>
+
+
+            </div>
+            <div class="swiper-pagination2 left-0 z-50"></div>
+
+        </div>
+        <div class="container mt-20 gap-x-12 bg-white rounded-3xl md:p-12 h-full flex flex-col md:flex-row">
+
+            <div class="bg-blue rounded-3xl flex flex-col items-start md:justify-between h-[640px] md:w-1/2 "
+                style="background: url('assets/card_back_5_page.png') no-repeat center center / cover;">
+                <div class="relative  w-full">
+                    <img class="absolute z-[13] w-[110px] md:w-[130px] left-4  md:left-10 md:top-7 "
+                        src="assets/5_page/Ellipse 22.png" />
+                    <img class="absolute z-[12] w-[110px] md:w-[130px] left-16 top-4 md:left-32 md:top-14 "
+                        src="assets/5_page/Ellipse 23.png" />
+                </div>
+                <div
+                    class="md:h-1/2 h-full mt-10 mb:mt-10 ml-10 text-white flex flex-col items-start mb-10 justify-center md:justify-start">
+                    <h3 class="text-[30px] max-w-[275px] md:max-w-[540px] md:text-[33px] font-semibold">Сформируем для
+                        вас индивидуальную экскурсию</h3>
+                    <p class="text-[16px] max-w-[290px] md:max-w-[387px] l-140 font-normal mt-6 w-[350px]">
+                        Мы разработаем
+                        для вас индивидуальную программу, которая полностью соответствует вашим мечтам. Расскажите
+                        нам о своих
+                        желаниях или местах, которые хотите посетить и мы составим для вас программу</p>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex flex-col justify-start relative md:ml-16 p-7 md:p-0 mt-10 md:mt-0 md:h-[640px]">
+                <div class="flex flex-row   absolute h-[150px] top-0  justify-between w-[420px]">
+                    <img class="w-20 h-16 md:w-[120px] md:h-[100px]" src="assets/snorkling.png" />
+                    <img class="w-20 h-16 md:w-[120px] md:h-[100px]" src="assets/islands.png" />
+                    <img class="w-20 h-16 md:w-[120px] md:h-[100px]" src="assets/fishing.png" />
+                </div>
+                <div
+                    class="max-w-[404px] flex-col text-smm font-semibold l-140 items-left mt-[170px] items-center flex justify-start text-[18px]">
+                    Заполните форму ниже. Наш
+                    менеджер
+                    перезвонит вам,
+                    чтобы уточнить все
+
+                    ваши пожелания
+                    и составит для вас
+                    идеальный тур</div>
+                <div class="l-140 mt-5 text-blue font-medium flex items-center justify-start"><img
+                        src="assets/telegram_2.svg" class="mr-2" />Или
+                    напишите ваш
+                    запрос нам в Telegram </div>
+                <div class=" p-0 flex items-start flex-col mt-5 md:w-[410px] rounded-3xl h-full   ">
+                    <div class="flex items-start flex-col gap-y-2  w-[404px]  h-full ">
+                        <div class="flex w-full justify-between h-[60px]  items-center">
+                            <input type="text" id="name"
+                                class="form-input placeholder:text-blue-text  p-4 px-10 cursor rounded-3xl block w-full  bg-light-blue  "
+                                placeholder="Имя">
+                        </div>
+                        <div class="flex w-full relative h-[60px] rounded-3xl bg-light-blue ">
+                            <div class="dropdown ">
+                                <div class="dropdown-selector absolute ml-10 flex items-center top-[19px] gap-x-2"
+                                    onclick="toggleDropdown()">
+                                    <img id="selected-flag" class="m-auto mb-1.5" src="assets/russian_flag.svg"
+                                        alt="Flag" />
+                                    <span id="selected-code">+7</span>
+                                </div>
+                                <ul id="dropdown-options" class="bg-white ml-10 w-full top-[23px]  dropdown-options">
+                                    <li class="" onclick="selectCountry('assets/russian_flag.svg', '+7')">
+                                        <img src="assets/russian_flag.svg" alt="Russian Flag" /> +7
+                                    </li>
+                                    <li class="" onclick="selectCountry('assets/russian_flag.svg', '+7')">
+                                        <img src="assets/russian_flag.svg" alt="Russian Flag" /> +7
+                                    </li>
+                                    <li class="" onclick="selectCountry('assets/russian_flag.svg', '+7')">
+                                        <img src="assets/russian_flag.svg" alt="Russian Flag" /> +7
+                                    </li>
+                                    <li class="" onclick="selectCountry('assets/russian_flag.svg', '+7')">
+                                        <img src="assets/russian_flag.svg" alt="Russian Flag" /> +7
+                                    </li>
+                                </ul>
+                            </div>
+                            <input type="tel" id="phone"
+                                class="w-full rounded-r-3xl h-[60px] mb-auto bg-transparent ml-4 px-2  block ">
+                        </div>
+
+                        <div class="flex relative w-full items-center">
+                            <select id="app"
+                                class="form-select px-10  block w-full select-css rounded-3xl py-4 pr-8 bg-light-blue">
+                                <option>WhatsApp</option>
+                                <option>Viber</option>
+                                <!-- Add other options here -->
+                            </select>
+                            <img src="assets/arrow_down.svg" class="absolute right-6" />
+                        </div>
+
+                        <button type="submit"
+                            class="w-full px-4  mt-4 h-[60px] bg-blue text-base font-semibold text-center text-white transition duration-200 ease-in rounded-3xl  ">
+                            Создать свой личный тур
+                        </button>
+                        <div class="flex max-w-[362px]  items-center">
+                            <input id="terms" type="checkbox"
+                                class="form-checkbox h-[32px] w-7 text-indigo-600  transition duration-150 ease-in-out rounded border-gray-300">
+                            <label for="terms" class="ml-3 block text-[12px] mb-10 md:mb-0 text-blue-text"> Нажимая на
+                                кнопку, я
+                                соглашаюсь с политикой конфиденциальности сайта</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="container w-full mb-20 bg-white p-12 rounded-3xl text-blue-text justify-between mt-10 flex flex-col md:flex-row">
+            <div class="flex flex-col justify-start  items-start h-full">
+                <div class="flex flex-col items-start justify-between h-full">
+                    <h2 class="text-[30px] md:text-[42px]  max-w-[450px] font-semibold leading-none">Путешествуйте <br
+                            class="hidden md:flex" />как
+                        профессионалы
+                    </h2>
+                    <div class="mt-10 l-140 max-w-[300px] text-grey-text text-[14px] md:text-[16px]">Узнайте из первых
+                        уст,
+                        что ждёт вас в путешествии, и поделитесь собственными мечтами и ожиданиями</div>
+                </div>
+                <div
+                    class="text-[14px] md:text-[16px] max-w-[400px] gap-y-2.5 flex text-blue-text flex-col font-bold mb-auto mt-[30px]">
+                    <div class="flex items-center h-[50px] justify-start ">
+                        <img src="assets/photoapparat.svg" class="mr-[20px]" />
+                        ЖИВЫЕ ФОТОГРАФИИИ С ЭКСКУРСИИ
+                    </div>
+                    <div class="flex items-center h-[50px] justify-start">
+                        <img src="assets/smile.svg" class="mr-[20px]" />
+                        ИСКРЕННИЕ ОТЗЫВЫ ОТ НАШИХ ПУТЕШЕСТВЕННИКОВ
+                    </div>
+                    <div class="flex items-center h-[50px] justify-start">
+                        <img src="assets/like.svg" class="mr-[20px]" />
+                        СОВЕТЫ И ВДОХНОВЛЯЮЩИЕ ИСТОРИИ
+                    </div>
+                </div>
+                <div class="p-4 bg-blue rounded-3xl mt-[30px] mb-auto cursor-pointer text-white px-10 font-medium">
+                    Перейти в
+                    телеграмм</div>
+            </div>
+            <img class=" mt-10 md:mt-0 " src="/assets/bt_girl.png" />
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: true,
+            },
+            pagination: {
+                el: ".swiper-pagination2", // Укажите класс вашего элемента пагинации
+                clickable: true, // Делаем точки кликабельными
+            },
+            cssMode: true,
+            navigation: {
+                nextEl: ".next_4",
+                prevEl: ".prev_4",
+            },
+
+            mousewheel: true,
+            keyboard: true,
+            breakpoints: {
+                640: {
+                    slidesPerView: 3,
+
+                }
+            }
+        });
+
+    </script>
+</body>
+
+</html>
