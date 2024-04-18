@@ -1,20 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-@font-face {
-    font-family: 'RG-StandardBold';
-    src: url('assets/RG-StandardBold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-  
 
-@font-face {
-    font-family: 'RG-StandardSemibold'; 
-    src: url('assets/RG-StandardSemibold.ttf') format('truetype');  
-    font-weight: 600;  
-    font-style: normal;
-}
 h2, h3{
     font-family: 'RG-StandardSemibold', sans-serif;
     line-height: 100%;

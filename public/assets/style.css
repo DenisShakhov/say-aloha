@@ -1,4 +1,7 @@
-
+/* styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @font-face {
     font-family: 'RG-StandardBold';
     src: url('assets/RG-StandardBold.ttf') format('truetype');
@@ -28,10 +31,7 @@ h1{
     appearance: none;
 }
 
-/* styles.css */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 
 .f_block_image_phone {
     background-image: url('images/phone_1page.png');
