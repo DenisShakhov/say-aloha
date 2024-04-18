@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family: 'RG-StandardBold';
+    src: url('assets/RG-StandardBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+  
+
+@font-face {
+    font-family: 'RG-StandardSemibold'; 
+    src: url('assets/RG-StandardSemibold.ttf') format('truetype');  
+    font-weight: 600;  
+    font-style: normal;
+}
+h2, h3{
+    font-family: 'RG-StandardSemibold', sans-serif;
+    line-height: 100%;
+}
+h1{
+    font-family: 'RG-StandardBold', sans-serif;
+    line-height: 110%;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    background-color: #F4F7F8;
+    font-style: normal;
+}
+.l-100{
+    line-height: 100%;
+}
+.l-140{
+    line-height: 140%;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .swiper {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .swiper-slide {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .mySwiper2 {
+    height: 80%;
+    width: 100%;
+  }
+
+  .mySwiper {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+  }
+
+  .mySwiper .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+  }
+
+  .mySwiper .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+.swiper-container{
+    overflow-x: hidden;
+}
+*{
+    /* border: red 1px solid; */
+}

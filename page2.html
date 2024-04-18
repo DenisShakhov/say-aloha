@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tailwind Project</title>
+    <link rel="stylesheet" href="assets/style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <div class="container mx-auto md:px-0 flex flex-col">
+        <nav class="hidden  py-4  md:flex md:items-center md:justify-between">
+            <div class="flex justify-between items-center">
+                <a href="#" class="flex items-center  max-w-[120px] leading-none">
+                    <img src="assets/logo.svg" alt="Logo" class="h-12 w-12 ">
+                    <h2 class="font-bold p-0.5 text-blue text-[20px] ml-2">SEY ALOHA</h2>
+                </a>
+                <div class="md:hidden">
+                    <!-- Mobile menu button -->
+                    <button type="button"
+                        class="text-blue-500 hover:text-blue-600 focus:outline-none focus:text-blue-600">
+                        <!-- Icon for menu button here -->
+                    </button>
+                </div>
+            </div>
+
+            <!-- Links section -->
+            <div class="hidden md:flex mt-2 bg-white px-11 py-4 ml-5 rounded-3xl text-[14px] md:mt-0 space-x-2">
+                <a href="#" class="text-blue-text">Экскурсии</a>
+                <img src="assets/dot.svg" />
+                <a href="#" class="text-blue-text">Рыбалка</a>
+                <img src="assets/dot.svg" />
+                <a href="#" class="text-blue-text">Яхтинг</a>
+                <img src="assets/dot.svg" />
+                <a href="#" class="text-blue-text">Катамаран</a>
+                <img src="assets/dot.svg" />
+                <a href="#" class="text-blue-text">О компании</a>
+            </div>
+            <div class="w-fit  gap-x-1 mr-8 flex items-center justify-between">
+                <button type="button"
+                    class="text-blue-500 bg-white p-4 rounded-full hover:text-blue-600 focus:outline-none focus:text-blue-600">
+                    <img src="assets/search.svg" alt="Search" class="h-5 w-5" />
+                </button>
+                <button type="button"
+                    class="text-blue-500 bg-white p-4 rounded-full hover:text-blue-600 focus:outline-none focus:text-blue-600">
+                    <img src="assets/bag.svg" alt="shop" class="h-5 w-5" />
+                </button>
+                <button type="button"
+                    class="text-blue-500 bg-white p-4 rounded-full hover:text-blue-600 focus:outline-none focus:text-blue-600">
+                    <img src="assets/telegram_3.svg" alt="telegram" class="h-5 w-5" />
+                </button>
+            </div>
+            <!-- Icons and additional options -->
+            <div class="hidden md:flex items-center space-x-5">
+
+                <a href="#"
+                    class="text-blue-text flex items-center font-bold text-[16px]  gap-x-2 justify-center">En<img
+                        src="assets/arrow_down.svg" /></a>
+                <a href="#" class="text-blue-text flex items-center font-bold text-[16px]  gap-x-2 justify-center">€
+                    (EUR)<img src="assets/arrow_down.svg" /></a>
+                <a href="#" class="text-blue-text bg-white rounded-3xl font-bold text-[16px] px-12 py-3">Войти</a>
+            </div>
+        </nav>
+        <div class="flex text-[12px] mt-20 text-grey-text items-center gap-x-2 justify-start w-full">
+            <span class=" opacity-50">Главная</span>
+            <img class="w-4 h-4" src="assets/arrow_right_2.svg" />
+            <span class=" opacity-50">Все экскурсии</span>
+            <img class="w-4 h-4" src="assets/arrow_right_2.svg" />
+            <span class=" opacity-50">Групповые</span>
+            <img class="w-4 h-4 opacity-100" src="assets/arrow_right_2.svg" />
+            <span>Морской национальный парк «Святая Анна»</span>
+        </div>
+        <div class="flex flex-col  mt-[30px] md:flex-row justify-between">
+            <div class="w-1/2 flex flex-col">
+                <div class="swiper-container h-full rounded-3xl gallery-swiper ">
+                    <!-- Wrapper for slides -->
+                    <div class="swiper-wrapper  ">
+                        <!-- Slide -->
+                        <div class="swiper-slide"><img src="assets/scroll_3_image.png" alt="Image 1" /></div>
+                        <div class="swiper-slide"><img src="assets/scroll_3_image.png" alt="Image 2" /></div>
+                        <div class="swiper-slide"><img src="assets/scroll_3_image.png" alt="Image 3" /></div>
+                        <!-- ... другие слайды ... -->
+                        <div class="swiper-slide"><img src="assets/scroll_3_image.png" alt="Image 1" /></div>
+                        <div class="swiper-slide"><img src="assets/scroll_3_image.png" alt="Image 2" /></div>
+                        <div class="swiper-slide"><img src="assets/scroll_3_image.png" alt="Image 3" /></div>
+                    </div>
+
+                </div>
+                <div thumbsSlider="" class="swiper mt-5  flex mySwiper">
+                    <div class="swiper-wrapper rounded-[5px]">
+                        <div class="swiper-slide rounded-[30px]">
+                            <img class="rounded-[10px]" src="assets/scroll_3_image.png" />
+                        </div>
+                        <div class="swiper-slide rounded-[30px]">
+                            <img class="rounded-[10px]" src="assets/scroll_3_image.png" />
+                        </div>
+                        <div class="swiper-slide rounded-[30px]">
+                            <img class="rounded-[10px]" src="assets/scroll_3_image.png" />
+                        </div>
+                        <div class="swiper-slide rounded-[30px]">
+                            <img class="rounded-[10px]" src="assets/scroll_3_image.png" />
+                        </div>
+                        <div class="swiper-slide rounded-[30px]">
+                            <img class="rounded-[10px]" src="assets/scroll_3_image.png" />
+                        </div>
+                        <div class="swiper-slide rounded-[30px]">
+                            <img class="rounded-[10px]" src="assets/scroll_3_image.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-1/2 flex flex-col items-start pl-24  justify-start text-blue-text">
+                <div class="w-full max-w-[500px] flex flex-col">
+                    <h2 class="l-100 font-bold  text-left max-w-[500px] text-[37px]">Водная экскурсия
+                        в морской
+                        национальный парк
+                        «Святая Анна»
+                    </h2>
+                    <div class="l-140 mt-8 text-grey-text text-[16px]">Погрузитесь в приключение с водной экскурсией
+                        в национальный
+                        морской
+                        парк Святой Анны, где вас ждут кристально чистые воды, знакомство с местными обитателями
+                        и незабываемые моменты сноркелинга.</div>
+                </div>
+                <div class="mt-[30px] flex flex-col items-start justify-start text-blue-text">
+                    <div class="flex w-fit items-start justify-start gap-x-2">
+                        <img src="assets/clock.svg" class="w-[24px] h-[24px]" />
+                        <div class=" text-[16px] mr-auto font-bold">Время маршрута:</div>
+                    </div>
+                    <div class="ml-[32px] ">с 9:30 до 17:30</div>
+                </div>
+                <div class="mt-[20px] flex flex-col  text-[16px]  items-start justify-start text-blue-text">
+                    <div class="flex w-fit items-start justify-start gap-x-2">
+                        <img src="assets/ship_3.svg" class="w-[24px] h-[24px]" />
+                        <div class=" text-[16px] mr-auto font-bold">Транспорт:</div>
+                    </div>
+                    <div class="mt-[10px] l-140 flex flex-col items-start justify-start text-blue-text">
+                        <ul class="custom-list list-disc  pl-[50px]">
+                            <li class="text-left">Бесплатный трансфер от отеля на минивэне только с северной части
+                                острова до места посадки на лодку в Виктории</li>
+                            <li class="text-left">Путешествие <span class="font-bold">на комфортабельной лодке с
+                                    прозрачным дном</span> до
+                                20
+                                человек
+                                (в среднем группы набираются по 15 человек)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-[20px] flex flex-col items-start justify-start text-blue-text">
+                    <div class="flex w-fit  items-start justify-start gap-x-2">
+                        <img src="assets/euro.svg" class="w-[24px] h-[24px]" />
+                        <div class=" text-[16px] mr-auto font-bold">Стоимость экскурсии:</div>
+                    </div>
+                    <div class="ml-[32px] text-[16px] l-140 mt-[10px]">
+                        <p>Взрослый - 80 €</p>
+                        <p class="mt-[10px]">Детский (до 12 лет) - 60€</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-[30px] rounded-xl bg-white md:h-[100px] flex items-center justify-between">
+            <div
+                class="bg-light-blue text-blue-text flex items-center justify-between px-[25px] rounded-3xl w-[250px] ml-[30px] h-[60px]">
+                <div class="text-[14px]">20.04.24-28.04.24</div>
+                <img src="assets/arrow_down.svg" />
+            </div>
+            <div
+                class="bg-light-blue text-blue-text flex items-center justify-between px-[25px] rounded-3xl w-[250px]  h-[60px]">
+                <div class="text-[14px]">2 взрослых</div>
+                <img src="assets/arrow_down.svg" />
+            </div>
+            <div class="flex flex-col items-start justify-start">
+                <div class="text-[12px]">Итоговая стоимость:</div>
+                <h4 class="l-140 font-semibold text-[24px]">160 €</h4>
+            </div>
+            <div
+                class="bg-blue flex items-center justify-center text-white font-bold px-[25px] rounded-3xl w-[250px]  h-[60px]">
+                <div class="text-[16px]">Забронировать</div>
+            </div>
+            <div class="flex max-w-[140px] text-blue-text flex-col items-start justify-start">
+                <div class="text-[12px]">Предоплата - 10 €</div>
+                <h4 class=" text-[12px]">Полная отмена в течение 24 часов</h4>
+            </div>
+        </div>
+        <div class="mt-[30px] flex gap-x-[35px] items-center justify-between">
+            <div class="flex w-[220px] items-center justify-between">
+                <div class="bg-blue font-bold text-[16px] py-[10px] rounded-full px-[17px] text-white">1</div>
+                <div>Выберите экскурсию </div>
+            </div>
+            <div class="flex w-[250px] items-center justify-between">
+                <div class="bg-blue font-bold text-[16px] py-[10px] rounded-full px-[17px] text-white">2</div>
+                <div class="flex">Забронируйте место <img src="assets/inform.svg " class="ml-[10px]" /></div>
+            </div>
+            <div class="flex w-[250px] items-center justify-between">
+                <div class="bg-blue font-bold text-[16px] py-[10px] rounded-full px-[17px] text-white">3</div>
+                <div class="flex">Оплатите безопасно <img src="assets/inform.svg " class="ml-[10px]" /></div>
+            </div>
+            <div class="flex w-[280px] items-center justify-between">
+                <div class="bg-blue font-bold text-[16px] py-[10px] rounded-full px-[17px] text-white">4</div>
+                <div>Ожидайте звонка менеджера </div>
+            </div>
+        </div>
+        <div class="mt-20 ">
+            <div class="w-fit gap-x-[10px] flex  items-center justify-between">
+                <div
+                    class="bg-blue l-100 flex items-center justify-center rounded-3xl text-center text-white w-[150px] text-[16px] font-bold h-[50px] p-2">
+                    Даты и
+                    стоимость
+                </div>
+                <div
+                    class="border flex items-center justify-center border-blue-text text-blue-text l-100 rounded-3xl text-center l-140 w-[150px] text-[16px]  h-[50px] ">
+                    Программа
+                </div>
+                <div
+                    class="border flex items-center justify-center border-blue-text text-blue-text l-100 rounded-3xl text-center l-140 w-[150px] text-[16px]  h-[50px] ">
+                    Маршрут
+                </div>
+                <div
+                    class="border flex items-center justify-center border-blue-text text-blue-text l-100 rounded-3xl text-center l-140 w-[150px] text-[16px]  h-[50px] ">
+                    Что включено
+                </div>
+            </div>
+        </div>
+        <div class="mt-12 h-full flex md:gap-x-[50px] items-start justify-between">
+            <div class="w-2/3 flex flex-col items-start justify-start">
+                <h2 class="text-blue-text text-[37px] font-semibold">Программа экскурсии:</h2>
+                <div class="flex w-full mt-[50px] items-start justify-between">
+                    <div class="flex flex-col items-start justify-start">
+                        <div
+                            class="border bg-white flex items-center font-bold px-[28px] justify-center border-blue-text text-blue-text l-100 rounded-3xl text-center l-140  text-[16px]  h-[50px] ">
+                            Отправление на о. Святой Анны
+                        </div>
+                        <div class="mt-5 text-grey-text max-w-[320px]">Отправляемся из Маэ в захватывающее приключение
+                            на остров
+                            Святой Анны всего за
+                            10 минут
+                            быстрым трансфером до морского заповедника</div>
+                    </div>
+                    <img src="assets/swimming_women.png" class="ml-auto" />
+                </div>
+                <div class="flex w-full mt-5 items-start justify-between">
+                    <img src="assets/swimming_women.png" class="mr-auto" />
+                    <div class="flex flex-col items-start justify-start">
+                        <div
+                            class="border bg-white flex items-center font-bold px-[28px] justify-center border-blue-text text-blue-text l-100 rounded-3xl text-center l-140  text-[16px]  h-[50px] ">
+                            Знакомство с подводным миром
+                        </div>
+                        <div class="mt-5 text-grey-text max-w-[320px]">На первой остановке в локации с лучшей видимостью
+                            мы познакомимся с миром под водой и даже покормим его обитателей</div>
+                    </div>
+
+                </div>
+                <div class="flex w-full items-start justify-between">
+                    <div class="flex flex-col items-start justify-start">
+                        <div
+                            class="border bg-white mt-5 flex items-center font-bold px-[28px] justify-center border-blue-text text-blue-text l-100 rounded-3xl text-center l-140  text-[16px]  h-[50px] ">
+                            Первая сессия снорклинга
+                        </div>
+                        <div class="mt-5 text-grey-text max-w-[320px]">Затем мы отправимся на первую сессию снорклинга,
+                            подготовившись к водным приключениям. Маски и ласты, спасательные жилеты предоставляются
+                            перед началом водной прогулки.</div>
+                    </div>
+                    <img src="assets/swimming_women.png" class="ml-auto" />
+                </div>
+                <div class="flex w-full mt-5 items-start justify-between">
+                    <img src="assets/swimming_women.png" class="mr-auto" />
+                    <div class="flex flex-col items-start justify-start">
+                        <div
+                            class="border bg-white flex items-center font-bold px-[28px] justify-center border-blue-text text-blue-text l-100 rounded-3xl text-center l-140  text-[16px]  h-[50px] ">
+                            Барбекю на о. Лонг
+                        </div>
+                        <div class="mt-5 text-grey-text max-w-[320px]">После этого нас ждет час свободного времени на
+                            острове Лонг, где вы можете насладиться купанием, фотографиями и готовящимся барбекю, пока
+                            наш персонал заботится о вкусном ужине.</div>
+                    </div>
+
+                </div>
+                <div class="flex w-full mt-5 items-start justify-between">
+                    <div class="flex flex-col items-start justify-start">
+                        <div
+                            class="border bg-white flex items-center font-bold px-[28px] justify-center border-blue-text text-blue-text l-100 rounded-3xl text-center l-140  text-[16px]  h-[50px] ">
+                            Остров Черепах
+                        </div>
+                        <div class="mt-5 text-grey-text max-w-[320px]">За дополнительную плату вы можете посетить остров
+                            и насладиться часом свободного времени для исследования.</div>
+                    </div>
+                    <img src="assets/swimming_women.png" class="ml-auto" />
+                </div>
+                <div class="flex w-full mt-5 items-start justify-between">
+                    <img src="assets/swimming_women.png" class="mr-auto" />
+                    <div class="flex flex-col items-start justify-start">
+                        <div
+                            class="border bg-white flex items-center font-bold px-[28px] justify-center border-blue-text text-blue-text l-100 rounded-3xl text-center l-140  text-[16px]  h-[50px] ">
+                            Вторая сессия снорклинга
+                        </div>
+                        <div class="mt-5 text-grey-text max-w-[320px]">После посещения острова черепах Мойенн и часа,
+                            проведенного среди его живописных пейзажей, мы отправимся на вторую сессию снорклинга, на
+                            этот раз в поисках морских черепах. После мы вас доставим в отель.</div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="w-1/3 rounded-3xl flex items-end justify-center  h-[700px]"
+                style="background: url(assets/form_bg_page_2.png);">
+                <div class=" flex flex-col items-center justify-center">
+                    <button type="submit"
+                        class="  w-[340px]  h-[60px] text-[16px] bg-white text-base font-bold text-center text-blue-text transition duration-200 ease-in rounded-3xl  ">
+                        Забронировать
+                    </button>
+                    <div class="flex mt-[10px] w-[340px]  items-center">
+                        <input id="terms" type="checkbox"
+                            class="form-checkbox h-[32px] w-7  bg-transparent transition duration-150 ease-in-out rounded ">
+                        <label for="terms" class="ml-[10px] block text-[12px] mb-10 md:mb-0 text-white"> Нажимая на
+                            кнопку, я
+                            соглашаюсь с политикой конфиденциальности сайта</label>
+                    </div>
+                    <div class="max-w-[280px] mt-5 flex flex-col items-center">
+                        <div class="text-[16px] l-140 text-center text-white">Или свяжитесь с нами любым удобным
+                            способом:</div>
+                        <div class="mt-[10px] flex items-center gap-x-[10px] mb-[50px] justify-between max-w-[150px]">
+                            <img src="assets/telegram_4.svg" class="h-[30px] cursor-pointer w-[30px]" />
+                            <img src="assets/whatsup_4.svg" class="h-[30px] cursor-pointer w-[30px]" />
+                            <img src="assets/viber_4.svg" class="h-[30px] cursor-pointer w-[30px]" />
+                            <img src="assets/phone_4.svg" class="h-[30px] cursor-pointer w-[30px]" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mb-10 md:w-2/3 mt-[65px]">
+            <h2 class="l-100 text-[37px] font-semibold text-blue-text">Что включено:</h2>
+            <div class="mt-[50px] flex gap-x-[37px] items-center justify-stretch">
+                <div
+                    class=" rounded-3xl h-[344px] flex flex-col w-[365px] items-start justify-start px-[30px] bg-white">
+                    <img class="ml-auto mt-10 w-[60px] h-[60px]" src="assets/shield.svg" />
+                    <div class=" text-xl mt-[16px] text-blue-text uppercase text-[16px] md:text-[20px] font-extrabold">
+                        Лицензия <br class="hidden md:flex" />и Безопасность</div>
+                    <div class="mt-[16px] mb-10 text-blue-text text-[14px] md:text-[16px]">Наши лодки обладают лицензией
+                        на перевозку 20 пассажиров и 3 членов экипажа, что гарантирует вам безопасное и комфортное
+                        путешествие</div>
+                </div>
+                <div class=" rounded-3xl  flex flex-col w-[365px] items-start justify-start px-[30px]  bg-white">
+                    <img class="ml-auto mt-10 w-[60px] h-[60px]" src="assets/swimming_kit.svg" />
+                    <div class=" text-xl mt-[16px] text-blue-text uppercase text-[16px] md:text-[20px] font-extrabold">
+                        Индивидуальный
+                        подход</div>
+                    <div class="mt-[16px] mb-10 text-blue-text text-[14px] md:text-[16px]">Мы создаём незабываемый
+                        отдых,
+                        подстраиваясь под ваши предпочтения. От инстаграм-достопримечательностей до удивительных пляжей
+                        и
+                        потрясающих закатов</div>
+                </div>
+            </div>
+            <div class="mt-[50px] flex gap-x-[20px] items-center rounded-3xl justify-stretch bg-white">
+                <div class=" rounded-3xl mb-auto  flex flex-col w-[365px] items-start justify-start p-[30px] ">
+
+                    <div
+                        class="border uppercase bg-white flex items-center font-bold px-[28px] justify-center border-blue-text text-blue-text l-100 rounded-3xl text-center l-140  text-[16px]  h-[50px] ">
+                        не включено
+                    </div>
+                    <div class="mt-5 mb-10 text-blue-text text-[14px] md:text-[16px]">Наши лодки обладают лицензией
+                        на перевозку 20 пассажиров и 3 членов экипажа, что гарантирует вам безопасное и комфортное
+                        путешествие</div>
+                </div>
+                <div class=" rounded-3xl  flex flex-col w-[365px] items-start justify-start p-[30px] ">
+
+                    <div
+                        class="border uppercase bg-blue flex items-center font-bold px-[28px] justify-center border-blue-text text-white l-100 rounded-3xl text-center l-140  text-[16px]  h-[50px] ">
+                        Дополнительно
+                    </div>
+                    <div class="mt-5 mb-10 text-blue-text text-[14px] md:text-[16px]">Приготовьтесь к своему
+                        приключению, взяв с собой солнцезащитный крем, полотенце, купальник (рекомендуется надеть его
+                        перед началом экскурсии, так как на борту нет закрытых помещений)</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        // Initialize Swiper
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 10,
+            slidesPerView: 4,
+            freeMode: true,
+            watchSlidesProgress: true,
+        });
+        var swiper2 = new Swiper(".mySwiper2", {
+            spaceBetween: 10,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            thumbs: {
+                swiper: swiper,
+            },
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            // Initialize thumbnail Swiper
+            var thumbsSwiper = new Swiper(".mySwiper", {
+                spaceBetween: 10,
+                slidesPerView: 7,
+                freeMode: true,
+                watchSlidesProgress: true,
+            });
+
+            // Initialize main Swiper and link it to the thumbnail Swiper
+            var gallerySwiper = new Swiper(".gallery-swiper", {
+                spaceBetween: 10,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                thumbs: {
+                    swiper: thumbsSwiper
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
