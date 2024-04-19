@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -10,11 +10,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@21.2.4/build/css/intlTelInput.css">
 </head>
 
 <body>
 
-  <div class="container mx-auto md:px-0 ">
+  <div class="container px-[25px] mx-auto md:px-0 ">
     <nav class="md:hidden">
       <div class="container mx-auto px-4">
         <div class="flex justify-between">
@@ -117,8 +118,9 @@
         style="background-image: linear-gradient(to bottom, rgba(1, 130, 190,0) 50%, rgba(0, 131, 187, 0.7) 70%), url('assets/1_page.png');">
 
         <div class="grow"></div>
-        <div class="grow flex flex-col p-10 text-left justify-end mb-10  md:mb-15">
-          <div class="  py-2 mt-4  w-fit font-medium text-left text-[14px] rounded-full text-blue-text bg-white px-4">
+        <div class="grow flex flex-col ml-[20px] mr-[5px] md:p-10 text-left justify-end mb-10  md:mb-15">
+          <div
+            class="  py-2 mt-4  md:w-fit px-[20px] md:font-medium text-left text-[14px] rounded-full text-blue-text bg-white">
             Создадим идеальный тур, учитывая ваши пожелания, бюджет и время отдыха</div>
           <h1 class="text-white uppercase  mt-2 max-w-[660px] l-140 font-bold  text-[32px] md:text-[41px]">
             Незабываемые
@@ -140,7 +142,7 @@
         <button class="text-blue md:hidden border-2 border-blue w-full mt-3 py-4 rounded-full ">Эмоции наших
           клиентов</button>
         <div
-          class=" w-full mt-2.5 tracking-normal text-left shadow-none font-medium flex items-center justify-between  text-[16px] flex-col md:flex-row ">
+          class=" w-full mt-2.5 tracking-normal text-left gap-y-[15px] shadow-none font-medium flex items-start md:items-center justify-start md:justify-between  text-[16px] flex-col md:flex-row ">
           <span class="flex items-center max-w-[333px]  gap-x-2">
             <img src="assets/palm.svg" class="" /> Индивидуальная программа отдыха
           </span>
@@ -155,30 +157,33 @@
       </div>
     </div>
 
-    <div class="container flex flex-col md:flex-row h-full gap-x-5 mt-20 w-full  justify-center">
-      <div class="md:w-1/2 w-full pl-12 pt-[60px] rounded-3xl bg-white flex flex-col ">
-        <div>
-          <div class="flex flex-row text-[12px] md:text-[14px] text-blue-text  ">
+    <div class="container relative flex flex-col-reverse md:flex-row h-full gap-x-5 mt-20 w-full  justify-center">
+      <div
+        class="md:w-1/2 z-50 w-full md:pl-12 pt-[30px] md:pt-[60px] rounded-3xl -mt-10 md:-mt-0 bg-white flex flex-col ">
+        <div class="pl-[30px] md:pl-0 md:max-w-full">
+          <div class="flex flex-row flex-wrap w-[195px]  md:pl-0 md:w-full text-[12px] md:text-[14px] text-blue-text  ">
             <span class="border rounded-2xl border-blue bg-[#F4F7F8] py-1 px-3 ">пляжи</span>
             <span class="border rounded-2xl border-blue bg-[#F4F7F8] py-1 px-3 ">сноркглинг</span>
-            <span class="border rounded-2xl border-blue bg-[#F4F7F8] py-1 px-3">барбекю</span>
-            <span class="border rounded-2xl border-blue bg-[#F4F7F8] py-1 px-3">черепахи</span>
+            <span class="border mt-[5px] md:mt-0 rounded-2xl border-blue bg-[#F4F7F8] py-1 px-3">барбекю</span>
+            <span class="border mt-[5px] md:mt-0 rounded-2xl border-blue bg-[#F4F7F8] py-1 px-3">черепахи</span>
           </div>
-          <h3 class="font-semibold  mt-[60px]  max-w-[450px] md:text-[37px] text-blue-text">
-            Водная экскурсия в морской национальный парк «Святая Анна» теперь
-            <div class="bg-blue w-[325px] p-1.5 mt-1 px-3 whitespace-nowrap rounded-3xl text-white">дешевле на 5
+          <h3
+            class="font-semibold max-w-[313px] text-[30px] l-100 mt-[60px]  md:max-w-[450px] md:text-[37px] text-blue-text">
+            Водная экскурсия <br class="md:hidden" />в морской национальный парк «Святая Анна» теперь
+            <div class="bg-blue w-[325px] p-1.5 md:mt-1 px-3 whitespace-nowrap rounded-3xl text-white">дешевле на 5
               евро!</div>
           </h3>
-          <div class=" font-normal mt-8 max-w-[350px] text-[16px]">
+          <div class=" font-normal mt-[17px] max-w-[350px] text-[14px] md:text-[16px]">
             Отправьтесь на приключенческое плавание, окунитесь в потрясающий подводный мир, насладитесь сноркелингом и
             расслабьтесь на уединенных пляжах.
           </div>
         </div>
-        <div class="flex items-start gap-x-2 justify-start mt-5">
+        <div
+          class="flex flex-col md:flex-row w-full px-7 md:px-0 mb-[32px] md:mb-0 items-start gap-x-2 justify-start mt-5">
           <button
-            class="px-10 py-4 bg-blue text-white font-bold md:w-1/2 text-[16px] cursor-pointer border rounded-3xl">Забронировать</button>
+            class="px-10 py-4 bg-blue w-full  text-white font-bold md:w-1/2 text-[16px] cursor-pointer border rounded-3xl">Забронировать</button>
           <button
-            class="px-10 mr-4 py-4 text-blue-text bg-light-blue font-bold md:w-1/2 text-[16px] cursor-pointer  rounded-3xl">Подробнее</button>
+            class="px-10 mr-4 py-4 text-blue-text w-full mt-[10px] md:mt-0 bg-light-blue font-bold md:w-1/2 text-[16px] cursor-pointer  rounded-3xl">Подробнее</button>
         </div>
       </div>
       <div class="md:w-1/2 w-full">
@@ -190,9 +195,9 @@
 
 
 
-    <div class="relative rounded-b-3xl leading-none h-[400px] md:h-full w-full swiper mySwiper3 mt-20 rounded-3xl">
+    <div class="relative rounded-b-3xl leading-none  md:h-full w-full swiper mySwiper3 mt-20 rounded-3xl">
       <div class="swiper-wrapper  font-medium md:font-bold">
-        <div class="swiper-slide slide">
+        <div class="swiper-slide h-[600px] slide">
           <h2
             class="absolute_custom max-w-[643px] left-4 text-left top-1/2 w-3/4  text-[30px] md:text-[42px] text-white">
             Отправитесь
@@ -200,7 +205,7 @@
           </h2>
           <img src="assets/scroll_1_image.png" alt="Slide 1">
         </div>
-        <div class="swiper-slide slide ">
+        <div class="swiper-slide h-[600px] slide ">
           <img src="assets/scroll_3_image.png" alt="Slide 2">
           <h2
             class="absolute_custom max-w-[589px] left-4 text-left top-1/2 w-3/4  text-[30px] md:text-[42px] text-white">
@@ -208,14 +213,14 @@
             музеи и ботанические сады, узнаете о флоре и фауне, и окунётесь в богатую историю этого удивительного места
           </h2>
         </div>
-        <div class="swiper-slide slide">
+        <div class="swiper-slide h-[600px] slide">
           <img src="assets/scroll_4_image.png" alt="Slide 3">
           <h2
-            class="absolute_custom max-w-[589px] left-4 text-left top-1/2 w-3/4  text-[30px] md:text-[42px] text-white">
+            class="absolute_custom max-w-[589px]  left-4 text-left top-1/2 w-3/4  text-[30px] md:text-[42px] text-white">
             Почувствуешь
             азарт рыбалки в уникальных природных условиях Сейшелских островов</h2>
         </div>
-        <div class="swiper-slide slide">
+        <div class="swiper-slide h-[600px] slide">
           <img src="assets/scroll_5_image.png" alt="Slide 4">
           <h2
             class="absolute_custom max-w-[589px] left-4 text-left top-1/2 w-3/4  text-[30px] md:text-[42px] text-white">
@@ -223,28 +228,31 @@
             романтический день на воде, наслаждаясь кристально чистыми лагунами и величественными видами</h2>
         </div>
       </div>
-      <button class="prev left-12 md:left-12  z-10  md:top-[80%] w-15 h-15"><img src="assets/Arrow left.svg" /></button>
-      <button class="next left-28 md:left-28 z-10  md:top-[80%] w-15 h-15"><img src="assets/Arrow right.svg" /></button>
+      <button class="prev left-12 md:left-12 top-[80%]  z-10   w-15 h-15"><img src="assets/Arrow left.svg" /></button>
+      <button class="next left-28 md:left-28 z-10 top-[80%]  w-15 h-15"><img src="assets/Arrow right.svg" /></button>
     </div>
 
 
 
     <div
       class="grid grid-cols-1  md:grid-cols-2 text-[16px] md:text-[20px] place-items-stretch border-none bg-none gap-4 mt-20">
-      <h2 class="col-span-2 text-[30px]  md:text-[42px] text-blue-text font-bold">Выберите свой стиль отдыха</h2>
+      <h2 class="col-span-2 text-[30px]  md:text-[42px] text-blue-text font-bold">Выберите свой<br class="md:hidden" />
+        стиль отдыха</h2>
       <!-- Individual excursion card -->
       <div class="relative uppercase rounded-3xl md:mt-12 h-[400px]"
         style="background: linear-gradient(to bottom, transparent, rgba(1, 130, 190, 0) 30%, rgba(1, 101, 147, 0.5) 70%, rgba(0, 71, 102, 0.85) 100%), url('./assets/styles_folder/1.png') no-repeat center center / cover;">
-        <p class="w-full p-12 text-white text-[14px] md:text-[18px] font-extrabold absolute  bottom-0 ">
+        <div
+          class="w-full  text-white max-w-[224px] md:max-w-full text-[16px] md:text-[18px] pl-[30px] pb-[40px] font-bold md:font-extrabold absolute  bottom-0 ">
           Индивидуальные
           экскурсии
-        </p>
+        </div>
         <a href="www.google.com"><img src="assets/arrow.svg" class="w-[40px] h-[40px] absolute right-4 top-4" /></a>
       </div>
 
       <div class="relative uppercase rounded-3xl md:mt-12 up h-[400px]"
         style="background: linear-gradient(to bottom, transparent, rgba(1, 130, 190, 0) 30%, rgba(1, 101, 147, 0.5) 70%, rgba(0, 71, 102, 0.85) 100%), url('./assets/styles_folder/2.png') no-repeat center center / cover;">
-        <p class="w-full p-12 text-white text-[14px] md:text-[18px] font-extrabold   absolute bottom-0 ">
+        <p
+          class="w-full  text-white max-w-[224px] md:max-w-full text-[16px] md:text-[18px] pl-[30px] pb-[40px] font-bold md:font-extrabold absolute  bottom-0 ">
           Групповые
           Приключения
         </p>
@@ -254,7 +262,9 @@
       <!-- Catamaran travel card -->
       <div class="relative uppercase rounded-3xl h-[400px]"
         style="background: linear-gradient(to bottom, transparent, rgba(1, 130, 190, 0) 30%, rgba(1, 101, 147, 0.5) 70%, rgba(0, 71, 102, 0.85) 100%), url('./assets/styles_folder/3.png') no-repeat center center / cover;">
-        <p class="w-full p-12 text-white text-[14px] md:text-[18px] font-extrabold absolute bottom-0 ">Путешествие
+        <p
+          class="w-full  text-white max-w-[224px] md:max-w-full text-[16px] md:text-[18px] pl-[30px] pb-[40px] font-bold md:font-extrabold absolute  bottom-0 ">
+          Путешествие
           на
           катамаране
         </p>
@@ -262,16 +272,20 @@
       </div>
 
       <!-- Yachting card -->
-      <div class="relative uppercase flex items-start justify-start rounded-3xl h-[400px]"
+      <div class="relative uppercase flex items-start col-span-1 justify-start rounded-3xl h-[400px]"
         style="background: linear-gradient(to bottom, transparent, rgba(1, 130, 190, 0) 30%, rgba(1, 101, 147, 0.5) 70%, rgba(0, 71, 102, 0.85) 100%), url('./assets/styles_folder/4.png') no-repeat center center / cover;">
-        <p class="w-full p-12 text-white text-[14px] md:text-[18px] font-extrabold absolute bottom-0 ">Яхтинг</p>
+        <p
+          class="w-full  text-white max-w-[224px] md:max-w-full text-[16px] md:text-[18px] pl-[30px] pb-[40px] font-bold md:font-extrabold absolute  bottom-0 ">
+          Яхтинг</p>
         <a href="www.google.com"><img src="assets/arrow.svg" class="w-[40px] h-[40px] absolute right-4 top-4" /></a>
       </div>
 
       <!-- Fishing expedition card -->
-      <div class="relative uppercase rounded-3xl md:col-span-2 h-[400px]"
+      <div class="relative uppercase rounded-3xl col-span-1 md:col-span-2 h-[400px]"
         style="background: linear-gradient(to bottom, transparent, rgba(1, 130, 190, 0) 30%, rgba(1, 101, 147, 0.5) 70%, rgba(0, 71, 102, 0.85) 100%), url('./assets/styles_folder/5.png') no-repeat center center / cover;">
-        <p class="w-full p-12 text-white text-[14px] md:text-[18px] font-extrabold absolute bottom-0 ">Рыболовные
+        <p
+          class="w-full  text-white max-w-[224px] md:max-w-full text-[16px] md:text-[18px] pl-[30px] pb-[40px] font-bold md:font-extrabold absolute  bottom-0 ">
+          Рыболовные
           Экспедиции
         </p>
         <a href="www.google.com"><img src="assets/arrow.svg" class="w-[40px] h-[40px] absolute right-4 top-4" /></a>
@@ -282,10 +296,10 @@
 
       <div class="bg-blue rounded-3xl flex flex-col items-start md:justify-between h-[640px] md:w-1/2 "
         style="background: url('assets/card_back_5_page.png') no-repeat center center / cover;">
-        <div class="relative  w-full">
-          <img class="absolute z-[13] w-[110px] md:w-[130px] left-4  md:left-10 md:top-7 "
+        <div class="relative mt-5 ml-10 w-full">
+          <img class="absolute z-[13] w-[110px] md:w-[130px]   md:left-10 md:top-7 "
             src="assets/5_page/Ellipse 22.png" />
-          <img class="absolute z-[12] w-[110px] md:w-[130px] left-16 top-4 md:left-32 md:top-14 "
+          <img class="absolute z-[12] w-[110px] md:w-[130px] left-12 top-4 md:left-32 md:top-14 "
             src="assets/5_page/Ellipse 23.png" />
         </div>
         <div
@@ -297,14 +311,14 @@
             желаниях или местах, которые хотите посетить и мы составим для вас программу</p>
         </div>
       </div>
-      <div class="md:w-1/2 flex flex-col justify-start relative md:ml-16 p-7 md:p-0 mt-10 md:mt-0 md:h-[640px]">
-        <div class="flex flex-row   absolute h-[150px] top-0  justify-between w-[420px]">
+      <div class="md:w-1/2 flex px-[30px] flex-col justify-start relative md:ml-16 md:p-0 mt-10 md:mt-0 md:h-[640px]">
+        <div class="flex flex-row  w-full h-[100px] md:h-[150px] top-0  justify-between md:w-[420px]">
           <img class="w-20 h-16 md:w-[120px] md:h-[100px]" src="assets/snorkling.png" />
           <img class="w-20 h-16 md:w-[120px] md:h-[100px]" src="assets/islands.png" />
           <img class="w-20 h-16 md:w-[120px] md:h-[100px]" src="assets/fishing.png" />
         </div>
         <div
-          class="max-w-[404px] flex-col text-smm font-semibold l-140 items-left mt-[170px] items-center flex justify-start text-[18px]">
+          class="max-w-[404px] flex-col text-smm font-semibold l-140 items-left  items-center flex justify-start text-[18px]">
           Заполните форму ниже. Наш
           менеджер
           перезвонит вам,
@@ -318,37 +332,20 @@
           напишите ваш
           запрос нам в Telegram </div>
         <div class=" p-0 flex items-start flex-col mt-5 md:w-[410px] rounded-3xl h-full   ">
-          <div class="flex items-start flex-col gap-y-2  w-[404px]  h-full ">
+          <div class="flex items-start flex-col  gap-y-2 w-[280px] md:w-[404px]  h-full ">
             <div class="flex w-full justify-between h-[60px]  items-center">
               <input type="text" id="name"
-                class="form-input placeholder:text-blue-text  p-4 px-10 cursor rounded-3xl block w-full  bg-light-blue  "
+                class="form-input placeholder:text-blue-text placeholder:text-[18px] placeholder:mb:text-[14px] p-4 px-10 cursor rounded-3xl block w-full  bg-light-blue  "
                 placeholder="Имя">
             </div>
-            <div class="flex w-full relative h-[60px] rounded-3xl bg-light-blue ">
-              <div class="dropdown ">
-                <div class="dropdown-selector absolute ml-10 flex items-center top-[19px] gap-x-2"
-                  onclick="toggleDropdown()">
-                  <img id="selected-flag" class="m-auto mb-1.5" src="assets/russian_flag.svg" alt="Flag" />
-                  <span id="selected-code">+7</span>
-                </div>
-                <ul id="dropdown-options" class="bg-white ml-10 w-full top-[23px]  dropdown-options">
-                  <li class="" onclick="selectCountry('assets/russian_flag.svg', '+7')">
-                    <img src="assets/russian_flag.svg" alt="Russian Flag" /> +7
-                  </li>
-                  <li class="" onclick="selectCountry('assets/russian_flag.svg', '+7')">
-                    <img src="assets/russian_flag.svg" alt="Russian Flag" /> +7
-                  </li>
-                  <li class="" onclick="selectCountry('assets/russian_flag.svg', '+7')">
-                    <img src="assets/russian_flag.svg" alt="Russian Flag" /> +7
-                  </li>
-                  <li class="" onclick="selectCountry('assets/russian_flag.svg', '+7')">
-                    <img src="assets/russian_flag.svg" alt="Russian Flag" /> +7
-                  </li>
-                </ul>
-              </div>
+
+
+            <div
+              class="flex  md:justify-start justify-start h-[60px] pl-[30px] md:pl-[30px] rounded-3xl items-center bg-light-blue w-[280px] md:w-[404px]">
               <input type="tel" id="phone"
-                class="w-full rounded-r-3xl h-[60px] mb-auto bg-transparent ml-4 px-2  block ">
+                class="w-[300px] outline-none placeholder:text-blue-text rounded-3xl form-input ring-white bg-transparent h-[60px] pl-4   block">
             </div>
+
 
             <div class="flex relative w-full items-center">
               <select id="app" class="form-select px-10  block w-full select-css rounded-3xl py-4 pr-8 bg-light-blue">
@@ -363,10 +360,11 @@
               class="w-full px-4  mt-4 h-[60px] bg-blue text-base font-semibold text-center text-white transition duration-200 ease-in rounded-3xl  ">
               Создать свой личный тур
             </button>
-            <div class="flex max-w-[362px]  items-center">
+            <div class="flex max-w-[362px] mb-10 items-center">
               <input id="terms" type="checkbox"
                 class="form-checkbox h-[32px] w-7 text-indigo-600  transition duration-150 ease-in-out rounded border-gray-300">
-              <label for="terms" class="ml-3 block text-[12px] mb-10 md:mb-0 text-blue-text"> Нажимая на кнопку, я
+              <label for="terms" class="ml-3 block text-[12px]  md:mb-0 text-blue-text"> Нажимая на
+                кнопку, я
                 соглашаюсь с политикой конфиденциальности сайта</label>
             </div>
           </div>
@@ -533,7 +531,13 @@
     <script type="module" src="js/scroll_third_page.js" defer></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@21.2.4/build/js/intlTelInput.min.js"></script>
+    <script>
+      const input = document.querySelector("#phone");
+      window.intlTelInput(input, {
+        utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@21.2.4/build/js/utils.js",
+      });
+    </script>
     <!-- Initialize Swiper -->
     <script>
       var swiper = new Swiper(".mySwiper", {

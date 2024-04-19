@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -10,11 +10,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@21.2.4/build/css/intlTelInput.css">
 </head>
 
 <body>
 
-    <div class="container mx-auto md:px-0 flex flex-col">
+    <div class="container mx-auto px-[25px] md:px-0 flex flex-col">
         <nav class="hidden mt-4  md:flex md:items-center md:justify-between">
             <div class="flex justify-between items-center">
                 <a href="index.html" class="flex items-center  max-w-[120px] leading-none">
@@ -79,7 +80,7 @@
             <h2 class="text-[42px] text-blue-text max-w-[560px]">Выберите и забронируйте незабываемое приключение на
                 Сейшелы!</h2>
         </div>
-        <div class=" mt-[30px] flex items-center gap-x-[10px] just">
+        <div class=" mt-[30px] overflow-x-scroll flex items-center gap-x-[10px] just">
             <div
                 class="border w-[210px]  flex items-center font-bold px-[28px] justify-center border-blue-text text-blue-text l-100 rounded-3xl text-center l-140  text-[16px]  h-[60px] ">
                 Все экскурсии
@@ -94,129 +95,153 @@
             </div>
 
         </div>
-        <div class="mt-[50px] grid gap-5 grid-cols-2 ">
-            <div class="w-[570px] flex flex-col items-center justify-end h-[550px] py-[60px] px-[50px]"
+        <div class="mt-[50px] grid gap-5 grid-cold-1 md:grid-cols-2 ">
+            <div class="w-full h-[500px] md:w-[570px] flex flex-col rounded-3xl items-center justify-end md:h-[550px] p-[30px] md:py-[60px] md:px-[50px]"
                 style="background: url('assets/page_3_bg.png');">
-                <div class="flex items-start justify-between w-full">
+                <div class="flex items-start mb-[30px]  h-[90px] md:mb-[80px]  justify-between w-full">
                     <div class="flex text-blue-text text-[14px] flex-col items-start justify-start">
-                        <div class="bg-white px-[19px] py-[5px] rounded-3xl">на авто</div>
-                        <div class="bg-white px-[19px] mt-[5px] py-[5px] rounded-3xl">можно индивидуально</div>
-                    </div>
-                    <div class="border border-white px-[19px] py-[5px] text-white rounded-3xl">от 300€</div>
-                </div>
-                <div class="flex flex-col items-start justify-start w-full">
-                    <h2 class="text-[42px] mt-[120px] text-white font-semibold">Тур по острову Маэ</h2>
-                    <div class="text-[18px] l-140 mt-[30px] text-white">12 точек по маршруту</div>
-                    <div class="mt-5 text-white flex w-full items-center justify-start">
-                        <div class="flex items-center justify-start gap-x-[10px]"><img src="assets/clock_2.svg" />с 9:00
-                            до 18:00
+                        <div class="bg-white text-[12px] md:text-[14px] px-[19px] py-[5px] rounded-3xl">на авто</div>
+                        <div class="bg-white text-[12px] md:text-[14px] px-[19px] mt-[5px] py-[5px] rounded-3xl">можно
+                            индивидуально
                         </div>
-                        <div class="flex items-center justify-start ml-[30px] gap-x-[10px]"><img
-                                src="assets/people.svg" />1-23
-                            человека</div>
+                    </div>
+                    <div
+                        class="border text-[12px] md:text-[14px] border-white px-[19px] py-[5px] text-white rounded-3xl">
+                        от 300€</div>
+                </div>
+                <div class="flex flex-col  items-start justify-start w-full">
+                    <h2
+                        class="text-[30px] flex items-start justify-end md:h-[90px] md:text-[42px]  text-white font-semibold">
+                        Тур
+                        по острову Маэ
+                    </h2>
+                    <div class="text-[16px] md:text-[18px] md:l-140 mt-[30px] text-white">12 точек по маршруту</div>
+                    <div class="mt-5 text-white flex w-full items-center justify-start gap-x-[20px]">
+                        <div class="flex items-center text-[14px] md:text-[16px] justify-start gap-x-[2px]"><img
+                                src="assets/clock_2.svg" />с 9:00 до 18:00
+                        </div>
+                        <div class="flex items-center justify-start  md:ml-[30px] gap-x-[2px]"><img
+                                src="assets/people.svg" />1-23 человека</div>
                     </div>
                 </div>
-                <div class="items-center mt-[30px] justify-start flex w-full">
+                <div class="items-center mt-[30px] justify-start flex flex-col md:flex-row w-full">
                     <div
-                        class="border w-[210px] cursor-pointer  bg-white flex items-center font-bold px-[43px] justify-center text-blue-text l-100 rounded-3xl text-center l-140  text-[16px]  h-[60px] ">
+                        class="border md:w-[210px] cursor-pointer  w-full  bg-white flex items-center font-bold px-[43px] justify-center text-blue-text l-100 rounded-3xl text-center l-140  text-[16px]  h-[60px] ">
                         Забронировать
                     </div>
                     <div
-                        class="border w-[210px] cursor-pointer ml-[10px]   flex items-center font-bold px-[60px] justify-center border-white text-white l-100 rounded-3xl text-center l-140  text-[16px]  h-[60px] ">
+                        class="border md:w-[210px] cursor-pointer md:ml-[10px] w-full mt-[10px] md:mt-0 flex items-center font-bold px-[60px] justify-center border-white text-white l-100 rounded-3xl text-center l-140  text-[16px]  h-[60px] ">
                         Подробнее
                     </div>
                 </div>
             </div>
-            <div class="w-[570px] flex flex-col items-center justify-end h-[550px] py-[60px] px-[50px]"
+            <div class="w-full h-[500px] md:w-[570px] flex flex-col rounded-3xl items-center justify-end md:h-[550px] p-[30px] md:py-[60px] md:px-[50px]"
                 style="background: url('assets/page_3_card_bg_2.png');">
-                <div class="flex items-start justify-between w-full">
+                <div class="flex items-start mb-[30px]  h-[90px] md:mb-[80px]  justify-between w-full">
                     <div class="flex text-blue-text text-[14px] flex-col items-start justify-start">
-                        <div class="bg-white px-[19px] py-[5px] rounded-3xl">на лодке</div>
-                        <div class="bg-white px-[19px] mt-[5px] py-[5px] rounded-3xl">можно индивидуально</div>
-                    </div>
-                    <div class="border border-white px-[19px] py-[5px] text-white rounded-3xl">80€</div>
-                </div>
-                <div class="flex flex-col items-start justify-start w-full">
-                    <h2 class="text-[42px] mt-[81px] text-white font-semibold">Морской национальный парк «Святая Анна»
-                    </h2>
-                    <div class="text-[18px] l-140 mt-[30px] text-white">6 точек по маршруту</div>
-                    <div class="mt-5 text-white flex w-full items-center justify-start">
-                        <div class="flex items-center justify-start gap-x-[10px]"><img src="assets/clock_2.svg" />с 9:30
-                            до 17:30
+                        <div class="bg-white text-[12px] md:text-[14px] px-[19px] py-[5px] rounded-3xl">на лодке</div>
+                        <div class="bg-white text-[12px] md:text-[14px] px-[19px] mt-[5px] py-[5px] rounded-3xl">можно
+                            индивидуально
                         </div>
-                        <div class="flex items-center justify-start ml-[30px] gap-x-[10px]"><img
+                    </div>
+                    <div
+                        class="border text-[12px] md:text-[14px] border-white px-[19px] py-[5px] text-white rounded-3xl">
+                        80€</div>
+                </div>
+                <div class="flex flex-col  items-start justify-start w-full">
+                    <h2 class="text-[30px] md:h-[90px] md:text-[42px]  text-white font-semibold">Морской
+                        национальный
+                        парк «Святая Анна»
+                    </h2>
+                    <div class="text-[16px] md:text-[18px] md:l-140 mt-[30px] text-white">6 точек по маршруту</div>
+                    <div class="mt-5 text-white flex w-full items-center justify-start gap-x-[20px]">
+                        <div class="flex items-center text-[14px] md:text-[16px] justify-start gap-x-[2px]"><img
+                                src="assets/clock_2.svg" />с 9:30 до 17:30
+                        </div>
+                        <div class="flex items-center justify-start  md:ml-[30px] gap-x-[2px]"><img
                                 src="assets/people.svg" />12-15 человек</div>
                     </div>
                 </div>
-                <div class="items-center mt-[30px] justify-start flex w-full">
+                <div class="items-center mt-[30px] justify-start flex flex-col md:flex-row w-full">
                     <div
-                        class="border w-[210px] cursor-pointer  bg-white flex items-center font-bold px-[43px] justify-center text-blue-text l-100 rounded-3xl text-center l-140  text-[16px]  h-[60px] ">
+                        class="border md:w-[210px] cursor-pointer  w-full  bg-white flex items-center font-bold px-[43px] justify-center text-blue-text l-100 rounded-3xl text-center l-140  text-[16px]  h-[60px] ">
                         Забронировать
                     </div>
                     <div
-                        class="border w-[210px] cursor-pointer ml-[10px]   flex items-center font-bold px-[60px] justify-center border-white text-white l-100 rounded-3xl text-center l-140  text-[16px]  h-[60px] ">
+                        class="border md:w-[210px] cursor-pointer md:ml-[10px] w-full mt-[10px] md:mt-0 flex items-center font-bold px-[60px] justify-center border-white text-white l-100 rounded-3xl text-center l-140  text-[16px]  h-[60px] ">
                         Подробнее
                     </div>
                 </div>
             </div>
-            <div class="w-[570px] flex flex-col items-center justify-end h-[550px] py-[60px] px-[50px]"
+            <div class="w-full h-[500px] md:w-[570px] flex flex-col rounded-3xl items-center justify-end md:h-[550px] p-[30px] md:py-[60px] md:px-[50px]"
                 style="background: url('assets/page_3_card_bg_3.png');">
-                <div class="flex items-start justify-between w-full">
+                <div class="flex items-start mb-[30px]  h-[90px] md:mb-[80px]  justify-between w-full">
                     <div class="flex text-blue-text text-[14px] flex-col items-start justify-start">
-                        <div class="bg-white px-[19px] py-[5px] rounded-3xl">на лодке</div>
-                        <div class="bg-white px-[19px] mt-[5px] py-[5px] rounded-3xl">можно индивидуально</div>
-                    </div>
-                    <div class="border border-white px-[19px] py-[5px] text-white rounded-3xl">140€</div>
-                </div>
-                <div class="flex flex-col items-start justify-start w-full">
-                    <h2 class="text-[42px] mt-[120px] text-white font-semibold">Тур по острову Ла Диг</h2>
-                    <div class="text-[18px] l-140 mt-[30px] text-white">5 точек по маршруту</div>
-                    <div class="mt-5 text-white flex w-full items-center justify-start">
-                        <div class="flex items-center justify-start gap-x-[10px]"><img src="assets/clock_2.svg" />с 6:30
-                            до 18:00
+                        <div class="bg-white text-[12px] md:text-[14px] px-[19px] py-[5px] rounded-3xl">на лодке</div>
+                        <div class="bg-white text-[12px] md:text-[14px] px-[19px] mt-[5px] py-[5px] rounded-3xl">можно
+                            индивидуально
                         </div>
-                        <div class="flex items-center justify-start ml-[30px] gap-x-[10px]"><img
+                    </div>
+                    <div
+                        class="border text-[12px] md:text-[14px] border-white px-[19px] py-[5px] text-white rounded-3xl">
+                        140€</div>
+                </div>
+                <div class="flex flex-col  items-start justify-start w-full">
+                    <h2 class="text-[30px] md:h-[90px] md:text-[42px]  text-white font-semibold">Тур по острову Ла Диг
+                    </h2>
+                    <div class="text-[16px] md:text-[18px] md:l-140 mt-[30px] text-white">5 точек по маршруту</div>
+                    <div class="mt-5 text-white flex w-full items-center justify-start gap-x-[20px]">
+                        <div class="flex items-center text-[14px] md:text-[16px] justify-start gap-x-[2px]"><img
+                                src="assets/clock_2.svg" />с 6:30 до 18:00
+                        </div>
+                        <div class="flex items-center justify-start  md:ml-[30px] gap-x-[2px]"><img
                                 src="assets/people.svg" />47 человек</div>
                     </div>
                 </div>
-                <div class="items-center mt-[30px] justify-start flex w-full">
+                <div class="items-center mt-[30px] justify-start flex flex-col md:flex-row w-full">
                     <div
-                        class="border w-[210px] cursor-pointer bg-white flex items-center font-bold px-[43px] justify-center text-blue-text l-100 rounded-3xl text-center l-140  text-[16px]  h-[60px] ">
+                        class="border md:w-[210px] cursor-pointer  w-full  bg-white flex items-center font-bold px-[43px] justify-center text-blue-text l-100 rounded-3xl text-center l-140  text-[16px]  h-[60px] ">
                         Забронировать
                     </div>
                     <div
-                        class="border w-[210px] cursor-pointer ml-[10px]  flex items-center font-bold px-[60px] justify-center border-white text-white l-100 rounded-3xl text-center l-140  text-[16px]  h-[60px] ">
+                        class="border md:w-[210px] cursor-pointer md:ml-[10px] w-full mt-[10px] md:mt-0 flex items-center font-bold px-[60px] justify-center border-white text-white l-100 rounded-3xl text-center l-140  text-[16px]  h-[60px] ">
                         Подробнее
                     </div>
                 </div>
             </div>
-            <div class="w-[570px] flex flex-col items-center justify-end h-[550px] py-[60px] px-[50px]"
+            <div class="w-full h-[500px] md:w-[570px] flex flex-col rounded-3xl items-center justify-end md:h-[550px] p-[30px] md:py-[60px] md:px-[50px]"
                 style="background: url('assets/page_3_card_bg_4.png');">
-                <div class="flex items-start justify-between w-full">
+                <div class="flex items-start mb-[30px]  h-[90px] md:mb-[80px]  justify-between w-full">
                     <div class="flex text-blue-text text-[14px] flex-col items-start justify-start">
-                        <div class="bg-white px-[19px] py-[5px] rounded-3xl">на лодке</div>
-                        <div class="bg-white px-[19px] mt-[5px] py-[5px] rounded-3xl">можно индивидуально</div>
-                    </div>
-                    <div class="border border-white px-[19px] py-[5px] text-white rounded-3xl">от 300€</div>
-                </div>
-                <div class="flex flex-col items-start justify-start w-full">
-                    <h2 class="text-[42px] mt-[81px] text-white font-semibold">Тур по островам Праслин и Ла Диг</h2>
-                    <div class="text-[18px] l-140 mt-[30px] text-white">5 точек по маршруту</div>
-                    <div class="mt-5 text-white flex w-full items-center justify-start">
-                        <div class="flex items-center justify-start gap-x-[10px]"><img src="assets/clock_2.svg" />с 6:30
-                            до 18:00
+                        <div class="bg-white text-[12px] md:text-[14px] px-[19px] py-[5px] rounded-3xl">на лодке</div>
+                        <div class="bg-white text-[12px] md:text-[14px] px-[19px] mt-[5px] py-[5px] rounded-3xl">можно
+                            индивидуально
                         </div>
-                        <div class="flex items-center justify-start ml-[30px] gap-x-[10px]"><img
+                    </div>
+                    <div
+                        class="border text-[12px] md:text-[14px] border-white px-[19px] py-[5px] text-white rounded-3xl">
+                        150€</div>
+                </div>
+                <div class="flex flex-col  items-start justify-start w-full">
+                    <h2 class="text-[30px] md:h-[90px] md:text-[42px]  text-white font-semibold">Тур по островам Праслин
+                        и Ла Диг
+                    </h2>
+                    <div class="text-[16px] md:text-[18px] md:l-140 mt-[30px] text-white">5 точек по маршруту</div>
+                    <div class="mt-5 text-white flex w-full items-center justify-start gap-x-[20px]">
+                        <div class="flex items-center text-[14px] md:text-[16px] justify-start gap-x-[2px]"><img
+                                src="assets/clock_2.svg" />с 6:30 до 18:00
+                        </div>
+                        <div class="flex items-center justify-start  md:ml-[30px] gap-x-[2px]"><img
                                 src="assets/people.svg" />47 человек</div>
                     </div>
                 </div>
-                <div class="items-center mt-[30px] justify-start flex w-full">
+                <div class="items-center mt-[30px] justify-start flex flex-col md:flex-row w-full">
                     <div
-                        class="border w-[210px] cursor-pointer bg-white flex items-center font-bold px-[43px] justify-center text-blue-text l-100 rounded-3xl text-center l-140  text-[16px]  h-[60px] ">
+                        class="border md:w-[210px] cursor-pointer  w-full  bg-white flex items-center font-bold px-[43px] justify-center text-blue-text l-100 rounded-3xl text-center l-140  text-[16px]  h-[60px] ">
                         Забронировать
                     </div>
                     <div
-                        class="border w-[210px] cursor-pointer ml-[10px]  flex items-center font-bold px-[60px] justify-center border-white text-white l-100 rounded-3xl text-center l-140  text-[16px]  h-[60px] ">
+                        class="border md:w-[210px] cursor-pointer md:ml-[10px] w-full mt-[10px] md:mt-0 flex items-center font-bold px-[60px] justify-center border-white text-white l-100 rounded-3xl text-center l-140  text-[16px]  h-[60px] ">
                         Подробнее
                     </div>
                 </div>
@@ -259,14 +284,14 @@
 
             <div class="bg-blue rounded-3xl flex flex-col items-start md:justify-between h-[640px] md:w-1/2 "
                 style="background: url('assets/card_back_5_page.png') no-repeat center center / cover;">
-                <div class="relative  w-full">
-                    <img class="absolute z-[13] w-[110px] md:w-[130px] left-4  md:left-10 md:top-7 "
+                <div class="relative mt-5 ml-10 w-full">
+                    <img class="absolute z-[13] w-[110px] md:w-[130px]   md:left-10 md:top-7 "
                         src="assets/5_page/Ellipse 22.png" />
-                    <img class="absolute z-[12] w-[110px] md:w-[130px] left-16 top-4 md:left-32 md:top-14 "
+                    <img class="absolute z-[12] w-[110px] md:w-[130px] left-12 top-4 md:left-32 md:top-14 "
                         src="assets/5_page/Ellipse 23.png" />
                 </div>
                 <div
-                    class="md:h-1/2 h-full mt-10 ml-10 text-white flex flex-col items-start mb-10 justify-center md:justify-start">
+                    class="md:h-1/2 h-full mt-10  ml-10 text-white flex flex-col items-start mb-10 justify-center md:justify-start">
                     <h2 class="text-[30px] max-w-[275px] md:max-w-[450px] md:text-[42px] font-semibold">Сформируем для
                         вас индивидуальную экскурсию</h2>
                     <p class="text-[16px] max-w-[290px] md:max-w-[387px] l-140 font-normal mt-6 w-[350px]">
@@ -276,14 +301,15 @@
                         желаниях или местах, которые хотите посетить и мы составим для вас программу</p>
                 </div>
             </div>
-            <div class="md:w-1/2 flex flex-col justify-start relative md:ml-16 p-7 md:p-0 mt-10 md:mt-0 md:h-[640px]">
-                <div class="flex flex-row   absolute h-[150px] top-0  justify-between w-[420px]">
+            <div
+                class="md:w-1/2 flex px-[30px] flex-col justify-start relative md:ml-16 md:p-0 mt-10 md:mt-0 md:h-[640px]">
+                <div class="flex flex-row  w-full h-[100px] md:h-[150px] top-0  justify-between md:w-[420px]">
                     <img class="w-20 h-16 md:w-[120px] md:h-[100px]" src="assets/snorkling.png" />
                     <img class="w-20 h-16 md:w-[120px] md:h-[100px]" src="assets/islands.png" />
                     <img class="w-20 h-16 md:w-[120px] md:h-[100px]" src="assets/fishing.png" />
                 </div>
                 <div
-                    class="max-w-[404px] flex-col text-smm font-semibold l-140 items-left mt-[170px] items-center flex justify-start text-[18px]">
+                    class="max-w-[404px] flex-col text-smm font-semibold l-140 items-left  items-center flex justify-start text-[18px]">
                     Заполните форму ниже. Наш
                     менеджер
                     перезвонит вам,
@@ -297,38 +323,20 @@
                     напишите ваш
                     запрос нам в Telegram </div>
                 <div class=" p-0 flex items-start flex-col mt-5 md:w-[410px] rounded-3xl h-full   ">
-                    <div class="flex items-start flex-col gap-y-2  w-[404px]  h-full ">
+                    <div class="flex items-start flex-col  gap-y-2 w-[280px] md:w-[404px]  h-full ">
                         <div class="flex w-full justify-between h-[60px]  items-center">
                             <input type="text" id="name"
-                                class="form-input placeholder:text-blue-text  p-4 px-10 cursor rounded-3xl block w-full  bg-light-blue  "
+                                class="form-input placeholder:text-blue-text placeholder:text-[18px] placeholder:mb:text-[14px] p-4 px-10 cursor rounded-3xl block w-full  bg-light-blue  "
                                 placeholder="Имя">
                         </div>
-                        <div class="flex w-full relative h-[60px] rounded-3xl bg-light-blue ">
-                            <div class="dropdown ">
-                                <div class="dropdown-selector absolute ml-10 flex items-center top-[19px] gap-x-2"
-                                    onclick="toggleDropdown()">
-                                    <img id="selected-flag" class="m-auto mb-1.5" src="assets/russian_flag.svg"
-                                        alt="Flag" />
-                                    <span id="selected-code">+7</span>
-                                </div>
-                                <ul id="dropdown-options" class="bg-white ml-10 w-full top-[23px]  dropdown-options">
-                                    <li class="" onclick="selectCountry('assets/russian_flag.svg', '+7')">
-                                        <img src="assets/russian_flag.svg" alt="Russian Flag" /> +7
-                                    </li>
-                                    <li class="" onclick="selectCountry('assets/russian_flag.svg', '+7')">
-                                        <img src="assets/russian_flag.svg" alt="Russian Flag" /> +7
-                                    </li>
-                                    <li class="" onclick="selectCountry('assets/russian_flag.svg', '+7')">
-                                        <img src="assets/russian_flag.svg" alt="Russian Flag" /> +7
-                                    </li>
-                                    <li class="" onclick="selectCountry('assets/russian_flag.svg', '+7')">
-                                        <img src="assets/russian_flag.svg" alt="Russian Flag" /> +7
-                                    </li>
-                                </ul>
-                            </div>
+
+
+                        <div
+                            class="flex  md:justify-start justify-start h-[60px] pl-[30px] md:pl-[30px] rounded-3xl items-center bg-light-blue w-[280px] md:w-[404px]">
                             <input type="tel" id="phone"
-                                class="w-full rounded-r-3xl h-[60px] mb-auto bg-transparent ml-4 px-2  block ">
+                                class="w-[300px] outline-none placeholder:text-blue-text rounded-3xl form-input ring-white bg-transparent h-[60px] pl-4   block">
                         </div>
+
 
                         <div class="flex relative w-full items-center">
                             <select id="app"
@@ -344,10 +352,10 @@
                             class="w-full px-4  mt-4 h-[60px] bg-blue text-base font-semibold text-center text-white transition duration-200 ease-in rounded-3xl  ">
                             Создать свой личный тур
                         </button>
-                        <div class="flex max-w-[362px]  items-center">
+                        <div class="flex max-w-[362px] mb-10 items-center">
                             <input id="terms" type="checkbox"
                                 class="form-checkbox h-[32px] w-7 text-indigo-600  transition duration-150 ease-in-out rounded border-gray-300">
-                            <label for="terms" class="ml-3 block text-[12px] mb-10 md:mb-0 text-blue-text"> Нажимая на
+                            <label for="terms" class="ml-3 block text-[12px]  md:mb-0 text-blue-text"> Нажимая на
                                 кнопку, я
                                 соглашаюсь с политикой конфиденциальности сайта</label>
                         </div>
@@ -356,33 +364,37 @@
             </div>
         </div>
         <div
-            class="container w-full mb-20 bg-white p-12 rounded-3xl text-blue-text justify-between mt-10 flex flex-col md:flex-row">
+            class="container w-full mb-20 bg-white px-[30px] md:p-12 rounded-3xl text-blue-text justify-between mt-10 flex flex-col-reverse md:flex-row">
             <div class="flex flex-col justify-start  items-start h-full">
-                <div class="flex flex-col items-start justify-between h-full">
-                    <h2 class="text-[30px] md:text-[42px]  max-w-[450px] font-semibold leading-none">Путешествуйте <br
-                            class="hidden md:flex" />как
+                <div class="flex flex-col items-start justify-start md:justify-between h-full">
+                    <h2
+                        class="text-[30px] mt-[20px] md:mt-0 md:text-[42px] max-w-[280px]  md:max-w-[450px] font-semibold l-100">
+                        Путешествуйте <br class="hidden md:flex" />как
                         профессионалы
                     </h2>
-                    <div class="mt-10 l-140 max-w-[300px] text-grey-text text-[14px] md:text-[16px]">Узнайте из первых
+                    <div class="mt-[30px] md:mt-10 l-140 max-w-[300px] text-grey-text text-[14px] md:text-[16px]">
+                        Узнайте
+                        из первых
                         уст,
                         что ждёт вас в путешествии, и поделитесь собственными мечтами и ожиданиями</div>
                 </div>
                 <div
-                    class="text-[14px] md:text-[16px] max-w-[400px] gap-y-2.5 flex text-blue-text flex-col font-bold mb-auto mt-[30px]">
+                    class="text-[14px] md:text-[16px] max-w-[290px] md:max-w-[400px] gap-y-2.5 flex text-blue-text flex-col font-bold mb-auto mt-[30px]">
                     <div class="flex items-center h-[50px] justify-start ">
                         <img src="assets/photoapparat.svg" class="mr-[20px]" />
-                        ЖИВЫЕ ФОТОГРАФИИИ С ЭКСКУРСИИ
+                        ЖИВЫЕ ФОТОГРАФИИИ <br class="md:hidden" /> С ЭКСКУРСИИ
                     </div>
                     <div class="flex items-center h-[50px] justify-start">
                         <img src="assets/smile.svg" class="mr-[20px]" />
-                        ИСКРЕННИЕ ОТЗЫВЫ ОТ НАШИХ ПУТЕШЕСТВЕННИКОВ
+                        ИСКРЕННИЕ ОТЗЫВЫ <br class="md:hidden" /> ОТ НАШИХ ПУТЕШЕСТВЕННИКОВ
                     </div>
                     <div class="flex items-center h-[50px] justify-start">
                         <img src="assets/like.svg" class="mr-[20px]" />
                         СОВЕТЫ И ВДОХНОВЛЯЮЩИЕ ИСТОРИИ
                     </div>
                 </div>
-                <div class="p-4 bg-blue rounded-3xl mt-[30px] mb-auto cursor-pointer text-white px-10 font-medium">
+                <div
+                    class="p-4 w-full md:w-fit text-center mb-[50px] md:mb-0 bg-blue rounded-3xl mt-[30px]  cursor-pointer text-white px-10 font-medium">
                     Перейти в
                     телеграмм</div>
             </div>
@@ -390,7 +402,25 @@
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@21.2.4/build/js/intlTelInput.min.js"></script>
+    <script>
+        const input = document.querySelector("#phone");
+        window.intlTelInput(input, {
+            utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@21.2.4/build/js/utils.js",
+        });
+    </script>
+    <script>
+        function toggleDropdown() {
+            var options = document.getElementById("dropdown-options");
+            options.style.display = options.style.display === "block" ? "none" : "block";
+        }
 
+        function selectCountry(flagPath, countryCode) {
+            document.getElementById("selected-flag").src = flagPath;
+            document.getElementById("selected-code").textContent = countryCode;
+            toggleDropdown();
+        }
+    </script>
     <script>
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 1,

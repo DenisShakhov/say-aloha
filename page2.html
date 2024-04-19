@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -94,18 +94,18 @@
                         <!-- ... other slides ... -->
                     </div>
                 </div>
-                <div thumbsSlider="" class="swiper mt-5 flex mySwiper">
+                <div thumbsSlider="" class="swiper mt-[10px] md:mt-5 flex mySwiper">
                     <div class="swiper-wrapper rounded-[5px]">
                         <div class="swiper-slide rounded-[30px]">
-                            <img class="rounded-[10px]" src="assets/scroll_3_image.png" />
+                            <img class="md:rounded-[10px] rounded-[5px]" src="assets/scroll_3_image.png" />
 
                         </div>
                         <div class="swiper-slide rounded-[30px]">
-                            <img class="rounded-[10px]" src="assets/scroll_3_image.png" />
+                            <img class="md:rounded-[10px] rounded-[5px]" src="assets/scroll_3_image.png" />
 
                         </div>
                         <div class="swiper-slide rounded-[30px]">
-                            <img class="rounded-[10px]" src="assets/scroll_3_image.png" />
+                            <img class="md:rounded-[10px] rounded-[5px]" src="assets/scroll_3_image.png" />
 
                         </div>
                     </div>
@@ -163,7 +163,7 @@
                 </div>
             </div>
         </div>
-        <div class="mt-[30px] rounded-xl bg-white md:h-[100px] flex items-center justify-between">
+        <div class="mt-[30px] hidden rounded-xl bg-white md:h-[100px] md:flex items-center justify-between">
             <div
                 class="bg-light-blue text-blue-text flex items-center justify-between px-[25px] rounded-3xl w-[250px] ml-[30px] h-[60px]">
                 <div class="text-[14px]">20.04.24-28.04.24</div>
@@ -187,18 +187,50 @@
                 <h4 class=" text-[12px]">Полная отмена в течение 24 часов</h4>
             </div>
         </div>
-        <div class="mt-[30px] flex gap-x-[35px] items-center justify-between">
-            <div class="flex w-[220px] items-center justify-between">
-                <div class="bg-blue font-bold text-[16px] md:py-[10px] rounded-full md:px-[17px] text-white">1</div>
-                <div>Выберите экскурсию </div>
+        <div class="mt-[30px] relative z-50 flex gap-x-[35px] items-center justify-between">
+            <img class="absolute top-0 -z-10 md:hidden w-full" src="assets/dotted_line.svg" />
+            <div
+                class="flex flex-col md:flex-row w-[250px] items-start justify-start md:items-center md:justify-between">
+                <div
+                    class="bg-blue px-[12px] py-[4px] font-bold mr-auto text-[16px] md:py-[10px] rounded-full md:px-[17px] text-white">
+                    1
+                </div>
+                <div class="flex items-end mt-[10px] md:mt-[0px] md:items-center justify-end md:justify-center">
+                    <div
+                        class="w-[64px] text-blue-text  md:w-full text-[12px] md:text-[16px] md:font-medium mt-auto font-bold">
+                        Выберите
+                        экскурсию </div>
+
+                </div>
             </div>
-            <div class="flex w-[250px] items-center justify-between">
-                <div class="bg-blue font-bold text-[16px] md:py-[10px] rounded-full md:px-[17px] text-white">2</div>
-                <div class="flex">Забронируйте место <img src="assets/inform.svg " class="ml-[10px]" /></div>
+            <div
+                class="flex flex-col md:flex-row w-[250px] items-start justify-start md:items-center md:justify-between">
+                <div
+                    class="bg-blue px-[12px] py-[4px] font-bold mx-auto text-[16px] md:py-[10px] rounded-full md:px-[17px] text-white">
+                    2
+                </div>
+                <div class="flex items-end mt-[10px] md:mt-[0px] md:items-center justify-end md:justify-center">
+                    <div
+                        class="w-[64px] text-blue-text  md:w-full text-[12px] md:text-[16px] md:font-medium mt-auto font-bold">
+                        Забронируйте место </div>
+                    <img src="assets/inform.svg "
+                        class="h-[8px] mb-1 md:mb-0 w-[8px] md:h-[16px] md:w-[16px] md:ml-[10px]" />
+                </div>
             </div>
-            <div class="flex w-[250px] items-center justify-between">
-                <div class="bg-blue font-bold text-[16px] md:py-[10px] rounded-full md:px-[17px] text-white">3</div>
-                <div class="flex">Оплатите безопасно <img src="assets/inform.svg " class="ml-[10px]" /></div>
+            <div
+                class="flex flex-col md:flex-row w-[250px] items-start justify-start md:items-center md:justify-between">
+                <div
+                    class="bg-blue px-[12px] py-[4px] font-bold ml-auto mr-1 md:mr-0 text-[16px] md:py-[10px] rounded-full md:px-[17px] text-white">
+                    3
+                </div>
+                <div class="flex items-end mt-[10px] md:mt-[0px] md:items-center justify-end md:justify-center">
+                    <div
+                        class="w-[64px] text-blue-text md:ml-2 md:w-full text-[12px] md:text-[16px] md:font-medium mt-auto font-bold">
+                        Оплатите
+                        безопасно</div>
+                    <img src="assets/inform.svg "
+                        class="h-[8px] mb-1 md:mb-0 w-[8px] ml-2 md:h-[16px] md:w-[16px] md:ml-[10px]" />
+                </div>
             </div>
             <div class="md:flex hidden w-[280px] items-center justify-between">
                 <div class="bg-blue font-bold text-[16px] py-[10px] rounded-full px-[17px] text-white">4</div>
@@ -335,12 +367,12 @@
                 </div>
             </div>
         </div>
-        <div class="mb-10 md:w-2/3 mt-[65px]">
+        <div class="mb-10 md:w-2/3 mt-[50px] md:mt-[65px]">
             <h2 class="l-100 text-[42px] font-semibold text-blue-text">Что включено:</h2>
             <div
                 class="mt-[50px] flex flex-col md:flex-row gap-x-[37px] items-start gap-y-5 md:gap-y-0 md:items-center justify-stretch">
                 <div
-                    class=" rounded-3xl h-[344px] flex flex-col w-[365px] items-start justify-start px-[30px] bg-white">
+                    class=" rounded-3xl h-[344px] flex flex-col w-[340px] md:w-[365px] items-start justify-start px-[30px] bg-white">
                     <img class="ml-auto mt-10 w-[45px] h-[45px]" src="assets/shield.svg" />
                     <div class=" text-xl mt-[16px] text-blue-text uppercase text-[16px] md:text-[20px] font-extrabold">
                         Лицензия <br class="hidden md:flex" />и Безопасность</div>
@@ -349,7 +381,7 @@
                         путешествие</div>
                 </div>
                 <div
-                    class=" rounded-3xl h-[344px] flex flex-col w-[365px] items-start justify-start px-[30px]  bg-white">
+                    class=" rounded-3xl h-[344px] flex flex-col w-[340px] md:w-[365px] items-start justify-start px-[30px]  bg-white">
                     <img class="ml-auto mt-10 w-[45px] h-[45px]" src="assets/swimming_kit.svg" />
                     <div class=" text-xl mt-[16px] text-blue-text uppercase text-[16px] md:text-[20px] font-extrabold">
                         Удобства на борту</div>
@@ -359,7 +391,7 @@
                 </div>
             </div>
             <div
-                class="mt-[50px] flex flex-col md:flex-row gap-x-[20px] items-center py-[30px] md:py-0 rounded-3xl justify-stretch bg-white">
+                class="mt-[20px] md:mt-[50px] flex flex-col md:flex-row gap-x-[20px] items-center py-[30px] md:py-0 rounded-3xl justify-stretch bg-white">
                 <div
                     class=" rounded-3xl md:mb-auto  flex flex-col w-[365px] items-start justify-start px-[30px] md:p-[30px] ">
 

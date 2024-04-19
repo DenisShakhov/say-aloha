@@ -1,4 +1,4 @@
-/* styles.css */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -145,22 +145,28 @@ z-index: 1; /* Убедитесь, что изображение под град
 
 
 @media (max-width: 768px) {
-    .absolute {
-        font-size: 1.875rem; /* Larger font size for larger screens */
-        padding: 1rem; /* Larger padding for larger screens */
-        width: 3/4; /* Specific width for larger screens */
+    
+    .dropdown{
+        width: 100px;
     }
     .slide {
         height: 400px;
+    }
+    .swiper-slide{
+        height: 100%
     }
     .prev, .next, .prev_2, .next_2 {
         width: 50px; /* Larger buttons for larger screens */
         height: 50px; /* Larger buttons for larger screens */
     }
 }
+
+
+    
+
 .swiper {
     width: 100%;
-    height: 100%;
+    height: 600px;
   }
 
   .swiper-slide {
@@ -183,7 +189,7 @@ z-index: 1; /* Убедитесь, что изображение под град
 
 .dropdown {
   position: relative;
-  width: 100px;
+  width: 76px;
 }
 
 .dropdown-selector {
@@ -228,4 +234,11 @@ z-index: 1; /* Убедитесь, что изображение под град
     left: 0;
     right: 0;
     text-align: center; /* Центрирование точек */
+}
+.intl-tel-input {
+    width: 100%;
+}
+
+.intl-tel-input .form-control {
+    width: 100%;
 }
