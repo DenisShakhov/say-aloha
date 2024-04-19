@@ -69,49 +69,44 @@
             </div>
         </nav>
         <div class="flex text-[12px] flex-wrap mt-20 text-grey-text items-center gap-x-2 justify-start w-full">
-            <span class=" opacity-50">Главная</span>
-            <img class="w-4 h-4" src="assets/arrow_right_2.svg" />
+            <span class="opacity-50">Главная</span>
+            <img class="w-4 h-4 opacity-50" src="assets/arrow_right_2.svg" />
             <span class=" opacity-50">Все экскурсии</span>
-            <img class="w-4 h-4" src="assets/arrow_right_2.svg" />
+            <img class="w-4 h-4 opacity-50" src="assets/arrow_right_2.svg" />
             <span class=" opacity-50">Групповые</span>
             <img class="w-4 h-4 opacity-100" src="assets/arrow_right_2.svg" />
             <span>Морской национальный парк «Святая Анна»</span>
         </div>
         <div class="flex flex-col mt-[30px] md:flex-row justify-between">
-            <div class="w-full md:w-1/2 flex flex-col">
-                <div class="swiper-container h-full rounded-3xl gallery-swiper ">
+            <div class="w-full  md:w-1/2 flex flex-col">
+                <div class="swiper-container relative h-full rounded-3xl gallery-swiper">
+                    <!-- Add Navigation Arrows -->
+                    <div class="hidden md:absolute top-1/2 left-2 prev z-50"><img src="assets/arrow_right_white_bg.svg"
+                            class=" rotate-180" /></div>
+                    <div class="hidden md:absolute top-1/2 right-2 next z-50"><img
+                            src="assets/arrow_right_white_bg.svg" /></div>
                     <!-- Wrapper for slides -->
-                    <div class="swiper-wrapper  ">
+                    <div class="swiper-wrapper">
                         <!-- Slide -->
                         <div class="swiper-slide"><img src="assets/scroll_3_image.png" alt="Image 1" /></div>
                         <div class="swiper-slide"><img src="assets/scroll_3_image.png" alt="Image 2" /></div>
                         <div class="swiper-slide"><img src="assets/scroll_3_image.png" alt="Image 3" /></div>
-                        <!-- ... другие слайды ... -->
-                        <div class="swiper-slide"><img src="assets/scroll_3_image.png" alt="Image 1" /></div>
-                        <div class="swiper-slide"><img src="assets/scroll_3_image.png" alt="Image 2" /></div>
-                        <div class="swiper-slide"><img src="assets/scroll_3_image.png" alt="Image 3" /></div>
+                        <!-- ... other slides ... -->
                     </div>
-
                 </div>
-                <div thumbsSlider="" class="swiper mt-5  flex mySwiper">
+                <div thumbsSlider="" class="swiper mt-5 flex mySwiper">
                     <div class="swiper-wrapper rounded-[5px]">
                         <div class="swiper-slide rounded-[30px]">
                             <img class="rounded-[10px]" src="assets/scroll_3_image.png" />
+
                         </div>
                         <div class="swiper-slide rounded-[30px]">
                             <img class="rounded-[10px]" src="assets/scroll_3_image.png" />
+
                         </div>
                         <div class="swiper-slide rounded-[30px]">
                             <img class="rounded-[10px]" src="assets/scroll_3_image.png" />
-                        </div>
-                        <div class="swiper-slide rounded-[30px]">
-                            <img class="rounded-[10px]" src="assets/scroll_3_image.png" />
-                        </div>
-                        <div class="swiper-slide rounded-[30px]">
-                            <img class="rounded-[10px]" src="assets/scroll_3_image.png" />
-                        </div>
-                        <div class="swiper-slide rounded-[30px]">
-                            <img class="rounded-[10px]" src="assets/scroll_3_image.png" />
+
                         </div>
                     </div>
                 </div>
@@ -346,23 +341,21 @@
                 class="mt-[50px] flex flex-col md:flex-row gap-x-[37px] items-start gap-y-5 md:gap-y-0 md:items-center justify-stretch">
                 <div
                     class=" rounded-3xl h-[344px] flex flex-col w-[365px] items-start justify-start px-[30px] bg-white">
-                    <img class="ml-auto mt-10 w-[60px] h-[60px]" src="assets/shield.svg" />
+                    <img class="ml-auto mt-10 w-[45px] h-[45px]" src="assets/shield.svg" />
                     <div class=" text-xl mt-[16px] text-blue-text uppercase text-[16px] md:text-[20px] font-extrabold">
                         Лицензия <br class="hidden md:flex" />и Безопасность</div>
                     <div class="mt-[16px] mb-10 text-blue-text text-[14px] md:text-[16px]">Наши лодки обладают лицензией
                         на перевозку 20 пассажиров и 3 членов экипажа, что гарантирует вам безопасное и комфортное
                         путешествие</div>
                 </div>
-                <div class=" rounded-3xl  flex flex-col w-[365px] items-start justify-start px-[30px]  bg-white">
-                    <img class="ml-auto mt-10 w-[60px] h-[60px]" src="assets/swimming_kit.svg" />
+                <div
+                    class=" rounded-3xl h-[344px] flex flex-col w-[365px] items-start justify-start px-[30px]  bg-white">
+                    <img class="ml-auto mt-10 w-[45px] h-[45px]" src="assets/swimming_kit.svg" />
                     <div class=" text-xl mt-[16px] text-blue-text uppercase text-[16px] md:text-[20px] font-extrabold">
-                        Индивидуальный
-                        подход</div>
-                    <div class="mt-[16px] mb-10 text-blue-text text-[14px] md:text-[16px]">Мы создаём незабываемый
-                        отдых,
-                        подстраиваясь под ваши предпочтения. От инстаграм-достопримечательностей до удивительных пляжей
-                        и
-                        потрясающих закатов</div>
+                        Удобства на борту</div>
+                    <div class="mt-[16px] mb-10 text-blue-text text-[14px] md:text-[16px]">На борту вы получите
+                        прохладительные напитки, маски и ласты подходящего размера, а также несколько кусочков хлеба для
+                        кормления рыб</div>
                 </div>
             </div>
             <div
@@ -404,8 +397,8 @@
         var swiper2 = new Swiper(".mySwiper2", {
             spaceBetween: 10,
             navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
+                nextEl: ".next",
+                prevEl: ".prev",
             },
             thumbs: {
                 swiper: swiper,
@@ -424,8 +417,8 @@
             var gallerySwiper = new Swiper(".gallery-swiper", {
                 spaceBetween: 10,
                 navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
+                    nextEl: ".next",
+                    prevEl: ".prev",
                 },
                 thumbs: {
                     swiper: thumbsSwiper
