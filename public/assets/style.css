@@ -152,6 +152,9 @@ z-index: 1; /* Убедитесь, что изображение под град
     .slide {
         height: 400px;
     }
+    .swiper_last_index{
+        height: 250px;
+    }
     .swiper-slide{
         height: 100%
     }
@@ -161,13 +164,14 @@ z-index: 1; /* Убедитесь, что изображение под град
     }
 }
 
-
-    
-
 .swiper {
     width: 100%;
     height: 600px;
   }
+.swiper_2 {
+    width: 100%;
+    height: 350px;
+}
 
   .swiper-slide {
     text-align: center;
@@ -242,3 +246,59 @@ z-index: 1; /* Убедитесь, что изображение под град
 .intl-tel-input .form-control {
     width: 100%;
 }
+
+
+
+.steps-container {
+    position: relative;
+    padding: 20px; /* Добавьте отступы вокруг, если необходимо */
+  }
+  
+  /* Стили для номера шага */
+  .number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Размеры и отступы могут быть адаптированы */
+  }
+  
+  /* Стили для текста шага */
+  .text {
+    /* Добавьте необходимые отступы или другие стили текста */
+  }
+  
+  /* Для десктопной версии отображаем все в ряд */
+  @media screen and (min-width: 768px) {
+    .steps-container {
+      flex-direction: row;
+    }
+  
+    .step {
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .step:not(:last-child)::after {
+      content: '';
+      background: url('assets/dotted_line.svg') center/contain no-repeat;
+      height: 10px;
+      flex-grow: 1;
+      margin-left: 20px; /* Отступ слева от номера до линии */
+    }
+  }
+  
+  /* Стили для мобильной версии (все элементы идут один за другим) */
+  @media screen and (max-width: 767px) {
+    .steps-container {
+      flex-direction: column;
+    }
+  
+    .step:not(:last-child)::after {
+      content: '';
+      background: url('assets/dotted_line_vertical.svg') center/contain no-repeat;
+      width: 10px;
+      height: 20px; /* Высота может быть изменена в зависимости от необходимого расстояния между шагами */
+      align-self: center;
+      margin-top: 20px; /* Отступ сверху от шага до линии */
+    }
+  }
