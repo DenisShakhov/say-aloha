@@ -15,6 +15,7 @@ module.exports = {
       container: {
         screens:{
           '2xl': '1160px',
+          'md:': '800px'
         }
       },
       borderRadius: {

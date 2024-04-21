@@ -15,14 +15,14 @@
 
 <body>
 
-    <div class="container px-[25px] mx-auto md:px-0 flex flex-col">
-        <nav class="hidden  pt-4  md:flex md:items-center md:justify-between">
+    <div class="px-[25px] container mx-auto xl:px-0">
+        <nav class="hidden  pt-4  xl:flex xl:items-center xl:justify-between">
             <div class="flex justify-between items-center">
                 <a href="index.html" class="flex items-center  max-w-[120px] leading-none">
                     <img src="assets/logo.svg" alt="Logo" class="h-12 w-12 ">
                     <h2 class="font-bold p-0.5 text-blue text-[20px] ml-2">SEY ALOHA</h2>
                 </a>
-                <div class="md:hidden">
+                <div class="xl:hidden">
                     <!-- Mobile menu button -->
                     <button type="button"
                         class="text-blue-500 hover:text-blue-600 focus:outline-none focus:text-blue-600">
@@ -32,7 +32,7 @@
             </div>
 
             <!-- Links section -->
-            <div class="hidden md:flex mt-2 bg-white px-11 py-4 ml-5 rounded-3xl text-[14px] md:mt-0 space-x-2">
+            <div class="hidden xl:flex mt-2 bg-white px-11 py-4 ml-5 rounded-3xl text-[14px] xl:mt-0 space-x-2">
                 <a href="page2.html" class="text-blue-text">Экскурсии</a>
                 <img src="assets/dot.svg" />
                 <a href="#" class="text-blue-text">Рыбалка</a>
@@ -58,7 +58,7 @@
                 </button>
             </div>
             <!-- Icons and additional options -->
-            <div class="hidden md:flex items-center space-x-5">
+            <div class="hidden xl:flex items-center space-x-5">
 
                 <a href="#"
                     class="text-blue-text flex items-center font-bold text-[16px]  gap-x-2 justify-center">En<img
@@ -77,13 +77,13 @@
             <img class="w-4 h-4 opacity-100" src="assets/arrow_right_2.svg" />
             <span>Морской национальный парк «Святая Анна»</span>
         </div>
-        <div class="flex flex-col mt-[30px] md:flex-row justify-between">
-            <div class="w-full  md:w-1/2 flex flex-col">
+        <div class="flex flex-col mt-[30px] xl:flex-row justify-between">
+            <div class="w-full  xl:w-1/2 flex flex-col">
                 <div class="swiper-container relative h-full rounded-3xl gallery-swiper">
                     <!-- Add Navigation Arrows -->
-                    <div class="hidden md:absolute top-1/2 left-2 prev z-50"><img src="assets/arrow_right_white_bg.svg"
+                    <div class="hidden xl:absolute top-1/2 left-2 prev z-50"><img src="assets/arrow_right_white_bg.svg"
                             class=" rotate-180" /></div>
-                    <div class="hidden md:absolute top-1/2 right-2 next z-50"><img
+                    <div class="hidden xl:absolute top-1/2 right-2 next z-50"><img
                             src="assets/arrow_right_white_bg.svg" /></div>
                     <!-- Wrapper for slides -->
                     <div class="swiper-wrapper">
@@ -93,28 +93,35 @@
                         <div class="swiper-slide"><img src="assets/scroll_3_image.png" alt="Image 3" /></div>
                         <!-- ... other slides ... -->
                     </div>
+                    <button class="prev_2 left-1 xl:left-5 z-50  top-1/2 w-15 h-15">
+
+                        <img src="assets/Arrow left.svg" class="" /></button>
+                    <button class="next_2 right-1 xl:right-5 z-50 top-1/2 w-15 h-15">
+
+                        <img src="assets/Arrow right.svg" class="" /></button>
                 </div>
-                <div thumbsSlider="" class="swiper mt-[10px] md:mt-5 flex mySwiper">
+                <div thumbsSlider="" class="swiper mt-[10px] xl:mt-5 flex mySwiper">
                     <div class="swiper-wrapper rounded-[5px]">
                         <div class="swiper-slide rounded-[30px]">
-                            <img class="md:rounded-[10px] rounded-[5px]" src="assets/scroll_3_image.png" />
+                            <img class="xl:rounded-[10px] rounded-[5px]" src="assets/scroll_3_image.png" />
 
                         </div>
                         <div class="swiper-slide rounded-[30px]">
-                            <img class="md:rounded-[10px] rounded-[5px]" src="assets/scroll_3_image.png" />
+                            <img class="xl:rounded-[10px] rounded-[5px]" src="assets/scroll_3_image.png" />
 
                         </div>
                         <div class="swiper-slide rounded-[30px]">
-                            <img class="md:rounded-[10px] rounded-[5px]" src="assets/scroll_3_image.png" />
+                            <img class="xl:rounded-[10px] rounded-[5px]" src="assets/scroll_3_image.png" />
 
                         </div>
                     </div>
                 </div>
+
             </div>
 
-            <div class="w-full md:w-1/2 flex flex-col items-start md:pl-24  justify-start text-blue-text">
+            <div class="w-full xl:w-1/2 flex flex-col items-start xl:pl-24  justify-start text-blue-text">
                 <div class="w-full max-w-[500px] flex flex-col">
-                    <h2 class="l-100 font-bold  text-left mt-[30px] md:mt-0 max-w-[500px] text-[30px] md:text-[42px]">
+                    <h2 class="l-100 font-bold  text-left mt-[30px] xl:mt-0 max-w-[500px] text-[30px] md:text-[42px]">
                         Водная экскурсия
                         в морской
                         национальный парк
@@ -127,7 +134,7 @@
                         парк Святой Анны, где вас ждут кристально чистые воды, знакомство с местными обитателями
                         и незабываемые моменты сноркелинга.</div>
                 </div>
-                <div class="mt-[30px] flex flex-col items-start justify-start text-blue-text">
+                <div class="mt-[30px] flex flex-col md:text-[16px] items-start justify-start text-blue-text">
                     <div class="flex w-fit items-start justify-start gap-x-2">
                         <img src="assets/clock.svg" class="w-[24px] h-[24px]" />
                         <div class=" text-[16px] mr-auto font-bold">Время маршрута:</div>
@@ -163,81 +170,96 @@
                 </div>
             </div>
         </div>
-        <div class="mt-[30px] hidden rounded-xl bg-white md:h-[100px] md:flex items-center justify-between">
+        <div
+            class=" mt-[30px] hidden  flex-wrap md:gap-x-[0px] xl:gap-x-0 rounded-xl px-[10px] bg-white md:h-[190px] xl:h-[100px] md:flex items-center justify-between">
             <div
-                class="bg-light-blue text-blue-text flex items-center justify-between px-[25px] rounded-3xl w-[250px] ml-[30px] h-[60px]">
+                class="bg-light-blue text-blue-text flex items-center justify-between px-[25px] rounded-3xl w-[240px] xl:ml-[30px] h-[60px]">
                 <div class="text-[14px]">20.04.24-28.04.24</div>
                 <img src="assets/arrow_down.svg" />
             </div>
             <div
-                class="bg-light-blue text-blue-text flex items-center justify-between px-[25px] rounded-3xl w-[250px]  h-[60px]">
+                class="bg-light-blue text-blue-text flex items-center justify-between px-[25px] rounded-3xl w-[240px]  h-[60px]">
                 <div class="text-[14px]">2 взрослых</div>
                 <img src="assets/arrow_down.svg" />
             </div>
-            <div class="flex flex-col items-start justify-start">
+            <div
+                class="bg-blue flex  items-center cursor-pointer justify-center text-white font-bold px-[25px] rounded-3xl w-[240px]  h-[60px]">
+                <div class="text-[16px]">Забронировать</div>
+            </div>
+            <div
+                class="xl:hidden max-w-[140px] flex md:text-[12px] md:max-w-[211px] text-blue-text flex-col items-start justify-start">
+                <div class="text-[12px]">Предоплата - 10 €</div>
+                <h4 class=" text-[12px]">Полная отмена в течение 24 часов</h4>
+            </div>
+            <div class="flex flex-col items-start md:mr-[115px] xl:mr-0 justify-start">
                 <div class="text-[12px]">Итоговая стоимость:</div>
                 <h4 class="l-140 font-semibold text-[24px]">160 €</h4>
             </div>
             <div
-                class="bg-blue flex items-center cursor-pointer justify-center text-white font-bold px-[25px] rounded-3xl w-[250px]  h-[60px]">
+                class="bg-blue flex md:hidden items-center cursor-pointer justify-center text-white font-bold px-[25px] rounded-3xl w-[240px]  h-[60px]">
                 <div class="text-[16px]">Забронировать</div>
             </div>
-            <div class="flex max-w-[140px] text-blue-text flex-col items-start justify-start">
+            <div class="xl:flex max-w-[140px] hidden  text-blue-text flex-col items-start justify-start">
                 <div class="text-[12px]">Предоплата - 10 €</div>
                 <h4 class=" text-[12px]">Полная отмена в течение 24 часов</h4>
             </div>
         </div>
-        <div class="mt-[30px] relative z-50 flex gap-x-[35px] items-center justify-between">
+        <div
+            class="mt-[30px] gap-y-[10px] xl:gap-y-0 relative z-50 flex md:flex-wrap xl:flex-nowrap gap-x-[35px] items-center md:items-start md:justify-start xl:items-center xl:justify-between">
             <img class="absolute top-[20%] -z-10 md:hidden w-full" src="assets/dotted_line.svg" />
             <div
-                class="flex flex-col md:flex-row w-[250px] items-start justify-start md:items-center md:justify-between">
+                class="flex flex-col md:flex-row w-[252px] items-start md:items-center justify-start xl:justify-between">
                 <div
-                    class="bg-blue px-[12px] py-[4px] font-bold mr-auto text-[16px] md:py-[10px] rounded-full md:px-[17px] text-white">
+                    class="bg-blue px-[12px] py-[4px] font-bold   xl:ml-auto  md:mr-0 text-[16px] md:py-[10px] rounded-full md:px-[17px] text-white">
                     1
                 </div>
                 <div class="flex items-end mt-[10px] md:mt-[0px] md:items-center justify-end md:justify-center">
                     <div
-                        class="w-[64px] text-blue-text  md:w-full text-[12px] md:text-[16px] md:font-medium mt-auto font-bold">
+                        class="w-[64px] text-blue-text md:ml-[20px] md:w-full text-[12px] md:text-[16px] md:font-medium mt-auto font-bold">
                         Выберите
                         экскурсию </div>
 
                 </div>
             </div>
             <div
-                class="flex flex-col md:flex-row w-[250px] items-start justify-start md:items-center md:justify-between">
+                class="flex flex-col md:flex-row w-[252px] items-start md:items-center justify-start xl:justify-between">
                 <div
-                    class="bg-blue px-[12px] py-[4px] font-bold mx-auto text-[16px] md:py-[10px] rounded-full md:px-[17px] text-white">
+                    class="bg-blue px-[12px] py-[4px] font-bold mx-auto   text-[16px] md:py-[10px] rounded-full md:px-[17px] text-white">
                     2
                 </div>
                 <div class="flex items-end mt-[10px] md:mt-[0px] md:items-center justify-end md:justify-center">
                     <span
-                        class="w-[64px] text-blue-text  md:w-full text-[12px] md:text-[16px] md:font-medium mt-auto font-bold">
+                        class="w-[64px] text-blue-text md:ml-[20px] md:w-full text-[12px] md:text-[16px] md:font-medium mt-auto font-bold">
                         Забронируйте место </span>
                     <img src="assets/inform.svg "
                         class="h-[8px] mb-1 md:mb-0 w-[8px]  md:h-[16px] md:w-[16px] md:ml-[10px]" />
                 </div>
             </div>
             <div
-                class="flex flex-col md:flex-row w-[250px] items-start justify-start md:items-center md:justify-between">
+                class="flex flex-col md:flex-row w-[252px] items-start md:items-center justify-start xl:justify-between">
                 <div
-                    class="bg-blue px-[12px] py-[4px] font-bold ml-auto mr-1 md:mr-0 text-[16px] md:py-[10px] rounded-full md:px-[17px] text-white">
+                    class="bg-blue px-[12px] py-[4px] font-bold ml-auto md:ml-0 xl:ml-auto mr-1 md:mr-0 text-[16px] md:py-[10px] rounded-full md:px-[17px] text-white">
                     3
                 </div>
                 <div class="flex items-end mt-[10px] md:mt-[0px] md:items-center justify-end md:justify-center">
                     <div
-                        class="w-[64px] text-blue-text md:ml-2 md:w-full text-[12px] md:text-[16px] md:font-medium mt-auto font-bold">
+                        class="w-[64px] text-blue-text md:ml-[20px] md:w-full text-[12px] md:text-[16px] md:font-medium mt-auto font-bold">
                         Оплатите
                         безопасно</div>
                     <img src="assets/inform.svg "
                         class="h-[8px] mb-1 md:mb-0 w-[8px] ml-2 md:h-[16px] md:w-[16px] md:ml-[10px]" />
                 </div>
             </div>
-            <div class="md:flex hidden w-[280px] items-center justify-between">
-                <div class="bg-blue font-bold text-[16px] py-[10px] rounded-full px-[17px] text-white">4</div>
-                <div>Ожидайте звонка менеджера </div>
+            <div class="md:flex hidden w-[300px] items-center justify-start md:justify-center xl:justify-between">
+                <div
+                    class="bg-blue px-[12px] py-[4px] font-bold ml-auto md:ml-0 xl:ml-auto mr-1 md:mr-0 text-[16px] md:py-[10px] rounded-full md:px-[17px] text-white">
+                    4</div>
+                <div class="w-[64px] text-blue-text md:ml-[20px] md:mt-0 md:w-full text-[12px] md:text-[16px] md:font-medium
+                     font-bold">Ожидайте звонка менеджера
+                </div>
             </div>
         </div>
-        <div class="mt-20 hidden md:flex">
+        <div class="mt-20 hidden xl:flex">
             <div class="w-fit gap-x-[10px] flex  items-center justify-between">
                 <div
                     class="bg-blue l-100 flex items-center justify-center rounded-3xl text-center text-white w-[150px] text-[16px] font-bold h-[50px] p-2">
@@ -258,27 +280,28 @@
                 </div>
             </div>
         </div>
-        <div class="mt-12 h-full flex md:gap-x-[50px] items-start justify-between">
-            <div class="w-full md:w-2/3 flex flex-col items-start justify-start">
-                <h2 class="text-blue-text text-[42px] font-semibold">Программа экскурсии:</h2>
-                <div class="flex flex-col md:flex-row w-full mt-[30px] md:mt-[50px] items-start justify-between">
-                    <div class="flex flex-col w-full items-start justify-center">
+        <div class="mt-12 h-full flex xl:gap-x-[50px] items-start justify-between">
+            <div class="w-full xl:w-2/3   flex flex-col items-start justify-start">
+                <h2 class="text-blue-text text-[30px] xl:text-[42px] font-semibold">Программа экскурсии:</h2>
+                <div
+                    class="flex flex-col  md:flex-row w-full mt-[30px] xl:items-start xl:mt-[50px] items-start justify-between">
+                    <div class="flex flex-col  w-full md:w-1/2 items-start justify-center">
                         <div
                             class="border bg-white flex items-center font-bold px-[28px] justify-center border-blue-text text-blue-text  rounded-3xl text-center md:l-140  text-[16px]  h-[50px] ">
                             Отправление на о. Святой Анны
                         </div>
-                        <div class="mt-5 text-grey-text max-w-[320px]">Отправляемся из Маэ в захватывающее приключение
+                        <div class="mt-5  text-grey-text max-w-[320px]">Отправляемся из Маэ в захватывающее приключение
                             на остров
                             Святой Анны всего за
                             10 минут
                             быстрым трансфером до морского заповедника</div>
                     </div>
-                    <img src="assets/swimming_women.png" class="w-full mt-5 md:mt-0 md:w-fit ml-auto" />
+                    <img src="assets/swimming_women.png" class="w-full xl:w-fit md:w-1/2 mt-5 md:mt-0  " />
                 </div>
                 <div
                     class="flex flex-col-reverse md:flex-row w-full mt-[30px] md:mt-[50px] items-start justify-between">
-                    <img src="assets/swimming_women.png" class="w-full mt-5 md:mt-0 md:w-fit mr-auto" />
-                    <div class="flex flex-col items-start justify-start">
+                    <img src="assets/swimming_women.png" class="w-full xl:w-fit md:w-1/2 mt-5 md:mt-0  " />
+                    <div class="flex flex-col md:ml-10 xl:ml-20 w-full md:w-1/2 items-start justify-center">
                         <div
                             class="border bg-white flex items-center font-bold px-[28px] justify-center border-blue-text text-blue-text  rounded-3xl text-center md:l-140  text-[16px]  h-[50px] ">
                             Знакомство с подводным миром
@@ -288,24 +311,24 @@
                     </div>
 
                 </div>
-                <div class="flex flex-col md:flex-row w-full mt-[30px] md:mt-[50px] items-start justify-between">
-                    <div class="flex flex-col items-start justify-start">
+                <div class="flex flex-col md:flex-row w-full mt-[30px] xl:mt-[50px] items-start justify-between">
+                    <div class="flex flex-col w-full md:w-1/2 items-start xl:items-start justify-center">
                         <div
-                            class="border bg-white mt-5 flex items-center font-bold px-[28px] justify-center border-blue-text text-blue-text  rounded-3xl text-center md:l-140  text-[16px]  h-[50px] ">
+                            class="border bg-white flex items-center font-bold px-[28px] justify-center border-blue-text text-blue-text  rounded-3xl text-center md:l-140  text-[16px]  h-[50px] ">
                             Первая сессия снорклинга
                         </div>
-                        <div class="mt-5 text-grey-text max-w-[320px]">Затем мы отправимся на первую сессию снорклинга,
+                        <div class="mt-5  text-grey-text max-w-[320px]">Затем мы отправимся на первую сессию снорклинга,
                             подготовившись к водным приключениям. Маски и ласты, спасательные жилеты предоставляются
                             перед началом водной прогулки.</div>
                     </div>
-                    <img src="assets/swimming_women.png" class="w-full mt-5 md:mt-0 md:w-fit ml-auto" />
+                    <img src="assets/swimming_women.png" class="w-full xl:w-fit md:w-1/2 mt-5 md:mt-0  " />
                 </div>
                 <div
-                    class="flex  flex-col-reverse md:flex-row w-full mt-[30px] md:mt-[50px] items-start justify-between">
-                    <img src="assets/swimming_women.png" class="w-full mt-5 md:mt-0 md:w-fit mr-auto" />
-                    <div class="flex flex-col items-start justify-start">
+                    class="flex flex-col-reverse md:flex-row w-full mt-[30px] md:mt-[50px] items-start justify-between">
+                    <img src="assets/swimming_women.png" class="w-full xl:w-fit md:w-1/2 mt-5 md:mt-0  " />
+                    <div class="flex flex-col md:ml-10 xl:ml-20 w-full md:w-1/2 items-start justify-center">
                         <div
-                            class="border bg-white flex items-center font-bold px-[28px] justify-center border-blue-text text-blue-text rounded-3xl text-center md:l-140  text-[16px]  h-[50px] ">
+                            class="border bg-white flex items-center font-bold px-[28px] justify-center border-blue-text text-blue-text  rounded-3xl text-center md:l-140  text-[16px]  h-[50px] ">
                             Барбекю на о. Лонг
                         </div>
                         <div class="mt-5 text-grey-text max-w-[320px]">После этого нас ждет час свободного времени на
@@ -314,21 +337,21 @@
                     </div>
 
                 </div>
-                <div class="flex flex-col md:flex-row w-full mt-[30px] md:mt-[50px] items-start justify-between">
-                    <div class="flex flex-col items-start justify-start">
+                <div class="flex flex-col md:flex-row w-full mt-[30px] xl:mt-[50px] items-start justify-between">
+                    <div class="flex flex-col w-full md:w-1/2 items-start xl:items-start justify-center">
                         <div
-                            class="border bg-white flex items-center font-bold px-[28px] justify-center border-blue-text text-blue-text  rounded-3xl text-center md:l-140  text-[16px]  h-[50px] ">
+                            class="border bg-white flex items-center xl:items-center font-bold px-[28px] justify-center border-blue-text text-blue-text  rounded-3xl text-center md:l-140  text-[16px]  h-[50px] ">
                             Остров Черепах
                         </div>
-                        <div class="mt-5 text-grey-text max-w-[320px]">За дополнительную плату вы можете посетить остров
-                            и насладиться часом свободного времени для исследования.</div>
+                        <div class="mt-5  text-grey-text max-w-[320px]">За дополнительную плату вы можете посетить
+                            остров и насладиться часом свободного времени для исследования.</div>
                     </div>
-                    <img src="assets/swimming_women.png" class="w-full mt-5 md:mt-0 md:w-fit ml-auto" />
+                    <img src="assets/swimming_women.png" class="w-full md:w-1/2 xl:w-[320px]  mt-5 md:mt-0" />
                 </div>
                 <div
                     class="flex flex-col-reverse md:flex-row w-full mt-[30px] md:mt-[50px] items-start justify-between">
-                    <img src="assets/swimming_women.png" class="w-full mt-5 md:mt-0 md:w-fit mr-auto" />
-                    <div class="flex flex-col items-start justify-start">
+                    <img src="assets/swimming_women.png" class="w-full md:w-1/2 xl:w-[320px] mt-5 md:mt-0  " />
+                    <div class="flex flex-col md:ml-10 xl:ml-20 w-full md:w-1/2 items-start justify-center">
                         <div
                             class="border bg-white flex items-center font-bold px-[28px] justify-center border-blue-text text-blue-text  rounded-3xl text-center md:l-140  text-[16px]  h-[50px] ">
                             Вторая сессия снорклинга
@@ -339,8 +362,9 @@
                     </div>
 
                 </div>
+
             </div>
-            <div class="w-1/3 hidden md:flex rounded-3xl  items-end justify-center  h-[700px]"
+            <div class="w-1/3 hidden xl:flex rounded-3xl  items-end justify-center  h-[700px]"
                 style="background: url(assets/form_bg_page_2.png);">
                 <div class=" flex flex-col items-center justify-center">
                     <button type="submit"
@@ -350,7 +374,7 @@
                     <div class="flex mt-[10px] w-[340px]  items-center">
                         <input id="terms" type="checkbox"
                             class="form-checkbox h-[32px] w-7  bg-transparent transition duration-150 ease-in-out rounded ">
-                        <label for="terms" class="ml-[10px] block text-[12px] mb-10 md:mb-0 text-white"> Нажимая на
+                        <label for="terms" class="ml-[10px] block text-[12px] mb-10 xl:mb-0 text-white"> Нажимая на
                             кнопку, я
                             соглашаюсь с политикой конфиденциальности сайта</label>
                     </div>
@@ -367,21 +391,21 @@
                 </div>
             </div>
         </div>
-        <div class="mb-10 flex flex-col w-full items-center md:w-2/3 mt-[50px] md:mt-[65px]">
-            <h2 class="l-100 text-[42px] mr-auto font-semibold text-blue-text">Что включено:</h2>
+        <div class="mb-10 flex flex-col w-full items-center xl:w-2/3 mt-[50px] xl:mt-[65px]">
+            <h2 class="l-100 text-[30px] md:text-[42px] mr-auto font-semibold text-blue-text">Что включено:</h2>
             <div
-                class="mt-[50px] flex flex-col md:flex-row gap-x-[37px] items-start gap-y-5 md:gap-y-0 md:items-center justify-stretch">
+                class="mt-[50px] flex flex-col md:flex-row gap-x-[37px] xl:gap-x-[37px] md:gap-x-[20px] items-start gap-y-5 xl:gap-y-0 xl:items-center justify-between">
                 <div
-                    class=" rounded-3xl h-[344px] flex flex-col w-[340px] md:w-[365px] items-start justify-start px-[30px] bg-white">
+                    class=" rounded-3xl h-[344px] flex flex-col w-[340px] md:w-[379px] xl:w-[365px] items-start justify-start px-[30px] bg-white">
                     <img class="ml-auto mt-10 w-[45px] h-[45px]" src="assets/shield.svg" />
-                    <div class=" text-xl mt-[16px] text-blue-text uppercase text-[16px] md:text-[20px] font-extrabold">
-                        Лицензия <br class="hidden md:flex" />и Безопасность</div>
+                    <div class=" text-xl mt-[16px] text-blue-text uppercase text-[16px] xl:text-[20px] font-extrabold">
+                        Лицензия <br class="hidden xl:flex" />и Безопасность</div>
                     <div class="mt-[16px] mb-10 text-blue-text text-[14px] md:text-[16px]">Наши лодки обладают лицензией
                         на перевозку 20 пассажиров и 3 членов экипажа, что гарантирует вам безопасное и комфортное
                         путешествие</div>
                 </div>
                 <div
-                    class=" rounded-3xl h-[344px] flex flex-col w-[340px] md:w-[365px] items-start justify-start px-[30px]  bg-white">
+                    class=" rounded-3xl h-[344px] flex flex-col w-[340px] md:w-[379px] xl:w-[365px] items-start justify-start px-[30px]  bg-white">
                     <img class="ml-auto mt-10 w-[45px] h-[45px]" src="assets/swimming_kit.svg" />
                     <div class=" text-xl mt-[16px] text-blue-text uppercase text-[16px] md:text-[20px] font-extrabold">
                         Удобства на борту</div>
@@ -391,9 +415,9 @@
                 </div>
             </div>
             <div
-                class="mt-[20px] md:mt-[50px] flex flex-col md:flex-row w-[340px] md:w-full gap-x-[20px] items-start py-[30px] md:py-0 rounded-3xl justify-stretch bg-white">
+                class="mt-[20px] xl:mt-[50px] flex flex-col md:flex-row w-[340px] md:w-[778px] xl:w-full gap-x-[20px] items-start py-[30px] xl:py-0 rounded-3xl justify-stretch bg-white">
                 <div
-                    class=" rounded-3xl md:mb-auto  flex flex-col w-[365px] items-start justify-start px-[30px] md:p-[30px] ">
+                    class=" rounded-3xl xl:mb-auto  flex flex-col w-[365px] items-start justify-start px-[30px] xl:p-[30px] ">
 
                     <div
                         class="border uppercase bg-white flex items-center font-bold px-[28px] justify-center border-blue-text text-blue-text l-100 rounded-3xl text-center l-140  text-[16px]  h-[50px] ">
@@ -403,10 +427,10 @@
                         на перевозку 20 пассажиров и 3 членов экипажа, что гарантирует вам безопасное и комфортное
                         путешествие</div>
                 </div>
-                <div class=" rounded-3xl  flex flex-col w-[365px] items-start justify-start px-[30px] md:p-[30px] ">
+                <div class=" rounded-3xl  flex flex-col w-[365px] items-start justify-start px-[30px] xl:p-[30px] ">
 
                     <div
-                        class="border uppercase bg-blue flex items-center font-bold px-[28px] justify-center border-blue-text text-white l-100 rounded-3xl text-center l-140  text-[16px]  h-[50px] ">
+                        class="border uppercase bg-blue flex items-center font-bold px-[28px] justify-center  text-white l-100 rounded-3xl text-center l-140  text-[16px]  h-[50px] ">
                         Дополнительно
                     </div>
                     <div class="mt-5 mb-10 text-blue-text text-[14px] md:text-[16px]">Приготовьтесь к своему
@@ -414,6 +438,20 @@
                         перед началом экскурсии, так как на борту нет закрытых помещений)</div>
                 </div>
             </div>
+        </div>
+    </div>
+    <div
+        class="fixed items-center px-[25px] justify-between z-[1000] w-full h-[110px] bottom-0 flex rounded-t-3xl bg-white md:hidden">
+        <div class="flex flex-col ">
+            <div class="flex justify-between w-full">
+                <div class="text-[12px] text-blue-text">2 взрослых</div>
+                <img src="assets/arrow_down.svg" class="ml-2" />
+            </div>
+            <div class="text-[24px] l-140 text-blue-text">160 €</div>
+        </div>
+        <div
+            class="border uppercase bg-blue flex items-center font-bold px-[28px] justify-center  text-white l-100 rounded-3xl text-center l-140  text-[14px]  h-[50px] ">
+            Забронировать
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -449,8 +487,8 @@
             var gallerySwiper = new Swiper(".gallery-swiper", {
                 spaceBetween: 10,
                 navigation: {
-                    nextEl: ".next",
-                    prevEl: ".prev",
+                    nextEl: ".next_2",
+                    prevEl: ".prev_2",
                 },
                 thumbs: {
                     swiper: thumbsSwiper

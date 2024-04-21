@@ -16,6 +16,10 @@ body, html {
     background-color: #F4F7F8;
     font-style: normal;
 }
+.gallery-swiper .swiper-slide{
+  height: 100%;
+}
+
 .l-100{
     line-height: 100%;
 }
@@ -70,7 +74,9 @@ body, html {
     height: 100%;
     opacity: 0.4;
   }
-
+  .form-input{
+    width: 100%;
+  }
   .mySwiper .swiper-slide-thumb-active {
     opacity: 1;
   }
@@ -84,6 +90,9 @@ body, html {
 .swiper-container{
     overflow-x: hidden;
 }
-*{
-    /* border: red 1px solid; */
+@media screen and (max-width: 768px) {
+  .gallery-swiper .swiper-slide{
+    height: 350px;
+  }
 }
+  

@@ -239,13 +239,7 @@ z-index: 1; /* Убедитесь, что изображение под град
     right: 0;
     text-align: center; /* Центрирование точек */
 }
-.intl-tel-input {
-    width: 100%;
-}
 
-.intl-tel-input .form-control {
-    width: 100%;
-}
 
 
 
@@ -301,4 +295,17 @@ z-index: 1; /* Убедитесь, что изображение под град
       align-self: center;
       margin-top: 20px; /* Отступ сверху от шага до линии */
     }
+  }
+  .scroll-changed::-webkit-scrollbar {
+    width: 20px; 
+    height: 10px;
+  }
+  
+  .scroll-changed::-webkit-scrollbar-track {
+    background: none;
+  }
+  
+  .scroll-changed::-webkit-scrollbar-thumb {
+    background-color: #0083BB; /* цвет плашки */
+    border-radius: 100px;
   }
