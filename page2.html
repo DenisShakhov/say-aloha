@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Tailwind Project</title>
-    <link rel="stylesheet" href="assets/style.css">
-    <link rel="stylesheet" href="assets/style2.css">
+    <link rel="stylesheet" href="public/assets/style.css">
+    <link rel="stylesheet" href="public/assets/style2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
@@ -15,60 +15,60 @@
 
 <body>
 
+    <nav class="hidden  container pt-4 xl:flex z-[10000] fixed h-[86px] top-0   xl:items-center xl:justify-between">
+        <div class="flex justify-between items-center">
+            <a href="index.html" class="flex items-center  max-w-[120px] leading-none">
+                <img src="assets/logo.svg" alt="Logo" class="h-12 w-12 ">
+                <h2 class="font-bold p-0.5 text-blue text-[20px] ml-2">SEY ALOHA</h2>
+            </a>
+            <div class="xl:hidden">
+                <!-- Mobile menu button -->
+                <button type="button" class="text-blue-500 hover:text-blue-600 focus:outline-none focus:text-blue-600">
+                    <!-- Icon for menu button here -->
+                </button>
+            </div>
+        </div>
+
+        <!-- Links section -->
+        <div class="hidden xl:flex mt-2 bg-white px-11 py-4 ml-5 rounded-3xl text-[14px] xl:mt-0 space-x-2">
+            <a href="page2.html" class="text-blue-text">Экскурсии</a>
+            <img src="assets/dot.svg" />
+            <a href="#" class="text-blue-text">Рыбалка</a>
+            <img src="assets/dot.svg" />
+            <a href="#" class="text-blue-text">Яхтинг</a>
+            <img src="assets/dot.svg" />
+            <a href="#" class="text-blue-text">Катамаран</a>
+            <img src="assets/dot.svg" />
+            <a href="#" class="text-blue-text">О компании</a>
+        </div>
+        <div class="w-fit  gap-x-1 mr-8 flex items-center justify-between">
+            <button type="button"
+                class="text-blue-500 bg-white p-4 rounded-full hover:text-blue-600 focus:outline-none focus:text-blue-600">
+                <img src="assets/search.svg" alt="Search" class="h-5 w-5" />
+            </button>
+            <button type="button"
+                class="text-blue-500 bg-white p-4 rounded-full hover:text-blue-600 focus:outline-none focus:text-blue-600">
+                <img src="assets/bag.svg" alt="shop" class="h-5 w-5" />
+            </button>
+            <button type="button"
+                class="text-blue-500 bg-white p-4 rounded-full hover:text-blue-600 focus:outline-none focus:text-blue-600">
+                <img src="assets/telegram_3.svg" alt="telegram" class="h-5 w-5" />
+            </button>
+        </div>
+        <!-- Icons and additional options -->
+        <div class="hidden xl:flex items-center space-x-5">
+
+            <a href="#" class="text-blue-text flex items-center font-bold text-[16px]  gap-x-2 justify-center">En<img
+                    src="assets/arrow_down.svg" /></a>
+            <a href="#" class="text-blue-text flex items-center font-bold text-[16px]  gap-x-2 justify-center">€
+                (EUR)<img src="assets/arrow_down.svg" /></a>
+            <a href="#" class="text-blue-text bg-white rounded-3xl font-bold text-[16px] px-12 py-3">Войти</a>
+        </div>
+    </nav>
     <div class="px-[25px] container mx-auto xl:px-0">
-        <nav class="hidden  pt-4  xl:flex xl:items-center xl:justify-between">
-            <div class="flex justify-between items-center">
-                <a href="index.html" class="flex items-center  max-w-[120px] leading-none">
-                    <img src="assets/logo.svg" alt="Logo" class="h-12 w-12 ">
-                    <h2 class="font-bold p-0.5 text-blue text-[20px] ml-2">SEY ALOHA</h2>
-                </a>
-                <div class="xl:hidden">
-                    <!-- Mobile menu button -->
-                    <button type="button"
-                        class="text-blue-500 hover:text-blue-600 focus:outline-none focus:text-blue-600">
-                        <!-- Icon for menu button here -->
-                    </button>
-                </div>
-            </div>
 
-            <!-- Links section -->
-            <div class="hidden xl:flex mt-2 bg-white px-11 py-4 ml-5 rounded-3xl text-[14px] xl:mt-0 space-x-2">
-                <a href="page2.html" class="text-blue-text">Экскурсии</a>
-                <img src="assets/dot.svg" />
-                <a href="#" class="text-blue-text">Рыбалка</a>
-                <img src="assets/dot.svg" />
-                <a href="#" class="text-blue-text">Яхтинг</a>
-                <img src="assets/dot.svg" />
-                <a href="#" class="text-blue-text">Катамаран</a>
-                <img src="assets/dot.svg" />
-                <a href="#" class="text-blue-text">О компании</a>
-            </div>
-            <div class="w-fit  gap-x-1 mr-8 flex items-center justify-between">
-                <button type="button"
-                    class="text-blue-500 bg-white p-4 rounded-full hover:text-blue-600 focus:outline-none focus:text-blue-600">
-                    <img src="assets/search.svg" alt="Search" class="h-5 w-5" />
-                </button>
-                <button type="button"
-                    class="text-blue-500 bg-white p-4 rounded-full hover:text-blue-600 focus:outline-none focus:text-blue-600">
-                    <img src="assets/bag.svg" alt="shop" class="h-5 w-5" />
-                </button>
-                <button type="button"
-                    class="text-blue-500 bg-white p-4 rounded-full hover:text-blue-600 focus:outline-none focus:text-blue-600">
-                    <img src="assets/telegram_3.svg" alt="telegram" class="h-5 w-5" />
-                </button>
-            </div>
-            <!-- Icons and additional options -->
-            <div class="hidden xl:flex items-center space-x-5">
-
-                <a href="#"
-                    class="text-blue-text flex items-center font-bold text-[16px]  gap-x-2 justify-center">En<img
-                        src="assets/arrow_down.svg" /></a>
-                <a href="#" class="text-blue-text flex items-center font-bold text-[16px]  gap-x-2 justify-center">€
-                    (EUR)<img src="assets/arrow_down.svg" /></a>
-                <a href="#" class="text-blue-text bg-white rounded-3xl font-bold text-[16px] px-12 py-3">Войти</a>
-            </div>
-        </nav>
-        <div class="flex text-[12px] flex-wrap mt-20 text-grey-text items-center gap-x-2 justify-start w-full">
+        <div
+            class="flex text-[12px] flex-wrap mt-20 xl:mt-[166px] text-grey-text items-center gap-x-2 justify-start w-full">
             <span class="opacity-50">Главная</span>
             <img class="w-4 h-4 opacity-50" src="assets/arrow_right_2.svg" />
             <span class=" opacity-50">Все экскурсии</span>
@@ -343,8 +343,13 @@
                             class="border bg-white flex items-center xl:items-center font-bold px-[28px] justify-center border-blue-text text-blue-text  rounded-3xl text-center md:l-140  text-[16px]  h-[50px] ">
                             Остров Черепах
                         </div>
-                        <div class="mt-5  text-grey-text max-w-[320px]">За дополнительную плату вы можете посетить
-                            остров и насладиться часом свободного времени для исследования.</div>
+                        <div class="mt-5  text-grey-text max-w-[320px]">За дополнительную плату (<span
+                                class="font-bold">200
+                                scr / 15 евро,
+                                детям до
+                                12 лет вход бесплатный</span>) вы можете посетить остров и насладиться часом свободного
+                            времени
+                            для исследования.</div>
                     </div>
                     <img src="assets/swimming_women.png" class="w-full md:w-1/2 xl:w-[320px]  mt-5 md:mt-0" />
                 </div>
@@ -391,8 +396,50 @@
                 </div>
             </div>
         </div>
+        <div class="mt-[50px] flex flex-col   items-start justify-start xl:mt-[80px]">
+
+            <div class="flex items-center max-w-[635px] h-[90px] md:h-[100px] justify-start">
+                <img src="assets/bulb.svg"
+                    class="bg-white py-[29px] px-[34px] md:py-[33px] md:px-[38px] rounded-full" />
+                <div style="background: url('public/assets/text-bg-page_2_card_phone.svg') no-repeat left; background-size: contain;"
+                    class=" w-[250px] md:hidden  text-white  font-bold text-[12px] p-4 pl-6">
+                    Если вы не
+                    нашли в списке интересующую вас локацию, можете уточнить у гида возможность посещения.
+                </div>
+                <div style="background: url('public/assets/text-bg-page_2_card.svg') no-repeat center; background-position-y: 3px;"
+                    class="md:w-[545px] -ml-2.5 hidden md:flex resp_card_bg_page_2 md:px-[50px] text-white md:text-[16px] font-bold md:py-[18px]">
+                    Если вы не
+                    нашли в списке интересующую вас локацию, можете уточнить у гида возможность посещения.
+                </div>
+            </div>
+            <div
+                class="mt-5 flex-col text-blue-text max-w-[635px] py-[20px] px-[30px] bg-white rounded-3xl flex items-center justify-start">
+                <div class="flex flex-col  md:flex-row items-start justify-start w-full">
+                    <div class="flex gap-x-[15px] items-center justify-center">
+                        <img src="assets/danil.png" />
+                        <div class="flex flex-col items-start justify-start">
+                            <span class="font-bold text-[16px]">Даниил</span>
+                            <span class="text-[12px]">Тревел-эксперт </span>
+                        </div>
+                    </div>
+                    <div class="flex md:ml-[30px] mt-[20px] md:mt-0 items-center justify-center gap-x-[10px]">
+                        <button
+                            class="bg-light-blue border-blue-text font-bold border-[1px] text-[16px] w-[220px] h-[60px] rounded-3xl text-blue-text px-[34px] py-[19px]">Связаться
+                            с
+                            гидом</button>
+                        <img src="assets/telegram_3.svg" class="p-[17px] rounded-full bg-light-blue" />
+                    </div>
+                </div>
+                <div class="mt-5  text-[16px] l-140">Выше изложено примерное описание, тайминг, маршрут
+                    и локации.
+
+                    <br /><br />Все пункты маршрута будут согласованы по факту бронирования. Маршрут может варьироваться
+                    в зависимости погодных условий, ваших пожеланий к поездке и затраченное время в каждой из локаций.
+                </div>
+            </div>
+        </div>
         <div class="mb-10 flex flex-col w-full items-center xl:w-2/3 mt-[50px] xl:mt-[65px]">
-            <h2 class="l-100 text-[30px] md:text-[42px] mr-auto font-semibold text-blue-text">Что включено:</h2>
+            <h2 class="l-100 text-[30px] md:text-[42px] mr-auto font-semibold text-blue-text">Важно знать:</h2>
             <div
                 class="mt-[50px] flex flex-col md:flex-row gap-x-[37px] xl:gap-x-[37px] md:gap-x-[20px] items-start gap-y-5 xl:gap-y-0 xl:items-center justify-between">
                 <div
@@ -400,7 +447,8 @@
                     <img class="ml-auto mt-10 w-[45px] h-[45px]" src="assets/shield.svg" />
                     <div class=" text-xl mt-[16px] text-blue-text uppercase text-[16px] xl:text-[20px] font-extrabold">
                         Лицензия <br class="hidden xl:flex" />и Безопасность</div>
-                    <div class="mt-[16px] mb-10 text-blue-text text-[14px] md:text-[16px]">Наши лодки обладают лицензией
+                    <div class="mt-[16px] mb-10 text-blue-text text-[14px] md:text-[16px] l-140">Наши лодки обладают
+                        лицензией
                         на перевозку 20 пассажиров и 3 членов экипажа, что гарантирует вам безопасное и комфортное
                         путешествие</div>
                 </div>
@@ -409,7 +457,7 @@
                     <img class="ml-auto mt-10 w-[45px] h-[45px]" src="assets/swimming_kit.svg" />
                     <div class=" text-xl mt-[16px] text-blue-text uppercase text-[16px] md:text-[20px] font-extrabold">
                         Удобства на борту</div>
-                    <div class="mt-[16px] mb-10 text-blue-text text-[14px] md:text-[16px]">На борту вы получите
+                    <div class="mt-[16px] mb-10 text-blue-text text-[14px] md:text-[16px] l-140">На борту вы получите
                         прохладительные напитки, маски и ласты подходящего размера, а также несколько кусочков хлеба для
                         кормления рыб</div>
                 </div>
@@ -423,9 +471,11 @@
                         class="border uppercase bg-white flex items-center font-bold px-[28px] justify-center border-blue-text text-blue-text l-100 rounded-3xl text-center l-140  text-[16px]  h-[50px] ">
                         не включено
                     </div>
-                    <div class="mt-5 mb-10 text-blue-text text-[14px] md:text-[16px]">Наши лодки обладают лицензией
-                        на перевозку 20 пассажиров и 3 членов экипажа, что гарантирует вам безопасное и комфортное
-                        путешествие</div>
+                    <div class="mt-5 mb-10 text-blue-text text-[14px] md:text-[16px] l-140">Если вы планируете посещение
+                        острова Мойенн (остров черепах), будьте готовы к оплате проходных <span class="font-bold">- 200
+                            scr / 15 евро,
+                            детям до
+                            12 лет вход бесплатный</span></div>
                 </div>
                 <div class=" rounded-3xl  flex flex-col w-[365px] items-start justify-start px-[30px] xl:p-[30px] ">
 
@@ -433,7 +483,7 @@
                         class="border uppercase bg-blue flex items-center font-bold px-[28px] justify-center  text-white l-100 rounded-3xl text-center l-140  text-[16px]  h-[50px] ">
                         Дополнительно
                     </div>
-                    <div class="mt-5 mb-10 text-blue-text text-[14px] md:text-[16px]">Приготовьтесь к своему
+                    <div class="mt-5 mb-10 text-blue-text text-[14px] md:text-[16px] l-140">Приготовьтесь к своему
                         приключению, взяв с собой солнцезащитный крем, полотенце, купальник (рекомендуется надеть его
                         перед началом экскурсии, так как на борту нет закрытых помещений)</div>
                 </div>

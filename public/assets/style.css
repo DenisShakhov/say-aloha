@@ -271,7 +271,6 @@ z-index: 1; /* Убедитесь, что изображение под град
       flex-direction: row;
       align-items: center;
     }
-  
     .step:not(:last-child)::after {
       content: '';
       background: url('assets/dotted_line.svg') center/contain no-repeat;
@@ -286,7 +285,6 @@ z-index: 1; /* Убедитесь, что изображение под град
     .steps-container {
       flex-direction: column;
     }
-  
     .step:not(:last-child)::after {
       content: '';
       background: url('assets/dotted_line_vertical.svg') center/contain no-repeat;
@@ -309,3 +307,4 @@ z-index: 1; /* Убедитесь, что изображение под град
     background-color: #0083BB; /* цвет плашки */
     border-radius: 100px;
   }
+
