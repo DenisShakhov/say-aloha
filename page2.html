@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Tailwind Project</title>
-    <link rel="stylesheet" href="assets/style.css">
-    <link rel="stylesheet" href="assets/style2.css">
+    <link rel="stylesheet" href="public/assets/style.css">
+    <link rel="stylesheet" href="public/assets/style2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
@@ -15,60 +15,76 @@
 
 <body>
 
-    <nav class="hidden  container pt-4 xl:flex z-[10000] fixed h-[86px] top-0   xl:items-center xl:justify-between">
-        <div class="flex justify-between items-center">
-            <a href="index.html" class="flex items-center  max-w-[120px] leading-none">
-                <img src="assets/logo.svg" alt="Logo" class="h-12 w-12 ">
-                <h2 class="font-bold p-0.5 text-blue text-[20px] ml-2">SEY ALOHA</h2>
-            </a>
-            <div class="xl:hidden">
-                <!-- Mobile menu button -->
-                <button type="button" class="text-blue-500 hover:text-blue-600 focus:outline-none focus:text-blue-600">
-                    <!-- Icon for menu button here -->
+    <nav id="nav" class="w-full  z-[10000] flex items-center justify-center top-0  h-[86px] ">
+        <div class="pt-4 xl:flex  container   w-full xl:items-center xl:justify-between">
+
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="flex items-center  max-w-[120px] leading-none">
+                    <img src="assets/logo.svg" alt="Logo" class="h-12 w-12 ">
+                    <h2 class="font-bold p-0.5 text-blue text-[20px] ml-2">SEY ALOHA</h2>
+                </a>
+                <div class="xl:hidden">
+                    <!-- Mobile menu button -->
+                    <button type="button"
+                        class="text-blue-500 hover:text-blue-600 focus:outline-none focus:text-blue-600">
+                        <!-- Icon for menu button here -->
+                    </button>
+                </div>
+            </div>
+
+            <!-- Links section -->
+            <div id="dropdown_excursion_trigger"
+                class="hidden  xl:flex mt-2 bg-white px-11 py-4 ml-5 rounded-3xl text-[14px] xl:mt-0 space-x-2">
+                <div class="relative text-blue-text">
+                    <span id="excursion_button" class="cursor-pointer">Экскурсии</span>
+                    <div
+                        class="absolute dropdown-content top-[35px] hidden gap-y-[10px] text-[14px] font-medium text-blue-text -left-[44px] pt-[30px] pl-[40px] bg-white rounded-3xl w-[200px] h-[137px] z-[3000] flex-col items-start justify-start">
+                        <div class="cursor-pointer">Все экскурсии</div>
+                        <div class="cursor-pointer">Групповые</div>
+                        <div class="cursor-pointer">Индивидуальные</div>
+                    </div>
+                </div>
+
+
+                <img src="assets/dot.svg" />
+                <a href="#" class="text-blue-text">Рыбалка</a>
+                <img src="assets/dot.svg" />
+                <a href="#" class="text-blue-text">Яхтинг</a>
+                <img src="assets/dot.svg" />
+                <a href="#" class="text-blue-text">Катамаран</a>
+                <img src="assets/dot.svg" />
+                <a href="#" class="text-blue-text">О компании</a>
+            </div>
+            <div class="w-fit  gap-x-1 mr-8 flex items-center justify-between">
+                <button type="button"
+                    class="text-blue-500 bg-white p-4 rounded-full hover:text-blue-600 focus:outline-none focus:text-blue-600">
+                    <img src="assets/search.svg" alt="Search" class="h-5 w-5" />
+                </button>
+                <button type="button"
+                    class="text-blue-500 bg-white p-4 rounded-full hover:text-blue-600 focus:outline-none focus:text-blue-600">
+                    <img src="assets/bag.svg" alt="shop" class="h-5 w-5" />
+                </button>
+                <button type="button"
+                    class="text-blue-500 bg-white p-4 rounded-full hover:text-blue-600 focus:outline-none focus:text-blue-600">
+                    <img src="assets/telegram_3.svg" alt="telegram" class="h-5 w-5" />
                 </button>
             </div>
-        </div>
+            <!-- Icons and additional options -->
+            <div class="hidden xl:flex items-center space-x-5">
 
-        <!-- Links section -->
-        <div class="hidden xl:flex mt-2 bg-white px-11 py-4 ml-5 rounded-3xl text-[14px] xl:mt-0 space-x-2">
-            <a href="page2.html" class="text-blue-text">Экскурсии</a>
-            <img src="assets/dot.svg" />
-            <a href="#" class="text-blue-text">Рыбалка</a>
-            <img src="assets/dot.svg" />
-            <a href="#" class="text-blue-text">Яхтинг</a>
-            <img src="assets/dot.svg" />
-            <a href="#" class="text-blue-text">Катамаран</a>
-            <img src="assets/dot.svg" />
-            <a href="#" class="text-blue-text">О компании</a>
-        </div>
-        <div class="w-fit  gap-x-1 mr-8 flex items-center justify-between">
-            <button type="button"
-                class="text-blue-500 bg-white p-4 rounded-full hover:text-blue-600 focus:outline-none focus:text-blue-600">
-                <img src="assets/search.svg" alt="Search" class="h-5 w-5" />
-            </button>
-            <button type="button"
-                class="text-blue-500 bg-white p-4 rounded-full hover:text-blue-600 focus:outline-none focus:text-blue-600">
-                <img src="assets/bag.svg" alt="shop" class="h-5 w-5" />
-            </button>
-            <button type="button"
-                class="text-blue-500 bg-white p-4 rounded-full hover:text-blue-600 focus:outline-none focus:text-blue-600">
-                <img src="assets/telegram_3.svg" alt="telegram" class="h-5 w-5" />
-            </button>
-        </div>
-        <!-- Icons and additional options -->
-        <div class="hidden xl:flex items-center space-x-5">
-
-            <a href="#" class="text-blue-text flex items-center font-bold text-[16px]  gap-x-2 justify-center">En<img
-                    src="assets/arrow_down.svg" /></a>
-            <a href="#" class="text-blue-text flex items-center font-bold text-[16px]  gap-x-2 justify-center">€
-                (EUR)<img src="assets/arrow_down.svg" /></a>
-            <a href="#" class="text-blue-text bg-white rounded-3xl font-bold text-[16px] px-12 py-3">Войти</a>
+                <a href="#"
+                    class="text-blue-text flex items-center font-bold text-[16px]  gap-x-2 justify-center">En<img
+                        src="assets/arrow_down.svg" /></a>
+                <a href="#" class="text-blue-text flex items-center font-bold text-[16px]  gap-x-2 justify-center">€
+                    (EUR)<img src="assets/arrow_down.svg" /></a>
+                <a href="#" class="text-blue-text bg-white rounded-3xl font-bold text-[16px] px-12 py-3">Войти</a>
+            </div>
         </div>
     </nav>
     <div class="px-[25px] container mx-auto xl:px-0">
 
-        <div
-            class="flex text-[12px] flex-wrap mt-20 xl:mt-[166px] text-grey-text items-center gap-x-2 justify-start w-full">
+        <div id="after_nav"
+            class="flex text-[12px] flex-wrap mt-20 xl:mt-[80px] text-grey-text items-center gap-x-2 justify-start w-full">
             <span class="opacity-50">Главная</span>
             <img class="w-4 h-4 opacity-50" src="assets/arrow_right_2.svg" />
             <span class=" opacity-50">Все экскурсии</span>
@@ -77,9 +93,7 @@
             <img class="w-4 h-4 opacity-100" src="assets/arrow_right_2.svg" />
             <span>Морской национальный парк «Святая Анна»</span>
         </div>
-        <div class="h-[100vh] relative">
-            <div class="sticky top-1 z-[4000]">123</div>
-        </div>
+
         <div class="flex flex-col mt-[30px] xl:flex-row justify-between">
             <div class="w-full  xl:w-1/2 flex flex-col">
                 <div class="swiper-container relative h-full rounded-3xl gallery-swiper">
@@ -498,6 +512,7 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="js/dropdown.js" defer></script>
+    <script type="module" src="js/nav.js" defer></script>
     <script type="module" src="js/card_fixed_page_2.js" defer></script>
     <script>
         // Initialize Swiper
