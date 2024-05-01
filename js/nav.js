@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const initialTop = card.getBoundingClientRect().top + window.scrollY; // Начальное положение относительно документа
     const after_card = document.getElementById('after_nav')
     window.addEventListener('scroll', () => {
-        console.log(window.scrollY)
         if (window.scrollY >= 100) {
             card.classList.add('fixed', 'bg-light-blue');
             after_card.classList.add('xl:mt-[166px]')
