@@ -33,3 +33,18 @@ document.addEventListener('DOMContentLoaded', function() {
         dropdown.classList.remove('flex');
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    var trigger = document.getElementById('dropdown_excursion_trigger');
+    var dropdown = trigger.querySelector('.dropdown-content');
+    var excursion_button = document.getElementById('excursion_button')
+    excursion_button.addEventListener('mouseenter', function() {
+        dropdown.classList.add('flex');
+        dropdown.classList.remove('hidden');
+    });
+
+    trigger.addEventListener('mouseleave', function() {
+        dropdown.classList.add('hidden');
+        dropdown.classList.remove('flex');
+    });
+});
