@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Tailwind Project</title>
-    <link rel="stylesheet" href="assets/style.css">
-    <link rel="stylesheet" href="assets/style2.css">
+    <link rel="stylesheet" href="public/assets/style.css">
+    <link rel="stylesheet" href="public/assets/style2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
@@ -502,6 +502,82 @@
                         </div>
                     </div>
                 </div>
+                <div class="mt-[50px] md:mt-[80px] flex flex-col items-center justify-start">
+                    <div
+                        class="flex w-full rounded-2xl bg-white p-[30px] flex-col md:flex-row items-center justify-start">
+                        <h3 class="text-[37px] l-100 md:whitespace-nowrap mr-auto font-semibold">Рейтинг 4.7</h3>
+                        <div class="md:ml-[16px] w-full flex items-center justify-start">
+                            <div class="flex items-center gap-x-[12px] justify-start">
+                                <img src="assets/star.svg" />
+                                <img src="assets/star.svg" />
+                                <img src="assets/star.svg" />
+                                <img src="assets/star.svg" />
+                                <img src="assets/star.svg" />
+                            </div>
+                            <div class="text-[18px] l-140 ml-[16px]">
+                                (57 отзывов)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex mt-5 rounded-2xl bg-white w-full flex-col items-center justify-start">
+                        <div class="p-[40px] w-full flex flex-col md:flex-row items-start justify-start">
+                            <img src="assets/review_avatar.png" />
+                            <div class="flex flex-col mt-[10px] md:mt-0  md:ml-[10px]">
+                                <div
+                                    class="flex rounded-2xl p-[30px] bg-light-blue   w-full flex-col items-start justify-start">
+                                    <div class="flex items-center gap-x-[12px] justify-start">
+                                        <img src="assets/star.svg" />
+                                        <img src="assets/star.svg" />
+                                        <img src="assets/star.svg" />
+                                        <img src="assets/star.svg" />
+                                        <img src="assets/star.svg" />
+                                    </div>
+                                    <div class="mt-[10px] text-[16px] font-bold">Наташа</div>
+                                    <div class="mt-[20px] l-140 text-[16px]">Прошел почти месяц и ни дня, чтоб я не
+                                        думала об этом
+                                        путешествии, невероятная
+                                        красота островов, природа просто волшебная, а эти виды, все как с картинки, но
+                                        даже
+                                        лучше, конечно всего этого бы не увидели, если бы не Рустам, показал самые
+                                        красивые
+                                        места, самые роскошные пляжи, признаться честно, я не думала, что пляжный отдых
+                                        может быть настолько активным и разнообразным, а здесь совместили все: пляжи,
+                                        трекинг, вечеринки, барбекю, отдельное спасибо за это.</div>
+                                </div>
+                                <div class="flex mt-[10px] overflow-x-auto gap-x-[10px] items-center justify-start">
+                                    <img class="w-40 h-35 cursor-pointer" src="assets/smiling_women.png"
+                                        onclick="openModal(0)" />
+                                    <img class="w-40 h-35 cursor-pointer" src="assets/smiling_people.png"
+                                        onclick="openModal(1)" />
+                                    <img class="w-40 h-35 cursor-pointer" src="assets/smiling_women.png"
+                                        onclick="openModal(2)" />
+                                </div>
+                            </div>
+                        </div>
+                        <div id="galleryModal"
+                            class="fixed top-0 left-0 w-full h-full bg-gray-800 bg-opacity-75 flex items-center justify-center hidden">
+                            <div class="relative max-w-3xl mx-auto">
+                                <button onclick="closeModal()"
+                                    class="absolute top-0 right-0 text-white text-xl p-2">×</button>
+                                <button onclick="prevImage()"
+                                    class="absolute left-0 top-1/2 transform -translate-y-1/2 text-white text-3xl p-2">‹</button>
+                                <img id="modalImage" class="w-full h-auto" src="assets/smiling_women.png" />
+                                <button onclick="nextImage()"
+                                    class="absolute right-0 top-1/2 transform -translate-y-1/2 text-white text-3xl p-2">›</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="flex mt-[20px]  md:mt-[35px] p-[15px] rounded-3xl w-full bg-white px-[20px] items-center justify-start">
+                        <img src="assets/paperclip.svg" class="mb-auto" />
+                        <textarea placeholder="Сообщение" class="px-1 w-full mx-3"></textarea>
+                        <img src="assets/Send Icon.svg" class="ml-auto mb-auto" />
+                    </div>
+                    <button
+                        class="text-14px px-[53px] text-white mr-auto mt-[30px] rounded-3xl py-[13px] mb-[250px] bg-blue">
+                        Все отзывы (57)
+                    </button>
+                </div>
 
             </div>
             <div class="hidden xl:flex sticky xl:w-1/3 flex-col">
@@ -535,11 +611,7 @@
                 </div>
             </div>
         </div>
-
-
-
     </div>
-    <div class="h-[200vh]"></div>
     <div
         class="fixed items-center px-[25px] justify-between z-[1000] w-full h-[110px] bottom-0 flex rounded-t-3xl bg-white md:hidden">
         <div class="flex flex-col ">
@@ -554,6 +626,40 @@
             Забронировать
         </div>
     </div>
+    <script>
+        const images = [
+            'assets/smiling_women.png',
+            'assets/smiling_people.png',
+            'assets/smiling_women.png'
+        ];
+
+        let currentIndex = 0;
+
+        function openModal(index) {
+            console.log(1)
+            currentIndex = index;
+            updateModalImage();
+            document.getElementById("galleryModal").classList.remove("hidden");
+        }
+
+        function closeModal() {
+            document.getElementById("galleryModal").classList.add("hidden");
+        }
+
+        function prevImage() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            updateModalImage();
+        }
+
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % images.length;
+            updateModalImage();
+        }
+
+        function updateModalImage() {
+            document.getElementById("modalImage").src = images[currentIndex];
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="js/dropdown.js" defer></script>
     <script type="module" src="js/nav.js" defer></script>

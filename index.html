@@ -63,54 +63,78 @@
         </div>
       </div>
     </nav>
-    <nav class="hidden  mt-4  md:flex md:items-center md:justify-between">
-      <div class="flex justify-between items-center">
-        <a href="index.html" class="flex items-center  max-w-[120px] leading-none">
-          <img src="assets/logo.svg" alt="Logo" class="h-12 w-12 ">
-          <h2 class="font-bold p-0.5 text-blue text-[20px] ml-2">SEY ALOHA</h2>
-        </a>
-        <div class="xl:hidden">
-          <!-- Mobile menu button -->
-          <button type="button" class="text-blue-500 hover:text-blue-600 focus:outline-none focus:text-blue-600">
-            <!-- Icon for menu button here -->
+    <nav id="nav" class="w-full hidden z-[10000] md:flex items-center justify-center top-0  h-[86px] ">
+      <div class="pt-4 xl:flex   relative container   w-full xl:items-center xl:justify-between">
+
+        <div class="flex justify-between items-center">
+          <a href="index.html" class="flex items-center  max-w-[120px] leading-none">
+            <img src="assets/logo.svg" alt="Logo" class="h-12 w-12 ">
+            <h2 class="font-bold p-0.5 text-blue text-[20px] ml-2">SEY ALOHA</h2>
+          </a>
+          <div class="xl:hidden">
+            <!-- Mobile menu button -->
+            <button type="button" class="text-blue-500 hover:text-blue-600 focus:outline-none focus:text-blue-600">
+              <!-- Icon for menu button here -->
+            </button>
+          </div>
+        </div>
+
+        <!-- Links section -->
+        <div id="dropdown_excursion_trigger"
+          class="hidden  xl:flex mt-2 bg-white px-11 py-4 ml-5 rounded-3xl text-[14px] xl:mt-0 space-x-2">
+          <div class="relative text-blue-text">
+            <span id="excursion_button" class="cursor-pointer">Экскурсии</span>
+            <div
+              class="absolute dropdown-content top-[35px] hidden gap-y-[10px] text-[14px] font-medium text-blue-text -left-[44px] pt-[30px] pl-[40px] bg-white rounded-3xl w-[200px] h-[137px] z-[3000] flex-col items-start justify-start">
+              <div class="cursor-pointer">Все экскурсии</div>
+              <div class="cursor-pointer">Групповые</div>
+              <div class="cursor-pointer">Индивидуальные</div>
+            </div>
+          </div>
+
+
+          <img src="assets/dot.svg" />
+          <a href="#" class="text-blue-text">Рыбалка</a>
+          <img src="assets/dot.svg" />
+          <a href="#" class="text-blue-text">Яхтинг</a>
+          <img src="assets/dot.svg" />
+          <a href="#" class="text-blue-text">Катамаран</a>
+          <img src="assets/dot.svg" />
+          <a href="#" class="text-blue-text">О компании</a>
+        </div>
+        <div class="w-fit  gap-x-1 mr-8 flex items-center justify-between">
+          <button id="search_button" type="button"
+            class="text-blue-500 bg-white p-4 rounded-full hover:text-blue-600 focus:outline-none focus:text-blue-600">
+            <img src="assets/search.svg" alt="Search" class="h-5 w-5" />
+
+          </button>
+          <div id="search_content"
+            class="hidden absolute z-[6000] items-center px-[40px] py-[15px] rounded-3xl justify-start top-24 w-[1160px] left-0 bg-white">
+            <img src="assets/search.svg" alt="Search" class="h-5 w-5" />
+            <input class="w-full rounded-3xl pl-3 py-[10px] ml-[25px] mr-[25px]" placeholder="Введите текст" />
+
+            <div id="search_type_button"
+              class="ml-auto bg-blue py-[15px] px-[43px] rounded-3xl text-white font-bold text-[14px]">
+              Поиск</div>
+          </div>
+          <button type="button"
+            class="text-blue-500 bg-white p-4 rounded-full hover:text-blue-600 focus:outline-none focus:text-blue-600">
+            <img src="assets/bag.svg" alt="shop" class="h-5 w-5" />
+          </button>
+          <button type="button"
+            class="text-blue-500 bg-white p-4 rounded-full hover:text-blue-600 focus:outline-none focus:text-blue-600">
+            <img src="assets/telegram_3.svg" alt="telegram" class="h-5 w-5" />
           </button>
         </div>
-      </div>
+        <!-- Icons and additional options -->
+        <div class="hidden xl:flex items-center space-x-5">
 
-      <!-- Links section -->
-      <div class="hidden xl:flex mt-2 bg-white px-11 py-4 ml-5 rounded-3xl text-[14px] xl:mt-0 space-x-2">
-        <a href="page2.html" class="text-blue-text">Экскурсии</a>
-        <img src="assets/dot.svg" />
-        <a href="#" class="text-blue-text">Рыбалка</a>
-        <img src="assets/dot.svg" />
-        <a href="#" class="text-blue-text">Яхтинг</a>
-        <img src="assets/dot.svg" />
-        <a href="#" class="text-blue-text">Катамаран</a>
-        <img src="assets/dot.svg" />
-        <a href="#" class="text-blue-text">О компании</a>
-      </div>
-      <div class="w-fit md:ml-auto gap-x-1 mr-8 flex items-center justify-between">
-        <button type="button"
-          class="text-blue-500 bg-white p-4 rounded-full hover:text-blue-600 focus:outline-none focus:text-blue-600">
-          <img src="assets/search.svg" alt="Search" class="h-5 w-5" />
-        </button>
-        <button type="button"
-          class="text-blue-500 bg-white p-4 rounded-full hover:text-blue-600 focus:outline-none focus:text-blue-600">
-          <img src="assets/bag.svg" alt="shop" class="h-5 w-5" />
-        </button>
-        <button type="button"
-          class="text-blue-500 bg-white p-4 rounded-full hover:text-blue-600 focus:outline-none focus:text-blue-600">
-          <img src="assets/telegram_3.svg" alt="telegram" class="h-5 w-5" />
-        </button>
-      </div>
-      <!-- Icons and additional options -->
-      <div class="hidden md:flex items-center space-x-5">
-
-        <a href="#" class="text-blue-text flex items-center font-bold text-[16px]  gap-x-2 justify-center">En<img
-            src="assets/arrow_down.svg" /></a>
-        <a href="#" class="text-blue-text flex items-center font-bold text-[16px]  gap-x-2 justify-center">€ (EUR)<img
-            src="assets/arrow_down.svg" /></a>
-        <a href="#" class="text-blue-text bg-white rounded-3xl font-bold text-[16px] px-12 py-3">Войти</a>
+          <a href="#" class="text-blue-text flex items-center font-bold text-[16px]  gap-x-2 justify-center">En<img
+              src="assets/arrow_down.svg" /></a>
+          <a href="#" class="text-blue-text flex items-center font-bold text-[16px]  gap-x-2 justify-center">€
+            (EUR)<img src="assets/arrow_down.svg" /></a>
+          <a href="#" class="text-blue-text bg-white rounded-3xl font-bold text-[16px] px-12 py-3">Войти</a>
+        </div>
       </div>
     </nav>
     <div class="container mx-auto mt-7 rounded-3xl  ">
@@ -556,6 +580,9 @@
 
     <script type="module" src="js/menu.js" defer></script>
     <script type="module" src="js/scroll_third_page.js" defer></script>
+    <script type="module" src="js/dropdown.js" defer></script>
+    <script type="module" src="js/nav.js" defer></script>
+    <script type="module" src="js/search_button.js" defer></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@21.2.4/build/js/intlTelInput.min.js"></script>

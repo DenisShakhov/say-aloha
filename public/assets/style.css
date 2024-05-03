@@ -307,3 +307,6 @@ z-index: 1; /* Убедитесь, что изображение под град
     background-color: #0083BB; /* цвет плашки */
     border-radius: 100px;
   }
+.top-2100{
+  top: 2100px;
+}
