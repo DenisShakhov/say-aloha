@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Tailwind Project</title>
-  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/styles/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
@@ -33,7 +33,7 @@
             <div>
               <!-- Website Logo -->
               <a href="#" class="flex items-center py-4 px-2">
-                <img src="assets/logo.svg" alt="Logo" class="h-8 w-8 mr-2">
+                <img src="assets/img/logo.svg" alt="Logo" class="h-8 w-8 mr-2">
                 <span class="font-semibold text-blue text-lg">SEY ALOHA</span>
               </a>
             </div>
@@ -48,7 +48,7 @@
           </div>
           <!-- Mobile menu button -->
           <div class="flex items-center justify-center">
-            <img src="assets/Telegram.svg" class="w-10 h-10" />
+            <img src="assets/img/Telegram.svg" class="w-10 h-10" />
           </div>
         </div>
       </div>
@@ -64,11 +64,11 @@
       </div>
     </nav>
     <nav id="nav" class="w-full hidden z-[10000] md:flex items-center justify-center top-0  h-[86px] ">
-      <div class="pt-4 xl:flex   relative container   w-full xl:items-center xl:justify-between">
+      <div class="pt-4 xl:flex relative container   w-full xl:items-center ">
 
         <div class="flex justify-between items-center">
           <a href="index.html" class="flex items-center  max-w-[120px] leading-none">
-            <img src="assets/logo.svg" alt="Logo" class="h-12 w-12 ">
+            <img src="assets/img/logo.svg" alt="Logo" class="h-12 w-12 ">
             <h2 class="font-bold p-0.5 text-blue text-[20px] ml-2">SEY ALOHA</h2>
           </a>
           <div class="xl:hidden">
@@ -93,24 +93,24 @@
           </div>
 
 
-          <img src="assets/dot.svg" />
+          <img src="assets/img/dot.svg" />
           <a href="#" class="text-blue-text">Рыбалка</a>
-          <img src="assets/dot.svg" />
+          <img src="assets/img/dot.svg" />
           <a href="#" class="text-blue-text">Яхтинг</a>
-          <img src="assets/dot.svg" />
+          <img src="assets/img/dot.svg" />
           <a href="#" class="text-blue-text">Катамаран</a>
-          <img src="assets/dot.svg" />
+          <img src="assets/img/dot.svg" />
           <a href="#" class="text-blue-text">О компании</a>
         </div>
-        <div class="w-fit  gap-x-1 mr-8 flex items-center justify-between">
+        <div class="w-fit ml-2  gap-x-1 mr-8 flex items-center justify-between">
           <button id="search_button" type="button"
             class="text-blue-500 bg-white p-4 rounded-full hover:text-blue-600 focus:outline-none focus:text-blue-600">
-            <img src="assets/search.svg" alt="Search" class="h-5 w-5" />
+            <img src="assets/img/search.svg" alt="Search" class="h-5 w-5" />
 
           </button>
           <div id="search_content"
             class="hidden absolute z-[6000] items-center px-[40px] py-[15px] rounded-3xl justify-start top-24 w-[1160px] left-0 bg-white">
-            <img src="assets/search.svg" alt="Search" class="h-5 w-5" />
+            <img src="assets/img/search.svg" alt="Search" class="h-5 w-5" />
             <input class="w-full rounded-3xl pl-3 py-[10px] ml-[25px] mr-[25px]" placeholder="Введите текст" />
 
             <div id="search_type_button"
@@ -119,20 +119,20 @@
           </div>
           <button type="button"
             class="text-blue-500 bg-white p-4 rounded-full hover:text-blue-600 focus:outline-none focus:text-blue-600">
-            <img src="assets/bag.svg" alt="shop" class="h-5 w-5" />
+            <img src="assets/img/bag.svg" alt="shop" class="h-5 w-5" />
           </button>
           <button type="button"
             class="text-blue-500 bg-white p-4 rounded-full hover:text-blue-600 focus:outline-none focus:text-blue-600">
-            <img src="assets/telegram_3.svg" alt="telegram" class="h-5 w-5" />
+            <img src="assets/img/telegram_3.svg" alt="telegram" class="h-5 w-5" />
           </button>
         </div>
         <!-- Icons and additional options -->
         <div class="hidden xl:flex items-center space-x-5">
 
           <a href="#" class="text-blue-text flex items-center font-bold text-[16px]  gap-x-2 justify-center">En<img
-              src="assets/arrow_down.svg" /></a>
+              src="assets/img/arrow_down.svg" /></a>
           <a href="#" class="text-blue-text flex items-center font-bold text-[16px]  gap-x-2 justify-center">€
-            (EUR)<img src="assets/arrow_down.svg" /></a>
+            (EUR)<img src="assets/img/arrow_down.svg" /></a>
           <a href="#" class="text-blue-text bg-white rounded-3xl font-bold text-[16px] px-12 py-3">Войти</a>
         </div>
       </div>
@@ -140,7 +140,7 @@
     <div class="container mx-auto mt-7 rounded-3xl  ">
       <div
         class="bg-cover flex w-full md:w-[750px] md:px-[45px] flex-col xl:w-full  xl:flex-row rounded-3xl bg-center h-[670px] "
-        style="background-image: linear-gradient(to bottom, rgba(1, 130, 190,0) 50%, rgba(0, 131, 187, 0.7) 70%), url('assets/1_page.png');">
+        style="background-image: linear-gradient(to bottom, rgba(1, 130, 190,0) 50%, rgba(0, 131, 187, 0.7) 70%), url('assets/img/1_page.png');">
 
         <div class="h-1/2"></div>
         <div
@@ -172,13 +172,13 @@
         <div
           class=" w-full mt-2.5 md:flex-row md:flex-wrap md:gap-x-[32px] tracking-normal text-left gap-y-[15px] shadow-none font-medium flex items-start xl:items-center justify-start xl:justify-between  text-[16px] flex-col xl:flex-row ">
           <span class="flex  items-center max-w-[333px]  gap-x-2">
-            <img src="assets/palm.svg" class="" /> Индивидуальная программа отдыха
+            <img src="assets/img/palm.svg" class="" /> Индивидуальная программа отдыха
           </span>
           <span class="flex items-center max-w-[400px] gap-x-2">
-            <img src="assets/ship.svg" class="" /> Комфортный отдых на лучших яхтах Сейшел
+            <img src="assets/img/ship.svg" class="" /> Комфортный отдых на лучших яхтах Сейшел
           </span>
           <span class="flex items-center max-w-[300px] gap-x-2">
-            <img src="assets/translate.svg" class="" />
+            <img src="assets/img/translate.svg" class="" />
             Русскоязычные и местные гиды со знанием 5 языков
           </span>
         </div>
@@ -217,7 +217,7 @@
         </div>
       </div>
       <div class="xl:w-1/2 w-full">
-        <img class="rounded-3xl object-cover w-full h-auto md:h-[417px] xl:h-full" src="assets/page_2_card.png" />
+        <img class="rounded-3xl object-cover w-full h-auto md:h-[417px] xl:h-full" src="assets/img/page_2_card.png" />
       </div>
     </div>
 
@@ -233,10 +233,10 @@
             Отправитесь
             в увлекательные экскурсии от коралловых рифов и тропических лесов до водопадов и уединённых пляжей
           </h2>
-          <img src="assets/scroll_1_image.png" alt="Slide 1">
+          <img src="assets/img/scroll_1_image.png" alt="Slide 1">
         </div>
         <div class="swiper-slide h-[600px] slide ">
-          <img src="assets/scroll_3_image.png" alt="Slide 2">
+          <img src="assets/img/scroll_3_image.png" alt="Slide 2">
           <h2
             class="absolute_custom max-w-[250px] md:max-w-[589px] left-4 text-left top-1/2  text-[26px] xl:text-[42px] text-white">
             Посетите
@@ -244,14 +244,14 @@
           </h2>
         </div>
         <div class="swiper-slide h-[600px] slide">
-          <img src="assets/scroll_4_image.png" alt="Slide 3">
+          <img src="assets/img/scroll_4_image.png" alt="Slide 3">
           <h2
             class="absolute_custom max-w-[250px] md:max-w-[589px]  left-4 text-left top-1/2 w-3/4  text-[26px] xl:text-[42px] text-white">
             Почувствуешь
             азарт рыбалки в уникальных природных условиях Сейшелских островов</h2>
         </div>
         <div class="swiper-slide h-[600px] slide">
-          <img src="assets/scroll_5_image.png" alt="Slide 4">
+          <img src="assets/img/scroll_5_image.png" alt="Slide 4">
           <h2
             class="absolute_custom max-w-[250px] md:max-w-[589px] left-4 text-left top-1/2 w-3/4  text-[26px] xl:text-[42px] text-white">
             Проведите
@@ -259,9 +259,9 @@
         </div>
       </div>
       <button class="prev left-12 xl:left-12 top-[80%] md:top-[67%] xl:top-[80%]  z-10   w-15 h-15"><img
-          src="assets/Arrow left.svg" /></button>
+          src="assets/img/Arrow left.svg" /></button>
       <button class="next left-28 xl:left-28 z-10 top-[80%] md:top-[67%] xl:top-[80%]   w-15 h-15"><img
-          src="assets/Arrow right.svg" /></button>
+          src="assets/img/Arrow right.svg" /></button>
     </div>
 
 
@@ -273,70 +273,70 @@
         стиль отдыха</h2>
       <!-- Individual excursion card -->
       <div class="relative uppercase rounded-3xl xl:mt-12 h-[400px] md:h-[350px] xl:h-[400px]"
-        style="background: linear-gradient(to bottom, transparent, rgba(1, 130, 190, 0) 30%, rgba(1, 101, 147, 0.5) 70%, rgba(0, 71, 102, 0.85) 100%), url('./assets/styles_folder/1.png') no-repeat center center / cover;">
+        style="background: linear-gradient(to bottom, transparent, rgba(1, 130, 190, 0) 30%, rgba(1, 101, 147, 0.5) 70%, rgba(0, 71, 102, 0.85) 100%), url('./assets/img/1.png') no-repeat center center / cover;">
         <div
           class="w-full  text-white max-w-[224px] xl:max-w-full text-[16px] xl:text-[18px] pl-[30px] pb-[40px] font-bold xl:font-extrabold absolute  bottom-0 ">
           Индивидуальные
           экскурсии
         </div>
-        <a href="www.google.com"><img src="assets/arrow.svg" class="w-[40px] h-[40px] absolute right-4 top-4" /></a>
+        <a href="www.google.com"><img src="assets/img/arrow.svg" class="w-[40px] h-[40px] absolute right-4 top-4" /></a>
       </div>
 
       <div class="relative col-span-1 uppercase rounded-3xl xl:mt-12 up h-[400px] md:h-[350px] xl:h-[400px]"
-        style="background: linear-gradient(to bottom, transparent, rgba(1, 130, 190, 0) 30%, rgba(1, 101, 147, 0.5) 70%, rgba(0, 71, 102, 0.85) 100%), url('./assets/styles_folder/2.png') no-repeat center center / cover;">
+        style="background: linear-gradient(to bottom, transparent, rgba(1, 130, 190, 0) 30%, rgba(1, 101, 147, 0.5) 70%, rgba(0, 71, 102, 0.85) 100%), url('./assets/img/2.png') no-repeat center center / cover;">
         <p
           class="w-full  text-white max-w-[224px] xl:max-w-full text-[16px] xl:text-[18px] pl-[30px] pb-[40px] font-bold xl:font-extrabold absolute  bottom-0 ">
           Групповые
           Приключения
         </p>
-        <a href="www.google.com"><img src="assets/arrow.svg" class="w-[40px] h-[40px] absolute right-4 top-4" /></a>
+        <a href="www.google.com"><img src="assets/img/arrow.svg" class="w-[40px] h-[40px] absolute right-4 top-4" /></a>
       </div>
 
       <!-- Catamaran travel card -->
       <div class="relative uppercase rounded-3xl h-[400px] md:h-[350px] xl:h-[400px]"
-        style="background: linear-gradient(to bottom, transparent, rgba(1, 130, 190, 0) 30%, rgba(1, 101, 147, 0.5) 70%, rgba(0, 71, 102, 0.85) 100%), url('./assets/styles_folder/3.png') no-repeat center center / cover;">
+        style="background: linear-gradient(to bottom, transparent, rgba(1, 130, 190, 0) 30%, rgba(1, 101, 147, 0.5) 70%, rgba(0, 71, 102, 0.85) 100%), url('./assets/img/3.png') no-repeat center center / cover;">
         <p
           class="w-full  text-white max-w-[224px] xl:max-w-full text-[16px] xl:text-[18px] pl-[30px] pb-[40px] font-bold xl:font-extrabold absolute  bottom-0 ">
           Путешествие
           на
           катамаране
         </p>
-        <a href="www.google.com"><img src="assets/arrow.svg" class="w-[40px] h-[40px] absolute right-4 top-4" /></a>
+        <a href="www.google.com"><img src="assets/img/arrow.svg" class="w-[40px] h-[40px] absolute right-4 top-4" /></a>
       </div>
 
       <!-- Yachting card -->
       <div
         class="relative uppercase flex items-start col-span-1 justify-start rounded-3xl h-[400px] md:h-[350px] xl:h-[400px]"
-        style="background: linear-gradient(to bottom, transparent, rgba(1, 130, 190, 0) 30%, rgba(1, 101, 147, 0.5) 70%, rgba(0, 71, 102, 0.85) 100%), url('./assets/styles_folder/4.png') no-repeat center center / cover;">
+        style="background: linear-gradient(to bottom, transparent, rgba(1, 130, 190, 0) 30%, rgba(1, 101, 147, 0.5) 70%, rgba(0, 71, 102, 0.85) 100%), url('./assets/img/4.png') no-repeat center center / cover;">
         <p
           class="w-full  text-white max-w-[224px] xl:max-w-full text-[16px] xl:text-[18px] pl-[30px] pb-[40px] font-bold xl:font-extrabold absolute  bottom-0 ">
           Яхтинг</p>
-        <a href="www.google.com"><img src="assets/arrow.svg" class="w-[40px] h-[40px] absolute right-4 top-4" /></a>
+        <a href="www.google.com"><img src="assets/img/arrow.svg" class="w-[40px] h-[40px] absolute right-4 top-4" /></a>
       </div>
 
       <!-- Fishing expedition card -->
       <div class="relative uppercase rounded-3xl col-span-1 md:col-span-2 h-[400px] md:h-[350px] xl:h-[400px]"
-        style="background: linear-gradient(to bottom, transparent, rgba(1, 130, 190, 0) 30%, rgba(1, 101, 147, 0.5) 70%, rgba(0, 71, 102, 0.85) 100%), url('./assets/styles_folder/5.png') no-repeat center center / cover;">
+        style="background: linear-gradient(to bottom, transparent, rgba(1, 130, 190, 0) 30%, rgba(1, 101, 147, 0.5) 70%, rgba(0, 71, 102, 0.85) 100%), url('./assets/img/5.png') no-repeat center center / cover;">
         <p
           class="w-full  text-white max-w-[224px] xl:max-w-full text-[16px] xl:text-[18px] pl-[30px] pb-[40px] font-bold xl:font-extrabold absolute  bottom-0 ">
           Рыболовные
           Экспедиции
         </p>
-        <a href="www.google.com"><img src="assets/arrow.svg" class="w-[40px] h-[40px] absolute right-4 top-4" /></a>
+        <a href="www.google.com"><img src="assets/img/arrow.svg" class="w-[40px] h-[40px] absolute right-4 top-4" /></a>
       </div>
     </div>
 
     <div class="container mt-[50px] xl:mt-20 gap-x-12 bg-white rounded-3xl xl:p-12 h-full flex flex-col xl:flex-row">
 
       <div class="bg-blue rounded-3xl bg flex flex-col items-start xl:justify-between h-[510px] xl:h-[640px] xl:w-1/2 "
-        style="background: url('assets/card_back_5_page.png') no-repeat center center / cover;">
+        style="background: url('assets/img/card_back_5_page.png') no-repeat center center / cover;">
 
         <div class="relative mt-5 ml-10 w-full">
           <img class="absolute z-[13] w-[110px] md:w-[135px] xl:w-[130px]   xl:top-7 "
-            src="assets/5_page/Ellipse 22.png" />
+            src="assets/img/Ellipse 22.png" />
           <img
             class="absolute z-[12] w-[110px] md:w-[135px] xl:w-[130px] left-12 md:left-20 top-4 md:top-8 xl:left-16 xl:top-14 "
-            src="assets/5_page/Ellipse 23.png" />
+            src="assets/img/Ellipse 23.png" />
         </div>
         <div
           class="xl:h-1/2 h-full mt-[150px] xl:mt-10 ml-[30px] xl:ml-10 text-white flex flex-col items-start mb-10 justify-center xl:justify-start">
@@ -353,9 +353,9 @@
       <div
         class="xl:w-1/2 flex px-[30px] flex-col justify-start md:items-center relative xl:ml-16 xl:p-0 mt-10 xl:mt-0 xl:h-[640px]">
         <div class="flex flex-row  w-full h-[100px] md:h-[150px] items-center top-0 justify-between md:w-[420px]">
-          <img class="w-20 mb-auto h-16 md:w-[120px] md:h-[100px]" src="assets/snorkling.png" />
-          <img class="w-20 h-16 md:w-[120px] md:h-[100px]" src="assets/islands.png" />
-          <img class="w-20 -mt-2 mb-auto h-16 md:w-[120px] md:h-[100px]" src="assets/fishing.png" />
+          <img class="w-20 mb-auto h-16 md:w-[120px] md:h-[100px]" src="assets/img/snorkling.png" />
+          <img class="w-20 h-16 md:w-[120px] md:h-[100px]" src="assets/img/islands.png" />
+          <img class="w-20 -mt-2 mb-auto h-16 md:w-[120px] md:h-[100px]" src="assets/img/fishing.png" />
         </div>
         <div
           class="max-w-[404px] flex-col text-smm md:text-center xl:mt-[85px] font-semibold l-140 items-left  items-center flex justify-start text-[16px] xl:text-[18px]">
@@ -369,7 +369,7 @@
           идеальный тур</div>
         <div
           class="l-140 mt-5 text-blue font-bold xl:font-semibold text-[16px] xl:text-[18px] flex items-center justify-start">
-          <img src="assets/telegram_2.svg" class="mr-2" />Или
+          <img src="assets/img/telegram_2.svg" class="mr-2" />Или
           напишите ваш
           запрос нам в Telegram
         </div>
@@ -396,7 +396,7 @@
                 <option>Viber</option>
                 <!-- Add other options here -->
               </select>
-              <img src="assets/arrow_down.svg" class="absolute right-6" />
+              <img src="assets/img/arrow_down.svg" class="absolute right-6" />
             </div>
 
             <button type="submit"
@@ -422,26 +422,26 @@
           и яркие
           воспоминания наших туристов</h2>
         <div class=" hidden md:flex justify-end items-center gap-x-4">
-          <img class="cursor-pointer prev_4" src="assets/Arrow left_2.svg" />
-          <img class="cursor-pointer next_4" src="assets/Arrow right_2.svg" />
+          <img class="cursor-pointer prev_4" src="assets/img/Arrow left_2.svg" />
+          <img class="cursor-pointer next_4" src="assets/img/Arrow right_2.svg" />
         </div>
       </div>
       <div class="mt-[50px] flex items-center justify-start">
         <p class="max-w-[225px] text-[16px] l-140">Еще большое фото и видео в нашем Telegram и Vkontakte</p>
         <div class="flex items-center ml-9 gap-x-3 justify-start">
-          <img src="assets/vk.svg" class="h-11 w-11 cursor-pointer " />
-          <img src="assets/telegram_2.svg" class="h-11 w-11 cursor-pointer" />
+          <img src="assets/img/vk.svg" class="h-11 w-11 cursor-pointer " />
+          <img src="assets/img/telegram_2.svg" class="h-11 w-11 cursor-pointer" />
         </div>
       </div>
       <div class="swiper_4 relative mt-7 mySwiper h-full">
         <div class="swiper-wrapper">
 
-          <div class="swiper-slide rounded-3xl"><img src="assets/smiling_women.png" /></div>
-          <div class="swiper-slide rounded-3xl"><img src="assets/smiling_people.png" /></div>
-          <div class="swiper-slide rounded-3xl"><img src="assets/man.png" /></div>
-          <div class="swiper-slide rounded-3xl"><img src="assets/smiling_women.png" /></div>
-          <div class="swiper-slide rounded-3xl"><img src="assets/smiling_people.png" /></div>
-          <div class="swiper-slide rounded-3xl"><img src="assets/man.png" /></div>
+          <div class="swiper-slide rounded-3xl"><img src="assets/img/smiling_women.png" /></div>
+          <div class="swiper-slide rounded-3xl"><img src="assets/img/smiling_people.png" /></div>
+          <div class="swiper-slide rounded-3xl"><img src="assets/img/man.png" /></div>
+          <div class="swiper-slide rounded-3xl"><img src="assets/img/smiling_women.png" /></div>
+          <div class="swiper-slide rounded-3xl"><img src="assets/img/smiling_people.png" /></div>
+          <div class="swiper-slide rounded-3xl"><img src="assets/img/man.png" /></div>
         </div>
 
 
@@ -463,15 +463,15 @@
         <div
           class="text-[14px] xl:text-[16px] max-w-[400px] gap-y-2.5 flex text-blue-text flex-col font-bold mb-auto mt-[30px]">
           <div class="flex items-center h-[50px] justify-start ">
-            <img src="assets/photoapparat.svg" class="mr-[20px]" />
+            <img src="assets/img/photoapparat.svg" class="mr-[20px]" />
             ЖИВЫЕ ФОТОГРАФИИИ С ЭКСКУРСИИ
           </div>
           <div class="flex items-center h-[50px] justify-start">
-            <img src="assets/smile.svg" class="mr-[20px]" />
+            <img src="assets/img/smile.svg" class="mr-[20px]" />
             ИСКРЕННИЕ ОТЗЫВЫ ОТ НАШИХ ПУТЕШЕСТВЕННИКОВ
           </div>
           <div class="flex items-center h-[50px] justify-start">
-            <img src="assets/like.svg" class="mr-[20px]" />
+            <img src="assets/img/like.svg" class="mr-[20px]" />
             СОВЕТЫ И ВДОХНОВЛЯЮЩИЕ ИСТОРИИ
           </div>
         </div>
@@ -480,7 +480,7 @@
           Перейти в
           телеграмм</div>
       </div>
-      <img class="mt-10 md:mt-0 md:w-[280px] md:h-[460px] rounded-3xl object-cover" src="/assets/bt_girl.png" />
+      <img class="mt-10 md:mt-0 md:w-[280px] md:h-[460px] rounded-3xl object-cover" src="./assets/img/bt_girl.png" />
 
     </div>
     <div class="container pb-10 relative flex flex-col items-center justify-start mt-20 ">
@@ -495,17 +495,17 @@
       <div
         class="swiper_4 swiper_last_index md:max-w-[640px] overflow-x-hidden  mySwiper2 relative w-full xl:max-w-full mt-10 rounded-3xl">
         <div class="swiper-wrapper ">
-          <div class="swiper-slide "><img class="" src="assets/scroll_1_image.png" alt="Slide 1"></div>
-          <div class="swiper-slide "><img class="" src="assets/scroll_1_image.png" alt="Slide 1"></div>
+          <div class="swiper-slide "><img class="" src="assets/img/scroll_1_image.png" alt="Slide 1"></div>
+          <div class="swiper-slide "><img class="" src="assets/img/scroll_1_image.png" alt="Slide 1"></div>
         </div>
 
       </div>
       <button class="prev_2 left-1 md:-left-3 xl:-left-20 z-10 top-[68%] md:top-[63%] w-15 h-15">
-        <img src="assets/Arrow left_2.svg" class="hidden md:flex" />
-        <img src="assets/Arrow left.svg" class="flex md:hidden" /></button>
+        <img src="assets/img/Arrow left_2.svg" class="hidden md:flex" />
+        <img src="assets/img/Arrow left.svg" class="flex md:hidden" /></button>
       <button class="next_2 right-1 md:-right-3 xl:-right-20 z-10 top-[68%] md:top-[63%] w-15 h-15">
-        <img src="assets/Arrow right_2.svg" class="hidden md:flex" />
-        <img src="assets/Arrow right.svg" class="flex md:hidden" /></button>
+        <img src="assets/img/Arrow right_2.svg" class="hidden md:flex" />
+        <img src="assets/img/Arrow right.svg" class="flex md:hidden" /></button>
 
       <div class="swiper-pagination absolute w-fit  bottom-0"></div>
     </div>
@@ -521,7 +521,7 @@
       <div
         class="grid grid-cols-1 md:grid-cols-2 place-items-start md:place-items-stretch xl:place-items-start xl:grid-cols-3 gap-y-[20px]  md:gap-5 p-3 pt-10  mx-2 pb-10">
         <div class=" rounded-3xl  flex flex-col items-start justify-start px-10 bg-light-blue">
-          <img class="ml-auto my-10 w-[60px] h-[60px]" src="assets/rest_palm.svg" />
+          <img class="ml-auto my-10 w-[60px] h-[60px]" src="assets/img/rest_palm.svg" />
           <div class=" text-xl  text-blue-text uppercase text-[16px] xl:text-[20px] font-extrabold">Индивидуальный
             подход</div>
           <div class="mt-10 mb-10 text-blue-text text-[14px] xl:text-[16px]">Мы создаём незабываемый отдых,
@@ -529,7 +529,7 @@
             потрясающих закатов</div>
         </div>
         <div class=" rounded-3xl xl:mt-[50px] xl:mb-[25px] px-10 bg-light-blue">
-          <img class="ml-auto my-10 w-[60px] h-[60px]" src="assets/shield.svg" />
+          <img class="ml-auto my-10 w-[60px] h-[60px]" src="assets/img/shield.svg" />
           <div class=" text-xl  text-blue-text uppercase text-[16px] xl:text-[20px] font-extrabold">Безопасность <br
               class="hidden xl:flex" />в
             приоритете</div>
@@ -538,7 +538,7 @@
           </div>
         </div>
         <div class=" rounded-3xl px-10 bg-light-blue">
-          <img class="ml-auto my-10 w-[60px] h-[60px]" src="assets/smth.svg" />
+          <img class="ml-auto my-10 w-[60px] h-[60px]" src="assets/img/smth.svg" />
           <div class=" text-xl  text-blue-text uppercase text-[16px] max-w-[232px] xl:text-[20px] font-extrabold">
             никаких скрытых
             платежей</div>
@@ -548,7 +548,7 @@
             только полная ясность и открытость</div>
         </div>
         <div class=" rounded-3xl px-10 bg-light-blue">
-          <img class="ml-auto my-10 w-[60px] h-[60px]" src="assets/translator.svg" />
+          <img class="ml-auto my-10 w-[60px] h-[60px]" src="assets/img/translator.svg" />
           <div class=" text-xl  text-blue-text uppercase max-w-[176px] text-[16px] xl:text-[20px] font-extrabold">
             Многоязычные
             гиды</div>
@@ -556,7 +556,7 @@
             на нескольких языках, включая русский, английский, французский, итальянский и немецкий</div>
         </div>
         <div class=" rounded-3xl xl:mt-[50px] xl:mb-[25px] px-10 bg-light-blue">
-          <img class="ml-auto my-10 w-[60px] h-[60px]" src="assets/ship_2.svg" />
+          <img class="ml-auto my-10 w-[60px] h-[60px]" src="assets/img/ship_2.svg" />
           <div class=" text-xl  text-blue-text uppercase max-w-[150px] text-[16px] xl:text-[20px] font-extrabold">
             Катамараны на
             высоте</div>
@@ -567,7 +567,7 @@
           </div>
         </div>
         <div class=" rounded-3xl px-10 bg-light-blue">
-          <img class="ml-auto my-10 w-[60px] h-[60px]" src="assets/fish.svg" />
+          <img class="ml-auto my-10 w-[60px] h-[60px]" src="assets/img/fish.svg" />
           <div class=" text-xl  text-blue-text uppercase text-[16px] xl:text-[20px] max-w-[138px] font-extrabold">
             трофейная
             рыбалка</div>
@@ -578,11 +578,11 @@
       </div>
     </div>
 
-    <script type="module" src="js/menu.js" defer></script>
-    <script type="module" src="js/scroll_third_page.js" defer></script>
-    <script type="module" src="js/dropdown.js" defer></script>
-    <script type="module" src="js/nav.js" defer></script>
-    <script type="module" src="js/search_button.js" defer></script>
+    <script type="module" src="/js/menu.js" defer></script>
+    <script type="module" src="/js/scroll_third_page.js" defer></script>
+    <script type="module" src="/js/dropdown.js" defer></script>
+    <script type="module" src="/js/nav.js" defer></script>
+    <script type="module" src="/js/search_button.js" defer></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@21.2.4/build/js/intlTelInput.min.js"></script>

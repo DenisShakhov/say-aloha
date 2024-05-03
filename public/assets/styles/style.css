@@ -4,7 +4,7 @@
 @tailwind utilities;
 @font-face {
     font-family: 'RG-StandardBold';
-    src: url('RG-StandardBold.ttf') format('truetype');
+    src: url('../RG-StandardBold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
@@ -12,7 +12,7 @@
 
 @font-face {
     font-family: 'RG-StandardSemibold'; 
-    src: url('RG-StandardSemibold.ttf') format('truetype');  
+    src: url('../RG-StandardSemibold.ttf') format('truetype');  
     font-weight: 600;  
     font-style: normal;
 }
@@ -273,7 +273,7 @@ z-index: 1; /* Убедитесь, что изображение под град
     }
     .step:not(:last-child)::after {
       content: '';
-      background: url('assets/dotted_line.svg') center/contain no-repeat;
+      background: url('assets/img/dotted_line.svg') center/contain no-repeat;
       height: 10px;
       flex-grow: 1;
       margin-left: 20px; /* Отступ слева от номера до линии */
@@ -287,7 +287,7 @@ z-index: 1; /* Убедитесь, что изображение под град
     }
     .step:not(:last-child)::after {
       content: '';
-      background: url('assets/dotted_line_vertical.svg') center/contain no-repeat;
+      background: url('assets/img/dotted_line_vertical.svg') center/contain no-repeat;
       width: 10px;
       height: 20px; /* Высота может быть изменена в зависимости от необходимого расстояния между шагами */
       align-self: center;
