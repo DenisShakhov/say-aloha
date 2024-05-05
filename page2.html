@@ -334,112 +334,121 @@
         </div>
         <div class="mt-20 hidden xl:flex">
             <div id="buttons_page_2" class="w-fit gap-x-[10px] flex  items-center justify-between">
-                <div
+                <div id="data_i_stoimost"
                     class="bg-blue l-100 flex items-center justify-center rounded-3xl text-center text-white w-[150px] text-[16px] font-bold h-[50px] p-2">
                     Даты и
                     стоимость
                 </div>
-                <div
+                <div id="programma"
                     class="border flex items-center justify-center border-blue-text text-blue-text rounded-3xl text-center l-140 w-[150px] text-[16px]  h-[50px] ">
                     Программа
                 </div>
-                <div
+                <div id="route"
                     class="border flex items-center justify-center border-blue-text text-blue-text rounded-3xl text-center l-140 w-[150px] text-[16px]  h-[50px] ">
                     Маршрут
                 </div>
-                <div
+                <div id="shto_vkl"
                     class="border flex items-center justify-center border-blue-text text-blue-text rounded-3xl text-center l-140 w-[150px] text-[16px]  h-[50px] ">
-                    Что включено
+                    Важно знать
                 </div>
             </div>
         </div>
         <div class="mt-12 relative flex w-full xl:gap-x-[50px] xl:flex-row">
             <div class="flex flex-col w-full xl:w-2/3 max-w-[711px]">
-                <h2 class="text-blue-text text-[30px] xl:text-[42px] font-semibold">Программа экскурсии:</h2>
+                <div class="programma_excursii">
+                    <h2 class="text-blue-text text-[30px] xl:text-[42px] font-semibold">Программа экскурсии:</h2>
 
+                    <div class="flex flex-col">
+                        <div class="w-full">
+                            <button
+                                class="border dropdownButton bg-white mt-[10px] px-[30px] w-full x:mt-[10px] flex items-center font-bold  justify-between border-blue-text text-blue-text  rounded-3xl text-center md:l-140 text-[14px]  md:text-[16px]  h-[50px]">
+                                Барбекю на о. Лонг
+                                <img src="assets/img/arrow_down.svg" class="" />
+                            </button>
+                            <div id="dropdownContent"
+                                class="hidden xl:flex flex-col md:mt-5 md:flex-row w-full xl:items-start items-start justify-between">
+                                <div class="flex flex-col md:flex-row-reverse w-full items-start justify-between">
+                                    <div class=" text-grey-text max-w-[320px]">После этого нас ждет час свободного
+                                        времени
+                                        на острове Лонг, где вы можете насладиться купанием, фотографиями и готовящимся
+                                        барбекю,
+                                        пока наш персонал заботится о вкусном ужине.</div>
+                                    <img src="assets/img/swimming_women.png" class="mt-5 md:mt-0" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full">
+                            <button
+                                class="border dropdownButton bg-white mt-[10px] px-[30px] w-full x:mt-[10px] flex items-center font-bold  justify-between border-blue-text text-blue-text  rounded-3xl text-center md:l-140 text-[14px]  md:text-[16px]  h-[50px]">
+                                Остров Черепах
+                                <img src="assets/img/arrow_down.svg" class="" />
+                            </button>
+                            <div id="dropdownContent"
+                                class="hidden xl:flex flex-col md:mt-5 md:flex-row w-full xl:items-start items-start justify-between">
+                                <div class="flex flex-col md:flex-row w-full items-start justify-between">
+                                    <div class=" text-grey-text max-w-[320px]">За дополнительную плату (200 scr/15 евро,
+                                        детям до 12 лет вход бесплатный) вы можете посетить остров и насладиться часом
+                                        свободного времени для исследования.</div>
+                                    <img src="assets/img/swimming_women.png" class="mt-5 md:mt-0" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full">
+                            <button
+                                class="border dropdownButton bg-white mt-[10px] px-[30px] w-full x:mt-[10px] flex items-center font-bold  justify-between border-blue-text text-blue-text  rounded-3xl text-center md:l-140 text-[14px]  md:text-[16px]  h-[50px]">
+                                Барбекю на о. Лонг
+                                <img src="assets/img/arrow_down.svg" class="" />
+                            </button>
+                            <div id="dropdownContent"
+                                class="hidden xl:flex flex-col md:mt-5 md:flex-row w-full xl:items-start items-start justify-between">
+                                <div class="flex flex-col md:flex-row-reverse w-full items-start justify-between">
+                                    <div class=" text-grey-text max-w-[320px]">После посещения острова черепах Мойенн и
+                                        часа, проведенного среди его живописных пейзажей, мы отправимся на вторую сессию
+                                        снорклинга, на этот раз в поисках морских черепах. После мы вас доставим в
+                                        отель.
+                                    </div>
+                                    <img src="assets/img/swimming_women.png" class="mt-5 md:mt-0" />
+                                </div>
+                            </div>
+                        </div>
 
-                <div class="w-full">
-                    <button
-                        class="border dropdownButton bg-white mt-[10px] px-[30px] w-full x:mt-[10px] flex items-center font-bold  justify-between border-blue-text text-blue-text  rounded-3xl text-center md:l-140 text-[14px]  md:text-[16px]  h-[50px]">
-                        Барбекю на о. Лонг
-                        <img src="assets/img/arrow_down.svg" class="" />
-                    </button>
-                    <div id="dropdownContent"
-                        class="hidden xl:flex flex-col md:mt-5 md:flex-row w-full xl:items-start items-start justify-between">
-                        <div class="flex flex-col md:flex-row-reverse w-full items-start justify-between">
-                            <div class=" text-grey-text max-w-[320px]">После этого нас ждет час свободного времени
-                                на острове Лонг, где вы можете насладиться купанием, фотографиями и готовящимся барбекю,
-                                пока наш персонал заботится о вкусном ужине.</div>
-                            <img src="assets/img/swimming_women.png" class="mt-5 md:mt-0" />
+                        <div class="w-full">
+                            <button
+                                class="border dropdownButton bg-white mt-[10px] px-[30px] w-full x:mt-[10px] flex items-center font-bold  justify-between border-blue-text text-blue-text  rounded-3xl text-center md:l-140 text-[14px]  md:text-[16px]  h-[50px]">
+                                Остров Черепах
+                                <img src="assets/img/arrow_down.svg" class="" />
+                            </button>
+                            <div id="dropdownContent"
+                                class="hidden xl:flex flex-col md:mt-5 md:flex-row w-full xl:items-start items-start justify-between">
+                                <div class="flex flex-col md:flex-row w-full items-start justify-between">
+                                    <div class=" text-grey-text max-w-[320px]">За дополнительную плату (200 scr/15 евро,
+                                        детям до 12 лет вход бесплатный) вы можете посетить остров и насладиться часом
+                                        свободного времени для исследования.</div>
+                                    <img src="assets/img/swimming_women.png" class="mt-5 md:mt-0" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full">
+                            <button
+                                class="border dropdownButton bg-white mt-[10px] px-[30px] w-full x:mt-[10px] flex items-center font-bold  justify-between border-blue-text text-blue-text  rounded-3xl text-center md:l-140 text-[14px]  md:text-[16px]  h-[50px]">
+                                Барбекю на о. Лонг
+                                <img src="assets/img/arrow_down.svg" class="" />
+                            </button>
+                            <div id="dropdownContent"
+                                class="hidden xl:flex flex-col md:mt-5 md:flex-row w-full xl:items-start items-start justify-between">
+                                <div class="flex flex-col md:flex-row-reverse w-full items-start justify-between">
+                                    <div class=" text-grey-text max-w-[320px]">После посещения острова черепах Мойенн и
+                                        часа, проведенного среди его живописных пейзажей, мы отправимся на вторую сессию
+                                        снорклинга, на этот раз в поисках морских черепах. После мы вас доставим в
+                                        отель.
+                                    </div>
+                                    <img src="assets/img/swimming_women.png" class="mt-5 md:mt-0" />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="w-full">
-                    <button
-                        class="border dropdownButton bg-white mt-[10px] px-[30px] w-full x:mt-[10px] flex items-center font-bold  justify-between border-blue-text text-blue-text  rounded-3xl text-center md:l-140 text-[14px]  md:text-[16px]  h-[50px]">
-                        Остров Черепах
-                        <img src="assets/img/arrow_down.svg" class="" />
-                    </button>
-                    <div id="dropdownContent"
-                        class="hidden xl:flex flex-col md:mt-5 md:flex-row w-full xl:items-start items-start justify-between">
-                        <div class="flex flex-col md:flex-row w-full items-start justify-between">
-                            <div class=" text-grey-text max-w-[320px]">За дополнительную плату (200 scr/15 евро,
-                                детям до 12 лет вход бесплатный) вы можете посетить остров и насладиться часом
-                                свободного времени для исследования.</div>
-                            <img src="assets/img/swimming_women.png" class="mt-5 md:mt-0" />
-                        </div>
-                    </div>
-                </div>
-                <div class="w-full">
-                    <button
-                        class="border dropdownButton bg-white mt-[10px] px-[30px] w-full x:mt-[10px] flex items-center font-bold  justify-between border-blue-text text-blue-text  rounded-3xl text-center md:l-140 text-[14px]  md:text-[16px]  h-[50px]">
-                        Барбекю на о. Лонг
-                        <img src="assets/img/arrow_down.svg" class="" />
-                    </button>
-                    <div id="dropdownContent"
-                        class="hidden xl:flex flex-col md:mt-5 md:flex-row w-full xl:items-start items-start justify-between">
-                        <div class="flex flex-col md:flex-row-reverse w-full items-start justify-between">
-                            <div class=" text-grey-text max-w-[320px]">После посещения острова черепах Мойенн и
-                                часа, проведенного среди его живописных пейзажей, мы отправимся на вторую сессию
-                                снорклинга, на этот раз в поисках морских черепах. После мы вас доставим в отель.</div>
-                            <img src="assets/img/swimming_women.png" class="mt-5 md:mt-0" />
-                        </div>
-                    </div>
-                </div>
-
-                <div class="w-full">
-                    <button
-                        class="border dropdownButton bg-white mt-[10px] px-[30px] w-full x:mt-[10px] flex items-center font-bold  justify-between border-blue-text text-blue-text  rounded-3xl text-center md:l-140 text-[14px]  md:text-[16px]  h-[50px]">
-                        Остров Черепах
-                        <img src="assets/img/arrow_down.svg" class="" />
-                    </button>
-                    <div id="dropdownContent"
-                        class="hidden xl:flex flex-col md:mt-5 md:flex-row w-full xl:items-start items-start justify-between">
-                        <div class="flex flex-col md:flex-row w-full items-start justify-between">
-                            <div class=" text-grey-text max-w-[320px]">За дополнительную плату (200 scr/15 евро,
-                                детям до 12 лет вход бесплатный) вы можете посетить остров и насладиться часом
-                                свободного времени для исследования.</div>
-                            <img src="assets/img/swimming_women.png" class="mt-5 md:mt-0" />
-                        </div>
-                    </div>
-                </div>
-                <div class="w-full">
-                    <button
-                        class="border dropdownButton bg-white mt-[10px] px-[30px] w-full x:mt-[10px] flex items-center font-bold  justify-between border-blue-text text-blue-text  rounded-3xl text-center md:l-140 text-[14px]  md:text-[16px]  h-[50px]">
-                        Барбекю на о. Лонг
-                        <img src="assets/img/arrow_down.svg" class="" />
-                    </button>
-                    <div id="dropdownContent"
-                        class="hidden xl:flex flex-col md:mt-5 md:flex-row w-full xl:items-start items-start justify-between">
-                        <div class="flex flex-col md:flex-row-reverse w-full items-start justify-between">
-                            <div class=" text-grey-text max-w-[320px]">После посещения острова черепах Мойенн и
-                                часа, проведенного среди его живописных пейзажей, мы отправимся на вторую сессию
-                                снорклинга, на этот раз в поисках морских черепах. После мы вас доставим в отель.</div>
-                            <img src="assets/img/swimming_women.png" class="mt-5 md:mt-0" />
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-[50px] xl:mt-[80px] flex flex-col items-start justify-start">
+                <div class="mt-[50px] map xl:mt-[80px] flex flex-col items-start justify-start">
                     <h2 class="text-blue-text text-[30px] xl:text-[42px] font-semibold">Маршрут экскурсии:</h2>
                     <img src="assets/img/map.png" class="md:mt-5" />
                 </div>
@@ -488,7 +497,7 @@
                     </div>
 
                 </div>
-                <div class="mb-10 flex flex-col w-full items-center mt-[50px] xl:mt-[65px]">
+                <div class="mb-10 important_to_know flex flex-col w-full items-center mt-[50px] xl:mt-[65px]">
                     <h2 class="l-100 text-[30px] md:text-[42px] mr-auto font-semibold text-blue-text">Важно знать:</h2>
                     <div
                         class="mt-[50px] flex flex-col md:flex-row gap-x-[37px] xl:gap-x-[37px] md:gap-x-[20px] items-start gap-y-5 xl:gap-y-0 xl:items-start justify-between">
