@@ -9,7 +9,7 @@ export default defineConfig({
         main: path.resolve(__dirname, 'index.html'),
         page2: path.resolve(__dirname, 'page2.html'),
         page3: path.resolve(__dirname, 'page3.html'),
-        page3: path.resolve(__dirname, 'page4.html'),
+        page4: path.resolve(__dirname, 'page4.html'),
       }
     }
   },
