@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tailwind Project</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@21.2.4/build/css/intlTelInput.css">
+</head>
+
+<body class="bg-white min-h-[100vh]">
+
+    <div class="container mx-auto">
+        <div class="flex flex-col md:flex-row items-start justify-center w-full ">
+            <div class="md:w-1/2 md:p-[50px] flex flex-col items-start justify-start">
+                <h4 class="text-[24px] font-semibold l-140">Оплата бронирования</h4>
+                <div class="mt-[20px] w-full h-[1px] bg-black"></div>
+
+                <form>
+                    <div class="flex mt-[30px] flex-col gap-x-[20px] md:flex-row items-start xl:justify-between">
+                        <div class="flex flex-col items-start justify-start">
+                            <label class="font-bold text-[16px]">Имя</label>
+                            <input type="text" placeholder="Ангелина"
+                                class="p-5 rounded-3xl mt-[16px] w-full xl:w-[233px] bg-light-blue" />
+                        </div>
+                        <div class="flex flex-col items-start justify-start">
+                            <label class="font-bold text-[16px]">Фамилия</label>
+                            <input type="text" placeholder="Андрусенко"
+                                class="p-5 rounded-3xl mt-[16px] w-full xl:w-[233px] bg-light-blue" />
+                        </div>
+                    </div>
+                    <div class="flex w-full flex-col mt-5 items-start justify-start">
+                        <label class="font-bold text-[16px]">E-mail</label>
+                        <input type="email" placeholder="andrusenko15@bk.ru"
+                            class="p-5 rounded-3xl mt-[16px] w-full  bg-light-blue" />
+                    </div>
+                    <div class="flex w-full flex-col mt-5 items-start justify-start">
+                        <label class="font-bold text-[16px]">Телефон</label>
+                        <div
+                            class="flex  xl:justify-start mt-[16px] justify-start h-[60px] pl-[30px] xl:pl-[30px] rounded-3xl items-center bg-light-blue w-[280px] md:w-full xl:w-[404px]">
+                            <input type="tel" id="phone"
+                                class="w-[300px] md:w-full outline-none placeholder:text-blue-text placeholder:text-[12px]  mb:placeholder:text-[14px] rounded-3xl form-input ring-white bg-transparent h-[60px] pl-4   block">
+                        </div>
+                    </div>
+                    <div class="flex w-full relative flex-col mt-5 items-start justify-start">
+                        <label class="font-bold text-[16px]">Количество участников</label>
+                        <div id="select_members_button"
+                            class="bg-light-blue text-blue-text flex items-center justify-between px-[25px] rounded-3xl w-[240px]  h-[60px]">
+                            <div class="text-[14px]">2 взрослых</div>
+                            <img src="assets/img/arrow_down.svg" />
+                        </div>
+                        <div id="members_content"
+                            class="w-[250px] hidden top-[90px]  flex-col bg-white border absolute h-[120px]  rounded-3xl">
+                            <div class="flex items-center w-full justify-between px-[20px] pt-[20px]">
+                                <div class="max-w-[70px]">Взрослые</div>
+                                <div class="flex items-center justify-start gap-x-[15px]">
+                                    <img class="cursor-pointer" src="assets/img/minus_2.svg" />
+                                    <div>2</div>
+                                    <img class="cursor-pointer" src="assets/img/plus_2.svg" />
+                                </div>
+                            </div>
+                            <div class="flex items-center w-full justify-between px-[20px] pt-2 pb-[26px]">
+                                <div class="max-w-[70px]">Дети
+                                    до 12 лет</div>
+                                <div class="flex items-center justify-start gap-x-[15px]">
+                                    <img class="cursor-pointer" src="assets/img/minus_2.svg" />
+                                    <div>2</div>
+                                    <img class="cursor-pointer" src="assets/img/plus_2.svg" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex w-full flex-col mt-5 items-start justify-start">
+                        <label class="font-bold text-[16px]">Выберите способ оплаты:</label>
+                        <div
+                            class="flex xl:justify-start gap-x-[20px] justify-start h-[60px]  rounded-3xl items-center  w-[280px] md:w-full xl:w-[404px]">
+                            <div class="flex items-center gap-x-[4px] justify-start">
+                                <input type="radio" name="paymentMethod" id="visa_mastercard" />
+                                <label for="visa_mastercard" class="font-bold text-[16px]">Visa, MasterCard</label>
+                            </div>
+                            <div class="flex items-center gap-x-[4px] justify-start">
+                                <input type="radio" name="paymentMethod" id="paypal" />
+                                <label for="paypal" class="font-bold text-[16px]">PayPal</label>
+                            </div>
+                            <div class="flex items-center gap-x-[4px] justify-start">
+                                <input type="radio" name="paymentMethod" id="mir" />
+                                <label for="mir" class="font-bold text-[16px]">Мир</label>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <button class="xl:w-[440px] bg-blue py-[18px] text-[16px] text-white rounded-3xl">Оплатить</button>
+                    <div class="flex mt-[5px] max-w-[362px] md:max-w-full xl:max-w-[362px] mb-10 items-center">
+                        <input id="terms" type="checkbox"
+                            class="form-checkbox h-[32px] w-7 text-indigo-600  transition duration-150 ease-in-out rounded border-gray-300">
+                        <label for="terms" class="ml-3 block text-[12px]  xl:mb-0 text-blue-text"> Нажимая на
+                            кнопку, я
+                            соглашаюсь с политикой конфиденциальности сайта</label>
+                    </div>
+                </form>
+            </div>
+            <div class="md:w-1/2 bg-light-blue md:p-[50px] flex flex-col items-start justify-start">
+                <h4 class="text-[24px] font-semibold l-140">Ваше путешествие:</h4>
+                <div class="mt-[20px] w-full h-[1px] bg-black"></div>
+                <div class="flex w-full mt-5 items-start justify-between">
+                    <div class="max-w-[226px] text-[18px]">Водная экскурсия
+                        в морской национальный парк «Святая Анна»</div>
+                    <div class="ml-auto font-semibold text-[18px] l-140">160 €</div>
+                </div>
+                <div class="mt-[20px] w-full h-[1px] bg-black"></div>
+                <div class="flex w-full text-blue mt-5 items-start justify-between">
+                    <div class="max-w-[226px] text-[18px]">Количество участников:</div>
+                    <div class="ml-auto font-semibold text-[18px] l-140">2</div>
+                </div>
+                <div class="mt-[20px] w-full h-[1px] bg-black"></div>
+                <div class="flex w-full mt-5 items-start justify-between">
+                    <div class="max-w-[226px] text-[18px]">Итого:</div>
+                    <div class="ml-auto font-semibold text-[18px] l-140">160 €</div>
+                </div>
+                <div class="flex w-full mt-5 items-start justify-between">
+                    <div class="max-w-[286px] text-[18px]">К оплате сейчас по депозиту</div>
+                    <div class="ml-auto font-semibold text-[18px] l-140">10 €</div>
+                </div>
+                <div class="p-5 bg-white text-[12px] mt-[30px]">Итоговая сумма списания может отличаться, если валюта
+                    вашей карты
+                    отличается
+                    от валюты
+                    тура
+                    (уточните в вашем банке курс конвертации)</div>
+                <div class="text-grey-text text-[12px] opacity-75 mt-[10px]">*Если передумаете, то в течение 24 часов
+                    после оплаты
+                    оформим
+                    100% возврат*</div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@21.2.4/build/js/intlTelInput.min.js"></script>
+    <script src="js/members.js"></script>
+    <script>
+        const input = document.querySelector("#phone");
+        window.intlTelInput(input, {
+            utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@21.2.4/build/js/utils.js",
+        });
+    </script>
+    <!-- Initialize Swiper -->
+    <script>
+
+        function toggleDropdown() {
+            var options = document.getElementById("dropdown-options");
+            options.style.display = options.style.display === "block" ? "none" : "block";
+        }
+
+        function selectCountry(flagPath, countryCode) {
+            document.getElementById("selected-flag").src = flagPath;
+            document.getElementById("selected-code").textContent = countryCode;
+            toggleDropdown();
+        }
+    </script>
+</body>
+
+</html>

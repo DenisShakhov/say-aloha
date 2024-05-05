@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Tailwind Project</title>
-    <link rel="stylesheet" href="assets/styles/style.css">
-    <link rel="stylesheet" href="assets/styles/style4.css">
+    <link rel="stylesheet" href="public/assets/styles/style.css">
+    <link rel="stylesheet" href="public/assets/styles/style4.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
@@ -17,8 +17,8 @@
 <body>
 
     <div class="container mx-auto px-[25px] xl:px-0 flex flex-col">
-        <nav id="nav" class="w-full hidden z-[10000] md:flex items-center justify-center top-0  h-[86px] ">
-            <div class="pt-4 xl:flex relative container   w-full xl:items-center ">
+        <nav id="nav" class="w-full  z-[10000] flex items-center justify-center top-0  h-[86px] ">
+            <div class="pt-4 xl:flex   relative container   w-full xl:items-center xl:justify-between">
 
                 <div class="flex justify-between items-center">
                     <a href="index.html" class="flex items-center  max-w-[120px] leading-none">
@@ -57,7 +57,7 @@
                     <img src="assets/img/dot.svg" />
                     <a href="#" class="text-blue-text">О компании</a>
                 </div>
-                <div class="w-fit ml-2  gap-x-1 mr-8 flex items-center justify-between">
+                <div class="w-fit  gap-x-1 mr-8 flex items-center justify-between">
                     <button id="search_button" type="button"
                         class="text-blue-500 bg-white p-4 rounded-full hover:text-blue-600 focus:outline-none focus:text-blue-600">
                         <img src="assets/img/search.svg" alt="Search" class="h-5 w-5" />
@@ -73,10 +73,25 @@
                             class="ml-auto bg-blue py-[15px] px-[43px] rounded-3xl text-white font-bold text-[14px]">
                             Поиск</div>
                     </div>
-                    <button type="button"
+                    <button type="button" id="bucket_button"
                         class="text-blue-500 bg-white p-4 rounded-full hover:text-blue-600 focus:outline-none focus:text-blue-600">
                         <img src="assets/img/bag.svg" alt="shop" class="h-5 w-5" />
                     </button>
+                    <div id="bucket_content"
+                        class="fixed hidden w-full z-[7000] right-0 md:w-[600px] bg-white top-0 h-[100vh]  flex-col items-start justify-start px-[25px] pt-[60px] md:p-[50px]">
+                        <h4 class="text-black font-semibold text-[24px] l-140">Ваше путешествие</h4>
+                        <div class="bg-black h-[1px] w-full mt-[20px]"></div>
+                        <div class=" flex items-center mt-[40px] justify-between w-full xl:justify-start">
+                            <div class="flex flex-col items-start justify-start md:flex-row md:items-center">
+                                <div class="max-w-[230px] text-[18px] l-140">Водная экскурсия
+                                    в морской национальный парк «Святая Анна»</div>
+                                <div class="flex items-center justify-center gap-x-[10px]"><img
+                                        src="assets/img/minus.svg" />1<img src="assets/img/plus.svg" /></div>
+                            </div>
+                            <div class="md:ml-[30px] mt-auto md:mt-0">160 €</div>
+                            <img class="md:ml-[30px] hidden md:flex" src="assets/img/delete_gray.svg" />
+                        </div>
+                    </div>
                     <button type="button"
                         class="text-blue-500 bg-white p-4 rounded-full hover:text-blue-600 focus:outline-none focus:text-blue-600">
                         <img src="assets/img/telegram_3.svg" alt="telegram" class="h-5 w-5" />
@@ -554,6 +569,7 @@
         <script type="module" src="/js/dual_range_1.js" defer></script>
         <script type="module" src="/js/dual_range_2.js" defer></script>
         <script type="module" src="/js/nav.js" defer></script>
+        <script type="module" src="/js/bucket.js"></script>
         <script type="module" src="/js/search_button.js" defer></script>
         <script>
             function toggleDropdown() {
