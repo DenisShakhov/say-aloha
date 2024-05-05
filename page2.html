@@ -259,7 +259,8 @@
             </div>
             <div style="background: linear-gradient(150deg,#15A1DD 0%, #26B9C2 30%, #26C2B9 51%, #25C192 66%, #34E06E 83%, #00CC21 100%);"
                 class=" flex  items-center cursor-pointer justify-center text-white font-bold px-[25px] rounded-3xl w-[240px]  h-[60px]">
-                <div class="text-[16px]">Забронировать</div>
+                <div class="text-[16px] flex items-center justify-center gap-x-[15px]">Забронировать <img
+                        src="assets/img/arrow_right_green.svg" /></div>
             </div>
             <div class="xl:flex max-w-[140px] hidden  text-blue-text flex-col items-start justify-start">
                 <div class="text-[12px]">Предоплата - 10 €</div>
@@ -289,12 +290,17 @@
                     class="bg-blue px-[12px] py-[4px] font-bold mx-auto   text-[16px] md:py-[10px] rounded-full md:px-[17px] text-white">
                     2
                 </div>
-                <div class="flex items-end mt-[10px] md:mt-[0px] md:items-center justify-end md:justify-center">
+                <div
+                    class="flex items-end relative mt-[10px] md:mt-[0px] md:items-center justify-end md:justify-center">
                     <span
                         class="w-[64px] text-blue-text md:ml-[20px] md:w-full text-[12px] md:text-[16px] md:font-medium mt-auto font-bold">
                         Забронируйте место </span>
-                    <img src="assets/img/inform.svg "
+                    <img src="assets/img/inform.svg " id="additional_info_1_button"
                         class="h-[8px] mb-1 md:mb-0 w-[8px]  md:h-[16px] md:w-[16px] md:ml-[10px]" />
+                    <div id="additional_info_content_1"
+                        class="absolute right-0 top-10 hidden bg-white rounded-2xl text-blue-text w-[170px] p-5 text-[12px] h-[100px]">
+                        Для бронирования потребуется только предоплата — от 10 € от стоимости тура
+                    </div>
                 </div>
             </div>
             <div
@@ -303,13 +309,18 @@
                     class="bg-blue px-[12px] py-[4px] font-bold ml-auto md:ml-0 xl:ml-auto mr-1 md:mr-0 text-[16px] md:py-[10px] rounded-full md:px-[17px] text-white">
                     3
                 </div>
-                <div class="flex items-end mt-[10px] md:mt-[0px] md:items-center justify-end md:justify-center">
+                <div
+                    class="flex items-end relative mt-[10px] md:mt-[0px] md:items-center justify-end md:justify-center">
                     <div
                         class="w-[64px] text-blue-text md:ml-[20px] md:w-full text-[12px] md:text-[16px] md:font-medium mt-auto font-bold">
                         Оплатите
                         безопасно</div>
-                    <img src="assets/img/inform.svg "
-                        class="h-[8px] mb-1 md:mb-0 w-[8px] ml-2 md:h-[16px] md:w-[16px] md:ml-[10px]" />
+                    <img src="assets/img/inform.svg " id="additional_info_2_button"
+                        class="h-[8px] mb-1 md:mb-0 w-[8px]  md:h-[16px] md:w-[16px] md:ml-[10px]" />
+                    <div id="additional_info_content_2"
+                        class="absolute right-0  hidden items-start justify-start top-10 bg-white rounded-2xl text-blue-text w-[170px] p-5 text-[12px] h-[100px]">
+                        Данные карт надежно защищены по стандартам VISA, Mastercard и МИР
+                    </div>
                 </div>
             </div>
             <div class="md:flex hidden w-[300px] items-center justify-start md:justify-center xl:justify-between">
@@ -322,7 +333,7 @@
             </div>
         </div>
         <div class="mt-20 hidden xl:flex">
-            <div class="w-fit gap-x-[10px] flex  items-center justify-between">
+            <div id="buttons_page_2" class="w-fit gap-x-[10px] flex  items-center justify-between">
                 <div
                     class="bg-blue l-100 flex items-center justify-center rounded-3xl text-center text-white w-[150px] text-[16px] font-bold h-[50px] p-2">
                     Даты и
@@ -349,14 +360,14 @@
 
                 <div class="w-full">
                     <button
-                        class="border dropdownButton bg-white mt-[30px] px-[30px] w-full xl:mt-[50px] flex items-center font-bold  justify-between border-blue-text text-blue-text  rounded-3xl text-center md:l-140 text-[14px]  md:text-[16px]  h-[50px]">
+                        class="border dropdownButton bg-white mt-[10px] px-[30px] w-full x:mt-[10px] flex items-center font-bold  justify-between border-blue-text text-blue-text  rounded-3xl text-center md:l-140 text-[14px]  md:text-[16px]  h-[50px]">
                         Барбекю на о. Лонг
                         <img src="assets/img/arrow_down.svg" class="" />
                     </button>
                     <div id="dropdownContent"
-                        class="hidden xl:flex flex-col mt-5 md:flex-row w-full xl:items-start items-start justify-between">
+                        class="hidden xl:flex flex-col md:mt-5 md:flex-row w-full xl:items-start items-start justify-between">
                         <div class="flex flex-col md:flex-row-reverse w-full items-start justify-between">
-                            <div class="mt-5 text-grey-text max-w-[320px]">После этого нас ждет час свободного времени
+                            <div class=" text-grey-text max-w-[320px]">После этого нас ждет час свободного времени
                                 на острове Лонг, где вы можете насладиться купанием, фотографиями и готовящимся барбекю,
                                 пока наш персонал заботится о вкусном ужине.</div>
                             <img src="assets/img/swimming_women.png" class="mt-5 md:mt-0" />
@@ -365,14 +376,14 @@
                 </div>
                 <div class="w-full">
                     <button
-                        class="border dropdownButton bg-white mt-[30px] px-[30px] w-full xl:mt-[50px] flex items-center font-bold  justify-between border-blue-text text-blue-text  rounded-3xl text-center md:l-140 text-[14px]  md:text-[16px]  h-[50px]">
+                        class="border dropdownButton bg-white mt-[10px] px-[30px] w-full x:mt-[10px] flex items-center font-bold  justify-between border-blue-text text-blue-text  rounded-3xl text-center md:l-140 text-[14px]  md:text-[16px]  h-[50px]">
                         Остров Черепах
                         <img src="assets/img/arrow_down.svg" class="" />
                     </button>
                     <div id="dropdownContent"
-                        class="hidden xl:flex flex-col mt-5 md:flex-row w-full xl:items-start items-start justify-between">
+                        class="hidden xl:flex flex-col md:mt-5 md:flex-row w-full xl:items-start items-start justify-between">
                         <div class="flex flex-col md:flex-row w-full items-start justify-between">
-                            <div class="mt-5 text-grey-text max-w-[320px]">За дополнительную плату (200 scr/15 евро,
+                            <div class=" text-grey-text max-w-[320px]">За дополнительную плату (200 scr/15 евро,
                                 детям до 12 лет вход бесплатный) вы можете посетить остров и насладиться часом
                                 свободного времени для исследования.</div>
                             <img src="assets/img/swimming_women.png" class="mt-5 md:mt-0" />
@@ -381,14 +392,14 @@
                 </div>
                 <div class="w-full">
                     <button
-                        class="border dropdownButton bg-white mt-[30px] px-[30px] w-full xl:mt-[50px] flex items-center font-bold  justify-between border-blue-text text-blue-text  rounded-3xl text-center md:l-140 text-[14px]  md:text-[16px]  h-[50px]">
+                        class="border dropdownButton bg-white mt-[10px] px-[30px] w-full x:mt-[10px] flex items-center font-bold  justify-between border-blue-text text-blue-text  rounded-3xl text-center md:l-140 text-[14px]  md:text-[16px]  h-[50px]">
                         Барбекю на о. Лонг
                         <img src="assets/img/arrow_down.svg" class="" />
                     </button>
                     <div id="dropdownContent"
-                        class="hidden xl:flex flex-col mt-5 md:flex-row w-full xl:items-start items-start justify-between">
+                        class="hidden xl:flex flex-col md:mt-5 md:flex-row w-full xl:items-start items-start justify-between">
                         <div class="flex flex-col md:flex-row-reverse w-full items-start justify-between">
-                            <div class="mt-5 text-grey-text max-w-[320px]">После посещения острова черепах Мойенн и
+                            <div class=" text-grey-text max-w-[320px]">После посещения острова черепах Мойенн и
                                 часа, проведенного среди его живописных пейзажей, мы отправимся на вторую сессию
                                 снорклинга, на этот раз в поисках морских черепах. После мы вас доставим в отель.</div>
                             <img src="assets/img/swimming_women.png" class="mt-5 md:mt-0" />
@@ -398,14 +409,14 @@
 
                 <div class="w-full">
                     <button
-                        class="border dropdownButton bg-white mt-[30px] px-[30px] w-full xl:mt-[50px] flex items-center font-bold  justify-between border-blue-text text-blue-text  rounded-3xl text-center md:l-140 text-[14px]  md:text-[16px]  h-[50px]">
+                        class="border dropdownButton bg-white mt-[10px] px-[30px] w-full x:mt-[10px] flex items-center font-bold  justify-between border-blue-text text-blue-text  rounded-3xl text-center md:l-140 text-[14px]  md:text-[16px]  h-[50px]">
                         Остров Черепах
                         <img src="assets/img/arrow_down.svg" class="" />
                     </button>
                     <div id="dropdownContent"
-                        class="hidden xl:flex flex-col mt-5 md:flex-row w-full xl:items-start items-start justify-between">
+                        class="hidden xl:flex flex-col md:mt-5 md:flex-row w-full xl:items-start items-start justify-between">
                         <div class="flex flex-col md:flex-row w-full items-start justify-between">
-                            <div class="mt-5 text-grey-text max-w-[320px]">За дополнительную плату (200 scr/15 евро,
+                            <div class=" text-grey-text max-w-[320px]">За дополнительную плату (200 scr/15 евро,
                                 детям до 12 лет вход бесплатный) вы можете посетить остров и насладиться часом
                                 свободного времени для исследования.</div>
                             <img src="assets/img/swimming_women.png" class="mt-5 md:mt-0" />
@@ -414,14 +425,14 @@
                 </div>
                 <div class="w-full">
                     <button
-                        class="border dropdownButton bg-white mt-[30px] px-[30px] w-full xl:mt-[50px] flex items-center font-bold  justify-between border-blue-text text-blue-text  rounded-3xl text-center md:l-140 text-[14px]  md:text-[16px]  h-[50px]">
+                        class="border dropdownButton bg-white mt-[10px] px-[30px] w-full x:mt-[10px] flex items-center font-bold  justify-between border-blue-text text-blue-text  rounded-3xl text-center md:l-140 text-[14px]  md:text-[16px]  h-[50px]">
                         Барбекю на о. Лонг
                         <img src="assets/img/arrow_down.svg" class="" />
                     </button>
                     <div id="dropdownContent"
-                        class="hidden xl:flex flex-col mt-5 md:flex-row w-full xl:items-start items-start justify-between">
+                        class="hidden xl:flex flex-col md:mt-5 md:flex-row w-full xl:items-start items-start justify-between">
                         <div class="flex flex-col md:flex-row-reverse w-full items-start justify-between">
-                            <div class="mt-5 text-grey-text max-w-[320px]">После посещения острова черепах Мойенн и
+                            <div class=" text-grey-text max-w-[320px]">После посещения острова черепах Мойенн и
                                 часа, проведенного среди его живописных пейзажей, мы отправимся на вторую сессию
                                 снорклинга, на этот раз в поисках морских черепах. После мы вас доставим в отель.</div>
                             <img src="assets/img/swimming_women.png" class="mt-5 md:mt-0" />
@@ -430,7 +441,7 @@
                 </div>
                 <div class="mt-[50px] xl:mt-[80px] flex flex-col items-start justify-start">
                     <h2 class="text-blue-text text-[30px] xl:text-[42px] font-semibold">Маршрут экскурсии:</h2>
-                    <img src="assets/img/map.png" class="mt-5" />
+                    <img src="assets/img/map.png" class="md:mt-5" />
                 </div>
                 <div class="mt-[50px] flex flex-col   items-start justify-start xl:mt-[80px]">
 
@@ -480,8 +491,9 @@
                 <div class="mb-10 flex flex-col w-full items-center mt-[50px] xl:mt-[65px]">
                     <h2 class="l-100 text-[30px] md:text-[42px] mr-auto font-semibold text-blue-text">Важно знать:</h2>
                     <div
-                        class="mt-[50px] flex flex-col md:flex-row gap-x-[37px] xl:gap-x-[37px] md:gap-x-[20px] items-start gap-y-5 xl:gap-y-0 xl:items-center justify-between">
-                        <div class=" rounded-3xl  flex flex-col  items-start justify-start px-[30px] bg-white">
+                        class="mt-[50px] flex flex-col md:flex-row gap-x-[37px] xl:gap-x-[37px] md:gap-x-[20px] items-start gap-y-5 xl:gap-y-0 xl:items-start justify-between">
+                        <div
+                            class="md:h-[340px] rounded-3xl  flex flex-col  items-start justify-start px-[30px] bg-white">
                             <img class="ml-auto mt-10 w-[45px] h-[45px]" src="assets/img/shield.svg" />
                             <div
                                 class=" text-xl mt-[16px] text-blue-text uppercase text-[16px] xl:text-[20px] font-extrabold">
@@ -493,7 +505,8 @@
                                 и комфортное
                                 путешествие</div>
                         </div>
-                        <div class=" rounded-3xl  flex flex-col  items-start justify-start px-[30px]  bg-white">
+                        <div
+                            class="md:h-[340px] rounded-3xl  flex flex-col  items-start justify-start px-[30px]  bg-white">
                             <img class="ml-auto mt-10 w-[45px] h-[45px]" src="assets/img/swimming_kit.svg" />
                             <div
                                 class=" text-xl mt-[16px] text-blue-text uppercase text-[16px] md:text-[20px] font-extrabold">
@@ -507,7 +520,7 @@
                         </div>
                     </div>
                     <div
-                        class="mt-[20px] xl:mt-[50px] flex flex-col md:flex-row w-[340px] md:w-[778px] xl:w-full gap-x-[20px] items-start py-[30px] xl:py-0 rounded-3xl justify-stretch bg-white">
+                        class="mt-[20px] x:mt-[10px] flex flex-col md:flex-row w-[340px] md:w-[778px] xl:w-full gap-x-[20px] items-start py-[30px] xl:py-0 rounded-3xl justify-stretch bg-white">
                         <div
                             class=" rounded-3xl xl:mb-auto  flex flex-col w-[365px] items-start justify-start px-[30px] xl:p-[30px] ">
 
@@ -537,6 +550,26 @@
                                 надеть
                                 его
                                 перед началом экскурсии, так как на борту нет закрытых помещений)</div>
+                        </div>
+                    </div>
+                </div>
+                <div style="background: url('assets/img/telegram_blog_bg.png');"
+                    class="mt-[50px] max-h-[404px] md:mt-[80px] p-[50px] flex flex-col items-start justify-start">
+                    <h2 class="text-[42px] l-100 max-w-[460px]  text-white">Присоединяйтесь к нашему
+                        Telegram-блогу!</h2>
+                    <div class="text-[16px] l-140 max-w-[360px] mt-[30px] text-white">Только у нас: живые отзывы,
+                        настоящее
+                        общение и масса
+                        полезных диалогов</div>
+                    <button class="bg-white rounded-3xl mt-[30px] text-blue px-[50px] py-[19px] text-[16px]">Перейти в
+                        телеграмм</button>
+                    <div class="mt-[30px] flex items-center gap-x-[6px] justify-start">
+                        <div class="text-white text-[16px] l-140">
+                            Мы в других соцсетях
+                        </div>
+                        <div class="flex items-center justify-start">
+                            <img class="h-[46px] w-[46px]" src="assets/img/instagram.svg" />
+                            <img class="h-[46px] w-[46px]" src="assets/img/ri_vk-fill (1).svg" />
                         </div>
                     </div>
                 </div>
@@ -593,15 +626,19 @@
                             </div>
                         </div>
                         <div id="galleryModal"
-                            class="fixed top-0 left-0 w-full h-full bg-gray-800 bg-opacity-75 flex items-center justify-center hidden">
+                            class="fixed top-0 left-0 z-[10000] w-full h-full bg-gray-800 bg-opacity-75 flex items-center justify-center hidden">
                             <div class="relative max-w-3xl mx-auto">
                                 <button onclick="closeModal()"
-                                    class="absolute top-0 right-0 text-white text-xl p-2">×</button>
+                                    class="absolute top-4 right-4 text-white text-xl p-2"><img
+                                        src="assets/img/charm_cross.svg" /></button>
                                 <button onclick="prevImage()"
-                                    class="absolute left-0 top-1/2 transform -translate-y-1/2 text-white text-3xl p-2">‹</button>
-                                <img id="modalImage" class="w-full h-auto" src="assets/img/smiling_women.png" />
+                                    class="absolute -left-20 top-1/2 transform -translate-y-1/2 text-white text-3xl p-2"><img
+                                        src="assets/img/Arrow left.svg" /></button>
+                                <img id="modalImage" class="w-full md:w-[768px] h-auto"
+                                    src="assets/img/smiling_women.png" />
                                 <button onclick="nextImage()"
-                                    class="absolute right-0 top-1/2 transform -translate-y-1/2 text-white text-3xl p-2">›</button>
+                                    class="absolute -right-20 top-1/2 transform -translate-y-1/2 text-white text-3xl p-2"><img
+                                        src="assets/img/Arrow right.svg" /></button>
                             </div>
                         </div>
                     </div>
@@ -625,7 +662,8 @@
                         <button type="submit"
                             style="background: linear-gradient(150deg,#15A1DD 0%, #26B9C2 30%, #26C2B9 51%, #25C192 66%, #34E06E 83%, #00CC21 100%);"
                             class="  w-[340px]  h-[60px] text-[16px]  text-base font-bold text-center text-white transition duration-200 ease-in rounded-3xl  ">
-                            Забронировать
+                            <div class="text-[16px] flex items-center justify-center gap-x-[15px]">Забронировать <img
+                                    src="assets/img/arrow_right_green.svg" /></div>
                         </button>
                         <div class="flex mt-[10px] w-[340px]  items-center">
                             <input id="terms" type="checkbox"
@@ -661,7 +699,8 @@
         </div>
         <div style="background: linear-gradient(150deg,#15A1DD 0%, #26B9C2 30%, #26C2B9 51%, #25C192 66%, #34E06E 83%, #00CC21 100%);"
             class="border uppercase  flex items-center font-bold px-[28px] justify-center  text-white l-100 rounded-3xl text-center l-140  text-[14px]  h-[50px] ">
-            Забронировать
+            <div class="text-[16px] flex items-center justify-center gap-x-[15px]">Забронировать <img
+                    src="assets/img/arrow_right_green.svg" /></div>
         </div>
     </div>
     <script>
@@ -703,6 +742,7 @@
     <script type="module" src="/js/nav.js" defer></script>
     <script type="module" src="/js/members.js" defer></script>
     <script type="module" src="/js/search_button.js" defer></script>
+    <script type="module" src="/js/additional_info.js" defer></script>
     <script type="module" src="/js/bucket.js"></script>
     <script type="module" src="/js/card_fixed_page_2.js" defer></script>
     <script>
