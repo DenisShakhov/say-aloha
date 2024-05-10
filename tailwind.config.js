@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./index.html", "./page2.html", "./page3.html", "./page4.html","./oplata.html",
+    "./index.html", "./page2.html", "./page3.html", "./page4.html","./oplata.html", "./oplata2.html",
     "./js/**/*.{vue,js,ts,jsx,tsx}" // Это гарантирует, что Tailwind будет искать классы во всех JS файлах в папке js и её подпапках
   ],
   theme: {

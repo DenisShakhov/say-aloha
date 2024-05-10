@@ -1,0 +1,30 @@
+input[type="checkbox"].custom-checkbox {
+    appearance: none;
+    background-color: #fff;
+    border: 2px solid #F69E18;
+    border-radius: 4px;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+input[type="checkbox"].custom-checkbox:checked {
+    background-color: #F69E18;
+    border-color: #F69E18;
+}
+
+input[type="checkbox"].custom-checkbox:checked::before {
+    content: "\2714";
+    color: white;
+    font-weight: normal;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+}
+
+input[type="checkbox"].custom-checkbox:focus {
+    outline: none;
+}

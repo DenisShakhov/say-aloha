@@ -11,6 +11,7 @@ export default defineConfig({
         page3: path.resolve(__dirname, 'page3.html'),
         page4: path.resolve(__dirname, 'page4.html'),
         oplata: path.resolve(__dirname, 'oplata.html'),
+        oplata2: path.resolve(__dirname, 'oplata2.html'),
       }
     }
   },

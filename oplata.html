@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Tailwind Project</title>
     <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/oplata.css">
     <link rel="stylesheet" href="assets/styles/style2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,23 +29,46 @@
                         <div class="flex flex-col items-start justify-start">
                             <label class="font-bold text-[16px]">Имя</label>
                             <input type="text" placeholder="Ангелина"
-                                class="p-5 rounded-3xl mt-[16px] w-full xl:w-[233px] bg-light-blue" />
+                                class="p-5 placeholder:text-blue-text rounded-3xl mt-[16px] w-full xl:w-[233px] bg-light-blue" />
                         </div>
                         <div class="flex flex-col items-start justify-start">
                             <label class="font-bold text-[16px]">Фамилия</label>
                             <input type="text" placeholder="Андрусенко"
-                                class="p-5 rounded-3xl mt-[16px] w-full xl:w-[233px] bg-light-blue" />
+                                class="p-5 placeholder:text-blue-text rounded-3xl mt-[16px] w-full xl:w-[233px] bg-light-blue" />
                         </div>
                     </div>
                     <div class="flex w-full flex-col mt-5 items-start justify-start">
                         <label class="font-bold text-[16px]">E-mail</label>
                         <input type="email" placeholder="andrusenko15@bk.ru"
-                            class="p-5 rounded-3xl mt-[16px] w-full  bg-light-blue" />
+                            class="p-5 placeholder:text-blue-text rounded-3xl mt-[16px] w-full  bg-light-blue" />
                     </div>
                     <div class="flex w-full flex-col mt-5 items-start justify-start">
-                        <label class="font-bold text-[16px]">Телефон</label>
+                        <label class="font-bold text-[16px]">Введите номер телефона</label>
+                        <div class="text-[12px]">по которому мы сможем с вами связаться в мессенджере: </div>
                         <div
-                            class="flex  xl:justify-start mt-[16px] justify-start h-[60px] pl-[30px] xl:pl-[30px] rounded-3xl items-center bg-light-blue w-[280px] md:w-full xl:w-[404px]">
+                            class="flex xl:justify-start gap-x-[20px] justify-start h-[60px]  rounded-3xl items-center  w-[280px] md:w-full xl:w-[404px]">
+                            <div class="flex items-center gap-x-[8px] justify-start">
+                                <input type="radio" name="paymentMethodMessenger" id="telegram" />
+                                <label for="telegram"
+                                    class="font-bold text-[12px] gap-x-[2px] flex items-center justify-center"><img
+                                        src="assets/img/telegram_3.svg" class="w-[15px]" />Telegram</label>
+                            </div>
+                            <div class="flex items-center gap-x-[8px] justify-start">
+                                <input type="radio" name="paymentMethodMessenger" id="whatsapp" />
+                                <label for="whatsapp"
+                                    class="font-bold text-[12px] gap-x-[2px] flex items-center justify-center"><img
+                                        src="assets/img/whatsup_4.svg" class="w-[15px]" />WhatsApp</label>
+                            </div>
+                            <div class="flex items-center gap-x-[8px] justify-start">
+                                <input type="radio" name="paymentMethodMessenger" id="viber" />
+                                <label for="viber"
+                                    class="font-bold text-[12px] gap-x-[2px] flex items-center justify-center"><img
+                                        src="assets/img/viber_4.svg" class="w-[15px]" />Viber</label>
+                            </div>
+                        </div>
+
+                        <div
+                            class="flex  xl:justify-start  justify-start h-[60px] pl-[30px] xl:pl-[30px] rounded-3xl items-center bg-light-blue w-[280px] md:w-full xl:w-[485px]">
                             <input type="tel" id="phone"
                                 class="w-[300px] md:w-full outline-none placeholder:text-blue-text placeholder:text-[12px]  mb:placeholder:text-[14px] rounded-3xl form-input ring-white bg-transparent h-[60px] pl-4   block">
                         </div>
@@ -52,7 +76,7 @@
                     <div class="flex w-full relative flex-col mt-5 items-start justify-start">
                         <label class="font-bold text-[16px]">Количество участников</label>
                         <div id="select_members_button"
-                            class="bg-light-blue text-blue-text flex items-center justify-between px-[25px] rounded-3xl w-[240px]  h-[60px]">
+                            class="bg-light-blue w-full mt-5 text-blue-text flex items-center justify-between px-[25px] rounded-3xl   h-[60px]">
                             <div class="text-[14px]">2 взрослых</div>
                             <img src="assets/img/arrow_down.svg" />
                         </div>
@@ -78,19 +102,100 @@
                         </div>
                     </div>
                     <div class="flex w-full flex-col mt-5 items-start justify-start">
+                        <label class="font-bold text-[16px]">Нужен ли трансфер?</label>
+                        <div
+                            class="flex xl:justify-start gap-x-[20px] justify-start h-[60px] rounded-3xl items-center w-[280px] md:w-full xl:w-[404px]">
+                            <div class="flex items-center gap-x-[4px] justify-start">
+                                <input type="radio" name="transfer" id="needed" />
+                                <label for="needed" class="font-bold text-[12px]">Нужен</label>
+                            </div>
+                            <div class="flex items-center gap-x-[4px] justify-start">
+                                <input type="radio" name="transfer" id="not_needed" />
+                                <label for="not_needed" class="font-bold text-[12px]">Нет</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex w-full flex-col  items-start justify-start">
+                        <label class="font-bold текст-[16px]">Введите ваш адрес:</label>
+                        <input placeholder="Адрес"
+                            class="w-full px-8 placeholder:text-blue-text placeholder:text-[14px] bg-light-blue h-[60px] rounded-3xl mt-4" />
+                    </div>
+                    <div class="mt-5 text-[12px] max-w-[300px] text-grey-text">Трансфер к данному месту оплачивается
+                        отдельно —
+                        менеджер
+                        вас ознакомит
+                        с вариантами </div>
+                    <div class="flex w-full flex-col mt-5 items-start justify-start">
+                        <label class="font-bold текст-[16px]">Выберите дополнительные услуги</label>
+                        <div class="mt-2 text-[12px]  text-grey-text">которые могут вам понадобиться и
+                            менеджер сформирует для вас варианты</div>
+                        <div class="flex gap-x-[20px] items-center mt-[20px] justify-start">
+
+                            <div class="flex items-center justify-start">
+                                <input id="barbeque" type="checkbox"
+                                    class="form-checkbox h-[20px] w-7 text-indigo-600  transition duration-150 ease-in-out rounded border-gray-300">
+                                <label for="barbeque" class="ml-[8px] block text-[12px]  xl:mb-0 text-blue-text">
+                                    Барбекю
+                                    <br />
+                                    50€</label>
+                            </div>
+                            <div class="flex items-center justify-start">
+                                <input id="photograph" type="checkbox"
+                                    class="form-checkbox h-[20px] w-7 text-indigo-600  transition duration-150 ease-in-out rounded border-gray-300">
+                                <label for="photograph" class="ml-[8px] block text-[12px]  xl:mb-0 text-blue-text">
+                                    Фотограф
+                                    <br />
+                                    от 150€</label>
+                            </div>
+                            <div class="flex items-center justify-start">
+                                <input id="russian gid" type="checkbox"
+                                    class="form-checkbox h-[20px] w-7 text-indigo-600  transition duration-150 ease-in-out rounded border-gray-300">
+                                <label for="russian gid" class="ml-[8px] block text-[12px]  xl:mb-0 text-blue-text">
+                                    Русский
+                                    гид<br />
+                                    от 300€</label>
+                            </div>
+                            <div class="flex items-center justify-start">
+                                <input id="alco" type="checkbox"
+                                    class="form-checkbox h-[20px] w-7 text-indigo-600  transition duration-150 ease-in-out rounded border-gray-300">
+                                <label for="alco" class="ml-[8px] block text-[12px]  xl:mb-0 text-blue-text">
+                                    Алкоголь<br />
+                                    от 10€</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex w-full flex-col mt-5 items-start justify-start">
+
+                        <input placeholder="Введите ваши пожелания при необходимостти"
+                            class="w-full px-8 placeholder:text-blue-text placeholder:text-[14px] bg-light-blue h-[60px] rounded-3xl mt-4" />
+                    </div>
+                    <div class="flex w-full flex-col mt-5 items-start justify-start">
+                        <label class="font-bold text-[16px] text-[#F69E18]">Я согласен на условия акции</label>
+                        <div class="text-[12px]">Перед началом экскурсии вносится полная оплата. По завершении экскурсии
+                            мы вернем вам 20
+                            евро за ваш отзыв на нашем сайте или в телеграм-канале.</div>
+                        <div class="flex items-center mt-5 justify-start relative">
+                            <input id="in-sale" type="checkbox"
+                                class="custom-checkbox form-checkbox appearance-none h-[20px] w-[20px] rounded-md border-[#F69E18] text-[#F69E18] cursor-pointer focus:ring-[#F69E18] focus:border-[#F69E18]">
+                            <label for="in-sale" class="ml-[8px] block text-[12px] text-blue-text">
+                                Участвую в акции
+                            </label>
+                        </div>
+                    </div>
+                    <div class="flex w-full flex-col mt-5 items-start justify-start">
                         <label class="font-bold text-[16px]">Выберите способ оплаты:</label>
                         <div
                             class="flex xl:justify-start gap-x-[20px] justify-start h-[60px]  rounded-3xl items-center  w-[280px] md:w-full xl:w-[404px]">
                             <div class="flex items-center gap-x-[4px] justify-start">
-                                <input type="radio" name="paymentMethod" id="visa_mastercard" />
+                                <input type="radio" name="paymentMethodPayment" id="visa_mastercard" />
                                 <label for="visa_mastercard" class="font-bold text-[16px]">Visa, MasterCard</label>
                             </div>
                             <div class="flex items-center gap-x-[4px] justify-start">
-                                <input type="radio" name="paymentMethod" id="paypal" />
+                                <input type="radio" name="paymentMethodPayment" id="paypal" />
                                 <label for="paypal" class="font-bold text-[16px]">PayPal</label>
                             </div>
                             <div class="flex items-center gap-x-[4px] justify-start">
-                                <input type="radio" name="paymentMethod" id="mir" />
+                                <input type="radio" name="paymentMethodPayment" id="mir" />
                                 <label for="mir" class="font-bold text-[16px]">Мир</label>
                             </div>
                         </div>
