@@ -188,11 +188,6 @@
         <img class="rounded-3xl object-cover w-full h-auto md:h-[417px] xl:h-full" src="assets/img/page_2_card.png" />
       </div>
     </div>
-
-
-
-
-
     <div class="relative rounded-b-3xl leading-none  xl:h-full w-full swiper mySwiper3 mt-20 rounded-3xl">
       <div class="swiper-wrapper l-100 font-semibold ">
         <div class="swiper-slide h-[600px] slide">
@@ -231,8 +226,6 @@
       <button class="next left-28 xl:left-28 z-10 top-[80%] md:top-[67%] xl:top-[80%]   w-15 h-15"><img
           src="assets/img/Arrow right.svg" /></button>
     </div>
-
-
 
     <div
       class="grid grid-cols-1  md:grid-cols-2 text-[16px] xl:text-[20px] place-items-stretch border-none bg-none gap-4 mt-20">
@@ -414,7 +407,8 @@
 
 
       </div>
-      <div class="swiper-pagination2 left-0 z-50"></div>
+      123
+      <div class="swiper-pagination2 left-0 z-50 "></div>
 
     </div>
     <div
@@ -545,91 +539,91 @@
         </div>
       </div>
     </div>
+  </div>
+  <script type="module" src="/js/menu.js" defer></script>
+  <script type="module" src="/js/scroll_third_page.js" defer></script>
+  <script type="module" src="/js/dropdown.js" defer></script>
+  <script type="module" src="/js/nav.js" defer></script>
+  <script type="module" src="/js/bucket.js"></script>
+  <script type="module" src="/js/search_button.js" defer></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@21.2.4/build/js/intlTelInput.min.js"></script>
+  <script>
+    const input = document.querySelector("#phone");
+    window.intlTelInput(input, {
+      utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@21.2.4/build/js/utils.js",
+    });
+  </script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: true,
+      },
+      pagination: {
+        el: ".swiper-pagination2", // Укажите класс вашего элемента пагинации
+        clickable: true, // Делаем точки кликабельными
+      },
+      cssMode: true,
+      navigation: {
+        nextEl: ".next_4",
+        prevEl: ".prev_4",
+      },
 
-    <script type="module" src="/js/menu.js" defer></script>
-    <script type="module" src="/js/scroll_third_page.js" defer></script>
-    <script type="module" src="/js/dropdown.js" defer></script>
-    <script type="module" src="/js/nav.js" defer></script>
-    <script type="module" src="/js/bucket.js"></script>
-    <script type="module" src="/js/search_button.js" defer></script>
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@21.2.4/build/js/intlTelInput.min.js"></script>
-    <script>
-      const input = document.querySelector("#phone");
-      window.intlTelInput(input, {
-        utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@21.2.4/build/js/utils.js",
-      });
-    </script>
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1,
-        spaceBetween: 20,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: true,
-        },
-        pagination: {
-          el: ".swiper-pagination2", // Укажите класс вашего элемента пагинации
-          clickable: true, // Делаем точки кликабельными
-        },
-        cssMode: true,
-        navigation: {
-          nextEl: ".next_4",
-          prevEl: ".prev_4",
-        },
+      mousewheel: true,
+      keyboard: true,
+      breakpoints: {
+        640: {
+          slidesPerView: 3,
 
-        mousewheel: true,
-        keyboard: true,
-        breakpoints: {
-          640: {
-            slidesPerView: 3,
-
-          }
         }
-      });
-      var swiper2 = new Swiper(".mySwiper2", {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: true,
-        },
-        pagination: {
-          el: ".swiper-pagination", // Укажите класс вашего элемента пагинации
-          clickable: true, // Делаем точки кликабельными
-        },
-        loop: true,
-        navigation: {
-          nextEl: ".next_2",
-          prevEl: ".prev_2",
-        },
-      });
-      var swiper3 = new Swiper(".mySwiper3", {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: true,
-        },
-        loop: true,
-        navigation: {
-          nextEl: ".next",
-          prevEl: ".prev",
-        },
-      });
-      function toggleDropdown() {
-        var options = document.getElementById("dropdown-options");
-        options.style.display = options.style.display === "block" ? "none" : "block";
       }
+    });
+    var swiper2 = new Swiper(".mySwiper2", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: true,
+      },
+      pagination: {
+        el: ".swiper-pagination", // Укажите класс вашего элемента пагинации
+        clickable: true, // Делаем точки кликабельными
+      },
+      loop: true,
+      navigation: {
+        nextEl: ".next_2",
+        prevEl: ".prev_2",
+      },
+    });
+    var swiper3 = new Swiper(".mySwiper3", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: true,
+      },
+      loop: true,
+      navigation: {
+        nextEl: ".next",
+        prevEl: ".prev",
+      },
+    });
+    function toggleDropdown() {
+      var options = document.getElementById("dropdown-options");
+      options.style.display = options.style.display === "block" ? "none" : "block";
+    }
 
-      function selectCountry(flagPath, countryCode) {
-        document.getElementById("selected-flag").src = flagPath;
-        document.getElementById("selected-code").textContent = countryCode;
-        toggleDropdown();
-      }
-    </script>
+    function selectCountry(flagPath, countryCode) {
+      document.getElementById("selected-flag").src = flagPath;
+      document.getElementById("selected-code").textContent = countryCode;
+      toggleDropdown();
+    }
+  </script>
 
 </body>
 
